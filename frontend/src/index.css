@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  /* Dark Mode Backgrounds */
+  --color-gruv-bg0: #282828;
+  --color-gruv-bg1: #3c3836;
+  --color-gruv-bg2: #504945;
+  --color-gruv-bg3: #665c54;
+  --color-gruv-bg4: #7c6f64;
+
+  /* Light Mode Backgrounds / Foreground Text */
+  --color-gruv-fg0: #fbf1c7;
+  --color-gruv-fg1: #ebdbb2;
+  --color-gruv-fg2: #d5c4a1;
+  --color-gruv-fg3: #bdae93;
+  --color-gruv-fg4: #a89984;
+
+  /* Accents - Normal Shades */
+  --color-gruv-red: #cc241d;
+  --color-gruv-green: #98971a;
+  --color-gruv-yellow: #d79921;
+  --color-gruv-blue: #458588;
+  --color-gruv-purple: #b16286;
+  --color-gruv-aqua: #689d6a;
+  --color-gruv-orange: #d65d0e;
+
+  /* Accents - Bright Shades */
+  --color-gruv-red-bright: #fb4934;
+  --color-gruv-green-bright: #b8bb26;
+  --color-gruv-yellow-bright: #fabd2f;
+  --color-gruv-blue-bright: #83a598;
+  --color-gruv-purple-bright: #d3869b;
+  --color-gruv-aqua-bright: #8ec07c;
+  --color-gruv-orange-bright: #fe8019;
+
+  /* Gray */
+  --color-gruv-gray: #928374;
+}
