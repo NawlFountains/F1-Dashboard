@@ -1,4 +1,3 @@
-import os
 import requests
 
 def download_pdf(pdf_url: str, output_filename: str | None ="archivo.pdf" ) -> str | None:

@@ -34,7 +34,7 @@ def load_json_file(filename: str):
 def healthcheck():
     return {"status": "ok"}
 
-@app.get("/api/race_result/{year}/{round_number}")
+@app.get("/api/results/{year}/{round_number}/race")
 def get_race_results(year: int, round_number: int):
     try:
         return get_cached_results(year, round_number)
@@ -52,14 +52,14 @@ def get_current_event():
 def get_full_schedule(year: int):
     return get_cached_schedule(year)
 
-@app.get("/api/upgrades/{year}/{race_slug}")
-def get_race_summaries(year: int, race_slug: str):
-    filename = f"{year}_{race_slug}/team_summaries.json"
+@app.get("/api/upgrades/{year}/{round_number}")
+def get_race_summaries(year: int, round_number: str):
+    filename = f"{year}_round_{round_number}/team_summaries.json"
     return load_json_file(filename)
 
-@app.get("/api/upgrades/{year}/{race_slug}/{team}")
-def get_team_summary(year: int, race_slug: str, team: str):
-    filename = f"{year}_{race_slug}/team_summaries.json"
+@app.get("/api/upgrades/{year}/{round_number}/{team}")
+def get_team_summary(year: int, round_number: int, team: str):
+    filename = f"{year}_round_{round_number}/team_summaries.json"
     summaries = load_json_file(filename)
 
     cleaned_team = team.strip()
@@ -68,7 +68,7 @@ def get_team_summary(year: int, race_slug: str, team: str):
     if summary is None:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"No data found for team '{cleaned_team}' in '{race_slug}'."
+            detail=f"No data found for team '{cleaned_team}' in round '{round_number}'."
         )
 
-    return {"team": cleaned_team, "summary": summary}
+    return summary

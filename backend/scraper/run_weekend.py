@@ -90,11 +90,11 @@ def get_current_event():
     return None, None, None
 
 
-def process_race_weekend(year: int, gp_name: str):
+def process_race_weekend(year: int, round_num: int, gp_name: str):
     pdf_path = get_car_submission_pdf(year, gp_name)              # downloader.py
 
     df = parse_fia_car_presentation(pdf_path)             # processor.py
-    race_slug = f"{year}_{gp_name}"
+    race_slug = f"{year}_round_{round_num}"
     os.makedirs(f"data/{race_slug}", exist_ok=True)
     df.to_csv(f"data/{race_slug}/fia_updates.csv", index=False)
 
@@ -103,8 +103,6 @@ def process_race_weekend(year: int, gp_name: str):
     summaries = generate_summaries(df)                    # summarizer.py
     with open(f"data/{race_slug}/team_summaries.json", "w") as f:
         json.dump(summaries, f, indent=2)
-
-    return race_slug
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fetch, process and summarize F1 component updates in a GP weekend.")
@@ -129,5 +127,4 @@ if __name__ == "__main__":
 
     gp_name = format_gp_name(event_name)
     print(f"Processing Round {round_num}: {gp_name} ({year})...")
-    # gp_name = event_name.lower().replace(" grand prix", "").replace(" ", "_") + "_grand_prix"
-    process_race_weekend(year, gp_name)
+    process_race_weekend(year, round_num, gp_name)
