@@ -5,9 +5,9 @@ import argparse
 import os
 import json
 from datetime import date
-from downloader import get_car_submission_pdf
-from processor import parse_fia_car_presentation
-from summarizer import generate_summaries
+from .downloader import get_car_submission_pdf
+from .processor import parse_fia_car_presentation
+from .summarizer import generate_summaries
 import fastf1
 
 from rapidfuzz import process, fuzz
@@ -90,7 +90,11 @@ def get_current_event():
     return None, None, None
 
 
-def process_race_weekend(year: int, round_num: int, gp_name: str):
+def process_race_weekend(year: int, round_num: int, event_name: str | None):
+    if event_name is None:
+        event_name = fastf1.get_event(year, round_num)['EventName']
+
+    gp_name = format_gp_name(event_name)
     pdf_path = get_car_submission_pdf(year, gp_name)              # downloader.py
 
     df = parse_fia_car_presentation(pdf_path)             # processor.py
@@ -125,6 +129,5 @@ if __name__ == "__main__":
         print("No race found for the specified parameters or current weekend, skipping.")
         exit()
 
-    gp_name = format_gp_name(event_name)
-    print(f"Processing Round {round_num}: {gp_name} ({year})...")
-    process_race_weekend(year, round_num, gp_name)
+    print(f"Processing Round {round_num}: {event_name} ({year})...")
+    process_race_weekend(year, round_num, event_name)

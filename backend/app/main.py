@@ -4,6 +4,7 @@ from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from cache.schedule_cache import get_current_or_next_event, get_cached_schedule
 from cache.results_cache import get_cached_results
+from scraper.run_weekend import process_race_weekend
 
 app = FastAPI(title='F1 upgrades API')
 
@@ -20,13 +21,17 @@ app.add_middleware(
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
-def load_json_file(filename: str):
+def fetch_summaries(year: int, round_number: int):
+    try:
+        process_race_weekend(year, round_number, None)
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail=f"No entry document entry for ${year} round ${round_number}")
+
+def get_summaries_json_file(year: int, round_number: int):
+    filename = f"{year}_round_{round_number}/team_summaries.json"
     file_path = DATA_DIR / filename
     if not file_path.exists():
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Data file '{filename}' not found. Run the scraper first."
-        )
+        fetch_summaries(year, round_number)
     with open(file_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -53,14 +58,12 @@ def get_full_schedule(year: int):
     return get_cached_schedule(year)
 
 @app.get("/api/upgrades/{year}/{round_number}")
-def get_race_summaries(year: int, round_number: str):
-    filename = f"{year}_round_{round_number}/team_summaries.json"
-    return load_json_file(filename)
+def get_race_summaries(year: int, round_number: int):
+    return get_summaries_json_file(year, round_number)
 
 @app.get("/api/upgrades/{year}/{round_number}/{team}")
 def get_team_summary(year: int, round_number: int, team: str):
-    filename = f"{year}_round_{round_number}/team_summaries.json"
-    summaries = load_json_file(filename)
+    summaries = get_summaries_json_file(year, round_number) 
 
     cleaned_team = team.strip()
     summary = summaries.get(cleaned_team)
