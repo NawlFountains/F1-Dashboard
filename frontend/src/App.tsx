@@ -3,6 +3,7 @@ import {useSchedules} from "./hooks/useSchedules"
 import {useState} from "react"
 import {useSummaries} from "./hooks/useSummaries"
 import {useRaceResults} from "./hooks/useRaceResults"
+import {LoadingSpinner} from "./components/styles/Icons"
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
 
 	const [ appliedYear, setAppliedYear ] = useState<number>(null)
 	const [ appliedRoundNumber, setAppliedRoundNumber ] = useState<number>(null)
+
+	const [ selectedScheduleIndex, setSelectedScheduleIndex ] = useState<number>(null)
 
 	const {
 		loading: summariesLoading,
@@ -78,34 +81,6 @@ function App() {
 				>
 					Summaries
 				</button>
-				<div className="ml-4 border rounded bg-gruv-fg2 divide-x px-2">
-								<input
-									value={year}
-									onChange={(e) => setYear(Number(e.target.value))}
-									placeholder="year"
-									min="1955"
-									max={new Date().getFullYear() + 1}
-									type="number"
-									className=""
-								/>
-								<input
-									value={roundNumber}
-									onChange={(e) => setRoundNumber(Number(e.target.value))}
-									placeholder="round"
-									min="1"
-									max="20"
-									type="number"
-									className=""
-								/>
-								<button
-									onClick={() => {
-										setAppliedYear(year),
-										setAppliedRoundNumber(roundNumber)
-									}}
-									className="rounded border border-gruv-orange px-3">
-									Search
-								</button>
-							</div>
 			</div>
 		
 			<div className="grid grid-cols-5 w-full gap-5">
@@ -114,13 +89,28 @@ function App() {
 									{activeTab === 'schedules' && (
 						<div>
 							{/* Full Schedule */}
-							<h2>Full schedules</h2>
-							<div className="grid grid-cols-4 gap-2">
-							{schedules.map(schedule => (
-								<div className="flex flex-col p-2 border border-gruv-orange">
-								<p>{schedule.event_name}</p>
+							<div className="grid grid-cols-3 gap-2 m-2">
+							{schedules.map((schedule, index) => (
+								<button
+									onClick={() => {
+										setAppliedYear(new Date(schedule.event_date).getFullYear()),
+										setAppliedRoundNumber(schedule.round_number)
+										setSelectedScheduleIndex(index)
+									}}
+									className={`
+										flex flex-col p-2 border border-gruv-orange 
+										${index == selectedScheduleIndex 
+											? 'bg-gruv-orange text-gruv-fg2' 
+											: 'hover:bg-gruv-orange hover:text-gruv-fg2 ' }
+										transition-all duration-300 cursor-pointer
+									`}
+								>
+									<div className="flex flex-row justify-between border-b pb-1">
+										<p>{schedule.event_name}</p>
+										<p>R: {schedule.round_number}</p>
+									</div>
 								<p>{new Date(schedule.event_date).toLocaleString()}</p>
-								</div>
+								</button>
 							))}
 							</div>
 						</div>
@@ -159,10 +149,10 @@ function App() {
 						</div>
 					)}
 				</div>
-				<div className="flex flex-col bg-gruv-fg2">
-					Leaderboard
+				<div className="flex flex-col bg-gruv-fg2 items-center text-center divide-y divide-gruv-orange gap-2">
+					<h2 className="text-center font-mono py-2">Leaderboard</h2>
 					{resultsLoading ? (
-						<p>Loading race results</p>
+						<LoadingSpinner size={50}/>
 					): (
 						<table>
 						<tbody>
