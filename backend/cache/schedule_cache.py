@@ -1,10 +1,20 @@
 import json
 import fastf1
+import pandas as pd
 from pathlib import Path
 from datetime import date, datetime, timedelta
 
 CACHE_DIR = Path("data/cache")
 MAX_AGE_DAYS = 7
+
+def _to_iso_utc(value) -> str | None:
+    if value is None or pd.isna(value):
+        return None
+    if value.tzinfo is not None:
+        value = value.tz_convert("UTC")
+    else:
+        value = value.tz_localize("UTC")
+    return value.isoformat().replace("+00:00", "Z")
 
 def _normalize_event(event: dict) -> dict:
     return {
@@ -12,11 +22,11 @@ def _normalize_event(event: dict) -> dict:
         "event_name": event["EventName"],
         "country": event["Country"],
         "location": event["Location"],
-        "event_date": event["EventDate"].isoformat() + "Z" if event["EventDate"] else None,
+        "event_date": _to_iso_utc(event["EventDate"]),
         "sessions": [
             {
                 "name": event.get(f"Session{i}"),
-                "date": event[f"Session{i}Date"].isoformat() + "Z" if event.get(f"Session{i}Date") else None,
+                "date": _to_iso_utc(event.get(f"Session{i}Date"))
             }
             for i in range(1, 6) if event.get(f"Session{i}")
         ],
@@ -62,7 +72,7 @@ def get_current_or_next_event(year: int | None = date.today().year) -> dict | No
     schedule = get_cached_schedule(year)
 
     for event in schedule:
-        if event["EventDate"] >= today:
+        if event["event_date"] >= today:
             return event
 
     return None
