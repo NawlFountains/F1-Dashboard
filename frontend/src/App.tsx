@@ -1,9 +1,16 @@
+import { useMemo } from "react"
 import ScreenLayout from "./layouts/ScreenLayout"
 import {useSchedules} from "./hooks/useSchedules"
-import {useState} from "react"
+import {useEffect, useState} from "react"
 import {useSummaries} from "./hooks/useSummaries"
 import {useRaceResults} from "./hooks/useRaceResults"
 import {LoadingSpinner} from "./components/styles/Icons"
+import {Card} from "./components/Card"
+import SummariesTable from "./components/summaries/SummariesTable"
+import SummariesRow from "./components/summaries/SummariesRow"
+import RaceResultsTable from "./components/results/race/RaceResultsTable"
+import RaceResultsRow from "./components/results/race/RaceResultsRow"
+import type { Schedule } from "./types"
 
 function App() {
 
@@ -12,17 +19,22 @@ function App() {
 	const {
 		schedules,
 		currentSchedule,
-		loading,
-		loadError
+		loading: schedulesLoading,
+		loadError: schedulesLoadError
 	} = useSchedules()
-
-	const [ year, setYear] = useState<number>(null)
-	const [ roundNumber, setRoundNumber ] = useState<number>(null)
 
 	const [ appliedYear, setAppliedYear ] = useState<number>(null)
 	const [ appliedRoundNumber, setAppliedRoundNumber ] = useState<number>(null)
 
-	const [ selectedScheduleIndex, setSelectedScheduleIndex ] = useState<number>(null)
+	const [selectedSchedule, setSelectedSchedule] = useState<Schedule | null>(null)
+
+	useEffect(() => {
+		if (currentSchedule && !selectedSchedule) {
+			setSelectedSchedule(currentSchedule)
+			setAppliedYear(new Date(currentSchedule.event_date).getFullYear())
+			setAppliedRoundNumber(currentSchedule.round_number)
+		}
+	}, [currentSchedule])
 
 	const {
 		loading: summariesLoading,
@@ -36,10 +48,12 @@ function App() {
 		results,
 	} = useRaceResults(appliedYear, appliedRoundNumber)
 
+	const leaderLaps = useMemo(() => results?.[0]?.laps ?? 0, [results])
+
   return (
     <>
     	<ScreenLayout>
-		<div className='relative w-full bg-gruv-fg1 dark:bg-gruv-bg1 text-center py-2'>
+		<div className='relative w-full bg-gruv-red text-gruv-fg1 dark:bg-gruv-bg1 text-center py-2'>
 			<div
 				className="absolute top-2 right-4 flex flex-row 
 				border border-[--pattern-fg]">
@@ -48,68 +62,67 @@ function App() {
 				className="px-2 rounded"
 			/>
 			</div>
-			<h1 className="text-2xl text-bold font-mono">
+			<h1 className="text-2xl font-bold font-mono">
 				F1 - Dashboard
 			</h1>
 			
 		</div>
 
-		{/* Current GP */}
-		<div className="flex flex-col bg-gruv-fg0">
-			<h2>{currentSchedule?.event_name}</h2>
-			{currentSchedule?.sessions.map(session => (
-				<div 
-					key={session.date}
-					className="flex flex-row justify-between">
-				<p>{session.name}</p>
-				<p>{new Date(session.date).toLocaleString()}</p>
-				</div>
-			))}
+		<div className="mx-5 py-2">
+			{selectedSchedule && (
+				<Card>
+					<div className="flex flex-row font-mono justify-between items-center">
+						<h2 className="text-nowrap px-2">{selectedSchedule?.event_name}</h2>
+						<div className="w-full max-w-lg h-px bg-gruv-orange"/>
+						<p className="text-nowrap px-2">{new Date(selectedSchedule?.event_date).toLocaleDateString()} <span className="font-bold uppercase">Round:</span>{selectedSchedule?.round_number}</p>
+					</div>
+				</Card>
+			)}
 		</div>
 
 		<div className="p-2 px-5">
-			<div className="flex flex-row">
+			<div className="flex flex-row gap-2">
 				<button
 					onClick={() => setActiveTab("schedules")}
-					className={`px-2 ${activeTab === "schedules" ? 'bg-gruv-orange text-gruv-fg1' : 'border border-gruv-orange/40'}`}
+					className={`rounded-t px-2 py-1 ${activeTab === "schedules" ? 'bg-gruv-fg2' : 'shadow-md shadow-neutral-900'}`}
 				>
 					Schedule
 				</button>
 				<button
 					onClick={() => setActiveTab("summaries")}
-					className={`px-2 ${activeTab === "summaries" ? 'bg-gruv-orange text-gruv-fg1' : 'border border-gruv-orange/40'}`}
+					className={`rounded-t px-2 py-1 ${activeTab === "summaries" ? 'bg-gruv-fg2' : 'shadow-md shadow-neutral-900'}`}
 				>
 					Summaries
 				</button>
 			</div>
 		
 			<div className="grid grid-cols-5 w-full gap-5">
-				<div className="col-span-4 w-full bg-gruv-fg2 flex flex-col">
+				<div className="col-span-4 w-full bg-gruv-fg2 flex flex-col rounded-r rounded-b overflown-hidden">
 
 									{activeTab === 'schedules' && (
 						<div>
 							{/* Full Schedule */}
 							<div className="grid grid-cols-3 gap-2 m-2">
-							{schedules.map((schedule, index) => (
+							{schedules.map(schedule => (
 								<button
 									onClick={() => {
 										setAppliedYear(new Date(schedule.event_date).getFullYear()),
 										setAppliedRoundNumber(schedule.round_number)
-										setSelectedScheduleIndex(index)
+										setSelectedSchedule(schedule)
 									}}
 									className={`
-										flex flex-col p-2 border border-gruv-orange 
-										${index == selectedScheduleIndex 
+										flex flex-col p-2 px-4 border border-gruv-orange bg-gruv-fg1 rounded 
+										${schedule?.event_name == selectedSchedule?.event_name
 											? 'bg-gruv-orange text-gruv-fg2' 
 											: 'hover:bg-gruv-orange hover:text-gruv-fg2 ' }
 										transition-all duration-300 cursor-pointer
 									`}
 								>
 									<div className="flex flex-row justify-between border-b pb-1">
-										<p>{schedule.event_name}</p>
-										<p>R: {schedule.round_number}</p>
+										<p className="font-mono text-lg">{schedule.event_name}</p>
+										<p className="text-nowrap">R: {schedule.round_number}</p>
 									</div>
-								<p>{new Date(schedule.event_date).toLocaleString()}</p>
+								<p>{new Date(schedule.event_date).toLocaleDateString()}</p>
 								</button>
 							))}
 							</div>
@@ -117,56 +130,38 @@ function App() {
 					)}
 
 					{activeTab === 'summaries' && (
+						<>
+						{summariesLoading ? (
+							<LoadingSpinner/>
+						) : (
 						<div>
-							
-							<table className="w-full text-center">
-							<thead>
-								<tr>
-								<td className="w-1/5">
-								Team
-								</td>
-								<td>
-								Summary
-								</td>
-								</tr>
-							</thead>
-							<tbody>
-							{summaries && Object.entries(summaries).map(([team, summary]) => (
-								  <tr 
-									key={team}
-									className="border p-2 divide-x"
-								  >
-								    <td>{team}</td>
-								    <td>{summary}</td>
-								  </tr>
+							<SummariesTable>
+								{summaries && Object.entries(summaries).map(([team, summary]) => (
+									<SummariesRow key={team} team={team} summary={summary}/>
 								))}
-
-							</tbody>
-							</table>
+							</SummariesTable>	
 							{summariesLoadError && (
 								<p>{summariesLoadError}</p>
 							)}
 						</div>
+						)}
+						</>
 					)}
 				</div>
-				<div className="flex flex-col bg-gruv-fg2 items-center text-center divide-y divide-gruv-orange gap-2">
+				<Card
+					padding="sm">
 					<h2 className="text-center font-mono py-2">Leaderboard</h2>
+					<div className="h-0.5 w-full bg-gruv-orange/40 mb-2"/>
 					{resultsLoading ? (
 						<LoadingSpinner size={50}/>
 					): (
-						<table>
-						<tbody>
+						<RaceResultsTable>
 							{results?.map((result, index) => (
-								<tr key={index}>
-									<td>{result.abbreviation}</td>
-									<td>{result.position}</td>
-									<td className="hidden lg:block">{result.time ?? result.status}</td>
-								</tr>
+								<RaceResultsRow key={index} result={result} raceLaps={leaderLaps} />
 							))}
-						</tbody>
-						</table>
+						</RaceResultsTable>
 					)}
-				</div>
+				</Card>
 			</div>
 		</div>
 	</ScreenLayout>
