@@ -17,7 +17,6 @@ export default function RaceResultsRow( { result, raceLaps }: RaceResultsRowProp
 		? result.time
 		: `+${result.time}`
 
-	console.log(result.team_color)
 
 	return (
 		<tr className="w-full">

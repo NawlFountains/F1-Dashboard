@@ -1,7 +1,7 @@
 import React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 
-const cardVariants = cva("rounded-xl bg-gruv-fg2 dark:bg-gruv-fg4 shadow-sm", {
+const cardVariants = cva("rounded-xl bg-gruv-fg2 dark:bg-gruv-bg1 dark:text-gruv-fg1 shadow-sm", {
   variants: {
     padding: { none: "p-0", sm: "p-3", md: "p-5", lg: "p-8" },
     interactive: { true: "hover:bg-gruv-orange hover:text-gruv-fg2 hover:bg-gruv-orange/80 transition-all cursor-pointer" },

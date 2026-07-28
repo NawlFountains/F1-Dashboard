@@ -2,29 +2,32 @@ import { useMemo } from "react"
 import ScreenLayout from "./layouts/ScreenLayout"
 import {useSchedules} from "./hooks/useSchedules"
 import {useEffect, useState} from "react"
-import {useSummaries} from "./hooks/useSummaries"
+import {useUpgrades} from "./hooks/useUpgrades"
 import {useRaceResults} from "./hooks/useRaceResults"
 import {LoadingSpinner} from "./components/styles/Icons"
 import {Card} from "./components/Card"
-import SummariesTable from "./components/summaries/SummariesTable"
-import SummariesRow from "./components/summaries/SummariesRow"
+import UpgradesTable from "./components/upgrades/UpgradesTable"
+import UpgradesRow from "./components/upgrades/UpgradesRow"
 import RaceResultsTable from "./components/results/race/RaceResultsTable"
 import RaceResultsRow from "./components/results/race/RaceResultsRow"
 import type { Schedule } from "./types"
+import ScheduleTable from "./components/schedules/SchedulesTable"
+import SchedulesRow from "./components/schedules/SchedulesRow"
+import { formatDate } from "./utils/date"
+import ButtonTab from "./components/ButtonTab"
 
 function App() {
-
-	const [ activeTab, setActiveTab ] = useState<'schedules' | 'results' | 'summaries'>('schedules')
+	const [ activeTab, setActiveTab ] = useState<'schedules' | 'results' | 'upgrades'>('schedules')
+	const [ appliedYear, setAppliedYear ] = useState<number>(new Date().getFullYear())
+	const [ appliedRoundNumber, setAppliedRoundNumber ] = useState<number>(null)
 
 	const {
 		schedules,
 		currentSchedule,
 		loading: schedulesLoading,
 		loadError: schedulesLoadError
-	} = useSchedules()
+	} = useSchedules(appliedYear)
 
-	const [ appliedYear, setAppliedYear ] = useState<number>(null)
-	const [ appliedRoundNumber, setAppliedRoundNumber ] = useState<number>(null)
 
 	const [selectedSchedule, setSelectedSchedule] = useState<Schedule | null>(null)
 
@@ -37,16 +40,24 @@ function App() {
 	}, [currentSchedule])
 
 	const {
-		loading: summariesLoading,
-		loadError: summariesLoadError,
-		summaries,
-	} = useSummaries(appliedYear, appliedRoundNumber)
+		loading: upgradesLoading,
+		loadError: upgradesLoadError,
+		upgradesSummaries,
+	} = useUpgrades(appliedYear, appliedRoundNumber)
 
 	const {
 		loading: resultsLoading,
 		loadError: resultsLoadError,
 		results,
 	} = useRaceResults(appliedYear, appliedRoundNumber)
+
+	const CURRENT_YEAR = new Date().getFullYear()
+	const EARLIEST_YEAR = 2018 
+
+	const yearOptions = Array.from(
+		{ length: CURRENT_YEAR - EARLIEST_YEAR + 1 },
+		(_, i) => CURRENT_YEAR - i
+	)
 
 	const leaderLaps = useMemo(() => results?.[0]?.laps ?? 0, [results])
 
@@ -55,7 +66,7 @@ function App() {
     	<ScreenLayout>
 		<div className='relative w-full bg-gruv-red text-gruv-fg1 dark:bg-gruv-bg1 text-center py-2'>
 			<div
-				className="absolute top-2 right-4 flex flex-row 
+				className="hidden md:absolute top-2 right-4 flex flex-row 
 				border border-[--pattern-fg]">
 			<input
 				placeholder="Search CTRL + K"
@@ -71,84 +82,115 @@ function App() {
 		<div className="mx-5 py-2">
 			{selectedSchedule && (
 				<Card>
-					<div className="flex flex-row font-mono justify-between items-center">
+					<div className="flex flex-col gap-2 md:flex-row font-mono justify-between items-center">
 						<h2 className="text-nowrap px-2">{selectedSchedule?.event_name}</h2>
 						<div className="w-full max-w-lg h-px bg-gruv-orange"/>
-						<p className="text-nowrap px-2">{new Date(selectedSchedule?.event_date).toLocaleDateString()} <span className="font-bold uppercase">Round:</span>{selectedSchedule?.round_number}</p>
+						<p className="text-nowrap px-2">{formatDate(selectedSchedule?.event_date)} <span className="font-bold uppercase">Round:</span>{selectedSchedule?.round_number}</p>
 					</div>
 				</Card>
 			)}
 		</div>
 
 		<div className="p-2 px-5">
-			<div className="flex flex-row gap-2">
-				<button
-					onClick={() => setActiveTab("schedules")}
-					className={`rounded-t px-2 py-1 ${activeTab === "schedules" ? 'bg-gruv-fg2' : 'shadow-md shadow-neutral-900'}`}
+				<div className="flex flex-row gap-2">
+				<div className="flex flex-row">
+				<ButtonTab
+					onSelect={() => setActiveTab("schedules")}
+					isSelected={activeTab === "schedules"}
+					name="Schedules"
+				/>
+				<select 
+					className={`px-2 dark:text-gruv-fg2 font-mono rounded-r
+						${activeTab === "schedules" ? 'bg-gruv-fg2 dark:bg-gruv-bg1' : ''}`}
+					value={appliedYear} 
+					onChange={(e) => setAppliedYear(Number(e.target.value))}
 				>
-					Schedule
-				</button>
-				<button
-					onClick={() => setActiveTab("summaries")}
-					className={`rounded-t px-2 py-1 ${activeTab === "summaries" ? 'bg-gruv-fg2' : 'shadow-md shadow-neutral-900'}`}
-				>
-					Summaries
-				</button>
+					{yearOptions.map(y => (
+						<option key={y} value={y} className="bg-gruv-fg2 dark:bg-gruv-bg1">{y}</option>
+					))}
+				</select>
+				</div>
+				<ButtonTab
+					onSelect={() => setActiveTab("upgrades")}
+					isSelected={activeTab === "upgrades"}
+					name="Upgrades"
+				/>
+				<div className="md:hidden">
+				<ButtonTab 
+					onSelect={() => setActiveTab("results")}
+					isSelected={activeTab === "results"}
+					name="Results"
+				/>
+				</div>	
+				
 			</div>
 		
-			<div className="grid grid-cols-5 w-full gap-5">
-				<div className="col-span-4 w-full bg-gruv-fg2 flex flex-col rounded-r rounded-b overflown-hidden">
+			<div className="grid grid-cols-1 md:grid-cols-5 w-full gap-5">
+				<div className="col-span-4 w-full bg-gruv-fg2 dark:bg-gruv-bg1 flex flex-col rounded-r rounded-b overflown-hidden">
 
-									{activeTab === 'schedules' && (
-						<div>
-							{/* Full Schedule */}
-							<div className="grid grid-cols-3 gap-2 m-2">
+					{/* Full Schedule */}
+					{activeTab === 'schedules' && (
+						<>
+						{schedulesLoading ? (
+							<LoadingSpinner/>
+						): (
+							<ScheduleTable>
 							{schedules.map(schedule => (
-								<button
-									onClick={() => {
+								<SchedulesRow 
+									key={schedule.event_date} 
+									onSelected={() => {
 										setAppliedYear(new Date(schedule.event_date).getFullYear()),
 										setAppliedRoundNumber(schedule.round_number)
 										setSelectedSchedule(schedule)
+
 									}}
-									className={`
-										flex flex-col p-2 px-4 border border-gruv-orange bg-gruv-fg1 rounded 
-										${schedule?.event_name == selectedSchedule?.event_name
-											? 'bg-gruv-orange text-gruv-fg2' 
-											: 'hover:bg-gruv-orange hover:text-gruv-fg2 ' }
-										transition-all duration-300 cursor-pointer
-									`}
-								>
-									<div className="flex flex-row justify-between border-b pb-1">
-										<p className="font-mono text-lg">{schedule.event_name}</p>
-										<p className="text-nowrap">R: {schedule.round_number}</p>
-									</div>
-								<p>{new Date(schedule.event_date).toLocaleDateString()}</p>
-								</button>
+									onSessionSelected={() => alert(`Session ${schedule.location}`)}
+									isSelected={schedule?.event_date == selectedSchedule?.event_date}
+									schedule={schedule}/>
 							))}
-							</div>
-						</div>
+							</ScheduleTable>
+						)}
+						{schedulesLoadError && (
+							<p>{schedulesLoadError}</p>
+						)}
+						</>
 					)}
 
-					{activeTab === 'summaries' && (
+					{activeTab === 'upgrades' && (
 						<>
-						{summariesLoading ? (
+						{upgradesLoading ? (
 							<LoadingSpinner/>
 						) : (
 						<div>
-							<SummariesTable>
-								{summaries && Object.entries(summaries).map(([team, summary]) => (
-									<SummariesRow key={team} team={team} summary={summary}/>
+							<UpgradesTable>
+								{upgradesSummaries && Object.entries(upgradesSummaries).map(([team, summary]) => (
+									<UpgradesRow key={team} team={team} summary={summary}/>
 								))}
-							</SummariesTable>	
-							{summariesLoadError && (
-								<p>{summariesLoadError}</p>
+							</UpgradesTable>	
+							{upgradesLoadError && (
+								<p>{upgradesLoadError}</p>
 							)}
 						</div>
 						)}
 						</>
 					)}
+
+					{activeTab === 'results' && (
+						<>
+						{resultsLoading ? (
+							<LoadingSpinner />
+						): (
+									<RaceResultsTable>
+										{results?.map((result, index) => (
+											<RaceResultsRow key={index} result={result} raceLaps={leaderLaps} />
+										))}
+									</RaceResultsTable>
+						)}
+						</>
+					)}
 				</div>
 				<Card
+					className="hidden md:block"
 					padding="sm">
 					<h2 className="text-center font-mono py-2">Leaderboard</h2>
 					<div className="h-0.5 w-full bg-gruv-orange/40 mb-2"/>
