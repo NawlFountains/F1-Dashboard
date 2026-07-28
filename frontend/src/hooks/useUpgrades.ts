@@ -2,9 +2,9 @@ import {useEffect, useState} from "react"
 import {getUpgradesSummaries} from "../api/upgrades"
 import type {TeamSummaries} from "../types"
 
-export const useSummaries = (year?: number, round_number?: number) => {
+export const useUpgrades = (year?: number, round_number?: number) => {
 	const [ loading, setLoading] = useState(false)
-	const [ summaries, setSummaries ] = useState<TeamSummaries>()
+	const [ upgradesSummaries, setUpgradesSummaries ] = useState<TeamSummaries>()
 	const [ loadError, setLoadError ] = useState('')
 
 	useEffect(() => {
@@ -15,10 +15,10 @@ export const useSummaries = (year?: number, round_number?: number) => {
 				setLoading(true)
 				setLoadError('')
 				const data = await getUpgradesSummaries(year, round_number)
-				setSummaries(data)
+				setUpgradesSummaries(data)
 			} catch (err) {
 				setLoadError(err instanceof Error ? err.message : "Unkwon error")
-				setSummaries(null)
+				setUpgradesSummaries(null)
 			} finally {
 				setLoading(false)
 			}
@@ -29,6 +29,6 @@ export const useSummaries = (year?: number, round_number?: number) => {
 	return {
 		loading,
 		loadError,
-		summaries,
+		upgradesSummaries,
 	}
 }
