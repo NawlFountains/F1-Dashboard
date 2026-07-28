@@ -11,7 +11,7 @@ car development updates — no login required.
  
 ## Status
  
-🚧 **Backend in progress. Frontend not started yet.**
+🚧 **Backend & Frontend in progress.**
  
 ## What's built so far
  
@@ -19,13 +19,14 @@ car development updates — no login required.
 FastAPI service exposing:
 - `GET /api/schedule/{year}` — full season schedule
 - `GET /api/schedule/{year}/current` — the current or next upcoming race weekend
-- `GET /api/results/{year}/{round}` — race results for a given round
-- `GET /api/upgrades/{year}/{race_slug}` — AI-generated per-team summaries of car updates
-- `GET /api/upgrades/{year}/{race_slug}/{team}` — a single team's update summary
+- `GET /api/upgrades/{year}/{round}` — AI-generated per-team summaries of car updates
+- `GET /api/upgrades/{year}/{round}/{team}` — a single team's update summary
 Schedule and results data comes from FastF1, with a local JSON cache layer
 (`cache/`) so the app doesn't hit FastF1's API on every request — data is
 refreshed on a time-based staleness check rather than fetched live per call.
  
+> In progress
+- `GET /api/results/{year}/{round}/{session_type}` — session results for a given round 
 ### Car update summarizer pipeline (`scraper/`)
 Runs independently of the API (its own scheduled job, not triggered by
 requests):
