@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
+from cache.enums import SessionType
 from cache.schedule_cache import get_current_or_next_event, get_cached_schedule
 from cache.results_cache import get_cached_results
 from scraper.run_weekend import process_race_weekend
@@ -39,10 +40,10 @@ def get_summaries_json_file(year: int, round_number: int):
 def healthcheck():
     return {"status": "ok"}
 
-@app.get("/api/results/{year}/{round_number}/race")
-def get_race_results(year: int, round_number: int):
+@app.get("/api/results/{year}/{round_number}/{session_type}")
+def get_session_results(year: int, round_number: int, session_type: SessionType):
     try:
-        return get_cached_results(year, round_number)
+        return get_cached_results(year, round_number, session_type)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
 
