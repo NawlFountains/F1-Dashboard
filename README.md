@@ -23,10 +23,9 @@ FastAPI service exposing:
 - `GET /api/upgrades/{year}/{round}/{team}` — a single team's update summary
 Schedule and results data comes from FastF1, with a local JSON cache layer
 (`cache/`) so the app doesn't hit FastF1's API on every request — data is
-refreshed on a time-based staleness check rather than fetched live per call.
- 
-> In progress
-- `GET /api/results/{year}/{round}/{session_type}` — session results for a given round 
+refreshed on a time-based staleness check rather than fetched live per call. 
+- `GET /api/results/{year}/{round}/{session_type}` — session results for a given round
+
 ### Car update summarizer pipeline (`scraper/`)
 Runs independently of the API (its own scheduled job, not triggered by
 requests):
@@ -41,7 +40,7 @@ requests):
 - `run_weekend.py` — orchestrates the above end to end for the current
   race weekend
 Output lives in `data/`, which the FastAPI app reads from directly.
- 
+
 ## Planned
  
 - Frontend (schedule, results, and upgrade summaries UI)
