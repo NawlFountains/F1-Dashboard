@@ -1,21 +1,24 @@
 import type {ReactNode} from "react";
 
-export default function RaceResultsTable({ children } : { children : ReactNode }) {
+export default function QualifyingResultsTable({ children } : { children : ReactNode }) {
 	return (
 		<table className="w-full text-center">
 		<thead>
 			<tr className="dark:bg-gruv-orange dark:text-gruv-fg2 font-mono">
-				<td className="py-2 mx-w-20">
+				<td className="py-2">
 				<p>Position</p>
 				</td>
 				<td>
 				<p>Driver</p>
 				</td>
-				<td>
-				<p>Delta</p>
+				<td className="hidden md:table-cell">
+				<p>Q1</p>
 				</td>
 				<td className="hidden md:table-cell">
-				<p>Laps</p>
+				<p>Q2</p>
+				</td>
+				<td>
+				<p>Q3</p>
 				</td>
 			</tr>
 		</thead>

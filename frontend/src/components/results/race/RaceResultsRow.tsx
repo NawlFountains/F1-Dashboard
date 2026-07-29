@@ -19,7 +19,7 @@ export default function RaceResultsRow( { result, raceLaps }: RaceResultsRowProp
 
 
 	return (
-		<tr className="w-full">
+		<tr className="w-full dark:text-gruv-fg2">
 			<td className="font-mono p-2">
 			{result.position}
 			</td>
@@ -28,8 +28,11 @@ export default function RaceResultsRow( { result, raceLaps }: RaceResultsRowProp
 				className="font-mono bg-gruv-bg0 font-bold">
 			{result.abbreviation}	
 			</td>	
-			<td className="hidden lg:table-cell">
+			<td>
 			{formatedStatus() === 'Finished' ? delta : formatedStatus()}
+			</td>
+			<td className="hidden md:table-cell">
+			{result.laps}
 			</td>
 		</tr>
 	)

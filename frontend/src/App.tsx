@@ -3,23 +3,24 @@ import ScreenLayout from "./layouts/ScreenLayout"
 import {useSchedules} from "./hooks/useSchedules"
 import {useEffect, useState} from "react"
 import {useUpgrades} from "./hooks/useUpgrades"
-import {useRaceResults} from "./hooks/useRaceResults"
+import {useSessionResults} from "./hooks/useSessionResults"
 import {LoadingSpinner} from "./components/styles/Icons"
 import {Card} from "./components/Card"
 import UpgradesTable from "./components/upgrades/UpgradesTable"
 import UpgradesRow from "./components/upgrades/UpgradesRow"
-import RaceResultsTable from "./components/results/race/RaceResultsTable"
-import RaceResultsRow from "./components/results/race/RaceResultsRow"
-import type { Schedule } from "./types"
+import type { SessionType, Schedule, SessionSchedule } from "./types"
 import ScheduleTable from "./components/schedules/SchedulesTable"
 import SchedulesRow from "./components/schedules/SchedulesRow"
 import { formatDate } from "./utils/date"
 import ButtonTab from "./components/ButtonTab"
+import parseSessionNameToShort from "./utils/session_parser"
+import {ResultsPanel} from "./components/results/ResultsPanel"
 
 function App() {
 	const [ activeTab, setActiveTab ] = useState<'schedules' | 'results' | 'upgrades'>('schedules')
 	const [ appliedYear, setAppliedYear ] = useState<number>(new Date().getFullYear())
 	const [ appliedRoundNumber, setAppliedRoundNumber ] = useState<number>(null)
+	const [ appliedSessionType, setAppliedSessionType ] = useState<SessionType>(null)
 
 	const {
 		schedules,
@@ -30,6 +31,7 @@ function App() {
 
 
 	const [selectedSchedule, setSelectedSchedule] = useState<Schedule | null>(null)
+	const [selectedSession, setSelectedSession ] = useState<SessionSchedule | null>(null)
 
 	useEffect(() => {
 		if (currentSchedule && !selectedSchedule) {
@@ -49,7 +51,7 @@ function App() {
 		loading: resultsLoading,
 		loadError: resultsLoadError,
 		results,
-	} = useRaceResults(appliedYear, appliedRoundNumber)
+	} = useSessionResults(appliedYear, appliedRoundNumber, appliedSessionType)
 
 	const CURRENT_YEAR = new Date().getFullYear()
 	const EARLIEST_YEAR = 2018 
@@ -60,6 +62,18 @@ function App() {
 	)
 
 	const leaderLaps = useMemo(() => results?.[0]?.laps ?? 0, [results])
+
+	const handleScheduleSelect = (schedule: Schedule) => {
+		setAppliedYear(new Date(schedule.event_date).getFullYear()),
+		setAppliedRoundNumber(schedule.round_number)
+		setSelectedSchedule(schedule)
+	}
+
+	const handleSessionSelect = (session: SessionSchedule) => {
+		setSelectedSession(session)
+		setAppliedSessionType(parseSessionNameToShort(session?.name))
+		setActiveTab("results")
+	}
 
   return (
     <>
@@ -83,22 +97,33 @@ function App() {
 			{selectedSchedule && (
 				<Card>
 					<div className="flex flex-col gap-2 md:flex-row font-mono justify-between items-center">
-						<h2 className="text-nowrap px-2">{selectedSchedule?.event_name}</h2>
+						
+						<div className="flex flex-col md:flex-row text-nowrap text-center">
+						<h2 className="px-2 font-bold">
+						{selectedSchedule?.event_name}
+						</h2>
+						{selectedSession && (
+							<p className="font-base">{selectedSession.name}</p>
+						)}
+
+						</div>
 						<div className="w-full max-w-lg h-px bg-gruv-orange"/>
 						<p className="text-nowrap px-2">{formatDate(selectedSchedule?.event_date)} <span className="font-bold uppercase">Round:</span>{selectedSchedule?.round_number}</p>
+						
 					</div>
 				</Card>
 			)}
 		</div>
 
 		<div className="p-2 px-5">
-				<div className="flex flex-row gap-2">
-				<div className="flex flex-row">
+
+			{/* Tab section */}
+			<div className="flex flex-row gap-2">
 				<ButtonTab
 					onSelect={() => setActiveTab("schedules")}
 					isSelected={activeTab === "schedules"}
 					name="Schedules"
-				/>
+				>
 				<select 
 					className={`px-2 dark:text-gruv-fg2 font-mono rounded-r
 						${activeTab === "schedules" ? 'bg-gruv-fg2 dark:bg-gruv-bg1' : ''}`}
@@ -109,23 +134,23 @@ function App() {
 						<option key={y} value={y} className="bg-gruv-fg2 dark:bg-gruv-bg1">{y}</option>
 					))}
 				</select>
-				</div>
+				</ButtonTab>
 				<ButtonTab
 					onSelect={() => setActiveTab("upgrades")}
 					isSelected={activeTab === "upgrades"}
 					name="Upgrades"
 				/>
-				<div className="md:hidden">
+				<div className={`${selectedSession ? 'block' : 'hidden'}`}>
 				<ButtonTab 
 					onSelect={() => setActiveTab("results")}
 					isSelected={activeTab === "results"}
 					name="Results"
 				/>
-				</div>	
+				</div>
 				
 			</div>
 		
-			<div className="grid grid-cols-1 md:grid-cols-5 w-full gap-5">
+			<div className="flex flex-col w-full">
 				<div className="col-span-4 w-full bg-gruv-fg2 dark:bg-gruv-bg1 flex flex-col rounded-r rounded-b overflown-hidden">
 
 					{/* Full Schedule */}
@@ -138,13 +163,8 @@ function App() {
 							{schedules.map(schedule => (
 								<SchedulesRow 
 									key={schedule.event_date} 
-									onSelected={() => {
-										setAppliedYear(new Date(schedule.event_date).getFullYear()),
-										setAppliedRoundNumber(schedule.round_number)
-										setSelectedSchedule(schedule)
-
-									}}
-									onSessionSelected={() => alert(`Session ${schedule.location}`)}
+									onSelected={handleScheduleSelect}
+									onSessionSelected={handleSessionSelect}
 									isSelected={schedule?.event_date == selectedSchedule?.event_date}
 									schedule={schedule}/>
 							))}
@@ -167,44 +187,24 @@ function App() {
 									<UpgradesRow key={team} team={team} summary={summary}/>
 								))}
 							</UpgradesTable>	
+							{upgradesSummaries && Object.entries(upgradesSummaries).length > 0 && (
+									<p className="text-gruv-bg2 dark:text-gruv-fg4 text-center py-2">Summaries are AI generated using GROQ</p>
+								)}
+
 							{upgradesLoadError && (
-								<p>{upgradesLoadError}</p>
+								<p className="text-gruv-fg2">Couldn't found upgrades for this GP</p>
 							)}
 						</div>
 						)}
 						</>
 					)}
 
+					{/* Leaderboard */}
 					{activeTab === 'results' && (
-						<>
-						{resultsLoading ? (
-							<LoadingSpinner />
-						): (
-									<RaceResultsTable>
-										{results?.map((result, index) => (
-											<RaceResultsRow key={index} result={result} raceLaps={leaderLaps} />
-										))}
-									</RaceResultsTable>
-						)}
-						</>
+						<ResultsPanel data={results} loading={resultsLoading} raceLaps={leaderLaps}/>
 					)}
 				</div>
-				<Card
-					className="hidden md:block"
-					padding="sm">
-					<h2 className="text-center font-mono py-2">Leaderboard</h2>
-					<div className="h-0.5 w-full bg-gruv-orange/40 mb-2"/>
-					{resultsLoading ? (
-						<LoadingSpinner size={50}/>
-					): (
-						<RaceResultsTable>
-							{results?.map((result, index) => (
-								<RaceResultsRow key={index} result={result} raceLaps={leaderLaps} />
-							))}
-						</RaceResultsTable>
-					)}
-				</Card>
-			</div>
+				</div>
 		</div>
 	</ScreenLayout>
     </>

@@ -1,17 +1,17 @@
-import type { Schedule } from '../../types'
+import type { Schedule, SessionSchedule } from '../../types'
 import {formatDateTime, formatEventDateSpan} from '../../utils/date'
 
 interface SchedulesRowProps {
 	schedule: Schedule,
-	onSelected: () => void,
-	onSessionSelected: () => void,
+	onSelected: (schedule: Schedule) => void,
+	onSessionSelected: (session: SessionSchedule) => void,
 	isSelected: boolean
 }
 
 export default function SchedulesRow( { schedule, onSelected, onSessionSelected, isSelected } : SchedulesRowProps ) {
 	return (
 		<div
-			onClick={onSelected}
+			onClick={() => onSelected(schedule)}
 			className={`
 				flex flex-col border border-gruv-fg3 dark:border-gruv-bg3 bg-gruv-fg1 dark:bg-gruv-bg2 dark:text-gruv-fg2 
 				${!isSelected && 'hover:border-gruv-orange hover:bg-gruv-orange/10' }
@@ -44,7 +44,7 @@ export default function SchedulesRow( { schedule, onSelected, onSessionSelected,
 			      {schedule.sessions.map((session, index) => (
 				      <button
 					      key={`${session.date}-${index}`}
-					      onClick={onSessionSelected}
+					      onClick={() => onSessionSelected(session)}
 					      className='grid grid-cols-2 py-1 border border-gruv-orange/0 hover:bg-gruv-orange/10 hover:border-gruv-orange transition-all duration-300 cursor-pointer'
 					>
 

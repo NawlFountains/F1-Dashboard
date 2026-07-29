@@ -28,4 +28,37 @@ export interface DriverRaceResult {
 	time: string,
 }
 
+export interface DriverQualifyingResult {
+	driver_number: number,
+	abbreviation: string,
+	driver_id: string,
+	team_name: string,
+	team_color: string,
+	driver_name: string,
+	position: number,
+	q1: string,
+	q2: string,
+	q3: string,
+}
+
+export interface DriverPracticeResult {
+	driver_number: number,
+	abbreviation: string,
+	driver_id: string,
+	team_name: string,
+	team_color: string,
+	driver_name: string,
+}
+
+export type SessionResultsData =
+	| { kind: "race"; results: DriverRaceResult[] }
+	| { kind: "qualifying"; results: DriverQualifyingResult[] }
+	| { kind: "practice"; results: DriverPracticeResult[] }
+
+export type RaceSessionType = "R" | "S"
+export type QualifyingSessionType = "Q" | "SQ" | "SS"
+export type PracticeSessionType = "FP1" | "FP2" | "FP3"
+
+export type SessionType = RaceSessionType | QualifyingSessionType | PracticeSessionType
+
 export type TeamSummaries = Record<string, string>
