@@ -1,7 +1,10 @@
 # Env
 .venv
 .env
+
+#Cache
 __pycache__
+data
 
 # Logs
 logs
