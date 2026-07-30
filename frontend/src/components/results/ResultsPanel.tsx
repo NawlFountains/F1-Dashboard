@@ -7,7 +7,14 @@ import RaceResultsRow from './race/RaceResultsRow'
 import RaceResultsTable from './race/RaceResultsTable'
 import type {SessionResultsData} from '../../types'
 
-export function ResultsPanel({ data, loading, raceLaps }: { data: SessionResultsData | null; loading: boolean; raceLaps: number }) {
+interface ResultsPanelProps {
+	onDriverSelect: (driver: string) => void
+	data: SessionResultsData | null;
+	loading: boolean; 
+	raceLaps: number 
+}
+
+export function ResultsPanel({ data, loading, raceLaps, onDriverSelect }: ResultsPanelProps) {
 	if (loading) return <div className="flex justify-center py-5"><LoadingSpinner size={40} /></div>
 	if (!data) return null
 
@@ -16,7 +23,7 @@ export function ResultsPanel({ data, loading, raceLaps }: { data: SessionResults
 			return (
 				<RaceResultsTable>
 					{data.results.map((result, index) => (
-						<RaceResultsRow key={index} result={result} raceLaps={raceLaps} />
+						<RaceResultsRow key={index} result={result} raceLaps={raceLaps} onSelect={onDriverSelect}/>
 					))}
 				</RaceResultsTable>
 			)
@@ -24,7 +31,7 @@ export function ResultsPanel({ data, loading, raceLaps }: { data: SessionResults
 			return (
 				<QualifyingResultsTable>
 					{data.results.map((result, index) => (
-						<QualifyingResultsRow key={index} result={result} />
+						<QualifyingResultsRow key={index} result={result} onSelect={onDriverSelect}/>
 					))}
 				</QualifyingResultsTable>
 			)
@@ -32,7 +39,7 @@ export function ResultsPanel({ data, loading, raceLaps }: { data: SessionResults
 			return (
 				<PracticeResultsTable>
 					{data.results.map((result, index) => (
-						<PracticeResultsRow key={index} result={result} />
+						<PracticeResultsRow key={index} result={result} onSelect={onDriverSelect}/>
 					))}
 				</PracticeResultsTable>
 			)

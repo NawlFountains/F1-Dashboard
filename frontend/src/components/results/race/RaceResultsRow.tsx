@@ -1,11 +1,13 @@
+import { formatDuration } from "../../../utils/time"
 import type {DriverRaceResult} from "../../../types"
 
 interface RaceResultsRowProps {
 	result: DriverRaceResult,
-	raceLaps: number
+	raceLaps: number,
+	onSelect: (driver: string) => void
 }
 
-export default function RaceResultsRow( { result, raceLaps }: RaceResultsRowProps ) {
+export default function RaceResultsRow( { result, raceLaps, onSelect }: RaceResultsRowProps ) {
 	const formatedStatus = () => {
 		if (result.status === 'Retired') return 'DNF'
 		if (result.status === 'Did not start') return 'DNS'
@@ -14,12 +16,14 @@ export default function RaceResultsRow( { result, raceLaps }: RaceResultsRowProp
 	}
 
 	const delta = result.position == 1 
-		? result.time
-		: `+${result.time}`
+		? formatDuration(result.time)
+		: `+${formatDuration(result.time)}`
 
 
 	return (
-		<tr className="w-full dark:text-gruv-fg2">
+		<tr 
+			onClick={() => onSelect(result.abbreviation)}
+			className="w-full dark:text-gruv-fg2 cursor-pointer hover:text-gruv-fg2 hover:bg-gruv-orange">
 			<td className="font-mono p-2">
 			{result.position}
 			</td>

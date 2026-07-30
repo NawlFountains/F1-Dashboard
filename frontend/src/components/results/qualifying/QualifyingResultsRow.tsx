@@ -1,13 +1,17 @@
+import { formatDuration } from "../../../utils/time"
 import type {DriverQualifyingResult} from "../../../types"
 
 interface QualifyingResultsRowProps {
 	result: DriverQualifyingResult
+	onSelect: (driver: string) => void
 }
 
-export default function QualifyingResultsRow( { result }: QualifyingResultsRowProps ) {
+export default function QualifyingResultsRow( { result, onSelect }: QualifyingResultsRowProps ) {
 
 	return (
-		<tr className="w-full dark:text-gruv-fg2">
+		<tr 
+			onClick={() => onSelect(result.abbreviation)}
+			className="w-full dark:text-gruv-fg2 cursor-pointer hover:text-gruv-fg2 hover:bg-gruv-orange">
 			<td className="font-mono p-2">
 			{result.position}
 			</td>
@@ -17,13 +21,13 @@ export default function QualifyingResultsRow( { result }: QualifyingResultsRowPr
 			{result.abbreviation}	
 			</td>	
 			<td className="hidden md:table-cell">
-			{result.q1}
+			{formatDuration(result.q1)}
 			</td>
 			<td className="hidden md:table-cell">
-			{result.q2}
+			{formatDuration(result.q2)}
 			</td>
 			<td>
-			{result.q3}
+			{formatDuration(result.q3)}
 			</td>
 		</tr>
 	)

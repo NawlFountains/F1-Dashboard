@@ -49,7 +49,14 @@ export default function SchedulesRow( { schedule, onSelected, onSessionSelected,
 					>
 
 					  <p>{session.name}</p>
-					  <p className='relative'>{formatDateTime(session.date)} 
+					  <p className='relative'>{ new Date(session.date).toLocaleString(undefined, {
+
+						  hour: "numeric",
+						  minute: "numeric",
+						  day: "numeric",
+						  month: "numeric",
+						  hour12: false
+					  })} 
 						<span className='absolute right-4 font-bold'>{`>`}</span>
 					  </p>
 

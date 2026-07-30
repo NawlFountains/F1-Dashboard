@@ -4,7 +4,7 @@ export default function RaceResultsTable({ children } : { children : ReactNode }
 	return (
 		<table className="w-full text-center">
 		<thead>
-			<tr className="dark:bg-gruv-orange dark:text-gruv-fg2 font-mono">
+			<tr className="bg-gruv-orange text-gruv-fg2 font-mono font-bold uppercase">
 				<td className="py-2 mx-w-20">
 				<p>Position</p>
 				</td>
