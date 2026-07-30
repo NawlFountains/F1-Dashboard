@@ -3,18 +3,10 @@ import fastf1
 import pandas as pd
 from pathlib import Path
 from datetime import date, datetime, timedelta
+from .parse_utils import _to_iso_utc
 
 CACHE_DIR = Path("data/cache")
 MAX_AGE_DAYS = 7
-
-def _to_iso_utc(value) -> str | None:
-    if value is None or pd.isna(value):
-        return None
-    if value.tzinfo is not None:
-        value = value.tz_convert("UTC")
-    else:
-        value = value.tz_localize("UTC")
-    return value.isoformat().replace("+00:00", "Z")
 
 def _normalize_event(event: dict) -> dict:
     return {

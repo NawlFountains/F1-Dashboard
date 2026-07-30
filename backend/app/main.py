@@ -1,10 +1,13 @@
 import json
 from pathlib import Path
+
+from groq import file_from_path
 from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from cache.enums import SessionType
 from cache.schedule_cache import get_current_or_next_event, get_cached_schedule
 from cache.results_cache import get_cached_results
+from cache.laps_cache import get_cached_laps
 from scraper.run_weekend import process_race_weekend
 
 app = FastAPI(title='F1 upgrades API')
@@ -36,9 +39,30 @@ def get_summaries_json_file(year: int, round_number: int):
     with open(file_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
+def get_laps_json_file(year: int, round_number: int, session_type: SessionType):
+    filename = f"{year}_round_{round_number}/session_{session_type.value}_laps.json"
+    file_path = DATA_DIR / filename
+    if not file_path.exists():
+        get_cached_laps(year, round_number, session_type)
+    with open(file_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
 @app.get("/health")
 def healthcheck():
     return {"status": "ok"}
+
+@app.get("/api/laps/{year}/{round_number}/{session_type}/{driver}")
+def get_driver_laps(year: int, round_number: int, session_type: SessionType, driver: str):
+    all_laps = get_laps_json_file(year, round_number, session_type)  # list[dict], all drivers, cached per session
+    cleaned_driver = driver.strip().upper()
+    driver_laps = [lap for lap in all_laps if lap["abbreviation"] == cleaned_driver]
+    if not driver_laps:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"No laps found for driver '{cleaned_driver}' in session {session_type.value}, round {round_number}."
+        )
+    return driver_laps
 
 @app.get("/api/results/{year}/{round_number}/{session_type}")
 def get_session_results(year: int, round_number: int, session_type: SessionType):

@@ -1,37 +1,9 @@
 import os
 import json
 import fastf1
-import math
-import pandas as pd
 from pathlib import Path
 from .enums import SessionType
-
-def _safe(value):
-    """Convert NaN/NaT to None; pass everything else through."""
-    if value is None:
-        return None
-    if isinstance(value, float) and math.isnan(value):
-        return None
-    if pd.isna(value):  # catches NaT, pandas NA, etc.
-        return None
-    if isinstance(value, pd.Timedelta):
-        return _timedelta_to_str(value)
-    return value
-
-
-def _safe_int(value):
-    """Cast to int, but return None if the value is missing/NaN."""
-    safe_value = _safe(value)
-    return int(safe_value) if safe_value is not None else None
-
-def _timedelta_to_str(value) -> str | None:
-    if pd.isna(value):
-        return None
-    total_seconds = value.total_seconds()
-    minutes = int(total_seconds // 60)
-    seconds = total_seconds % 60
-    return f"{minutes}:{seconds:06.3f}"
-
+from .parse_utils import _safe, _safe_int
 
 
 def _normalize_race_results(driver_results: dict) -> dict:
