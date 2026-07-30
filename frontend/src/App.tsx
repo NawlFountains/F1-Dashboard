@@ -19,6 +19,8 @@ import {useLaps} from "./hooks/useLaps"
 import LapsTable from "./components/laps/LapsTable"
 import LapsRow from "./components/laps/LapsRow"
 import {LapChart} from "./components/laps/LapChart"
+import TableSkeleton from "./components/skeletons/TableSkeleton"
+import ChartSkeleton from "./components/skeletons/ChartSkeleton"
 
 function App() {
 	const [ activeTab, setActiveTab ] = useState<'schedules' | 'results' | 'upgrades' | 'laps'>('schedules')
@@ -298,7 +300,10 @@ function App() {
 					{activeTab === 'laps' && (
 						<>
 						{lapsLoading ? (
-							<div className="flex justify-center py-5"><LoadingSpinner size={40} /></div>
+							<>
+							<ChartSkeleton />
+							<TableSkeleton cols={6} rows={10}/>
+							</>
 						) : (
 						<div className="flex flex-col items-center">
 							{selectedDriver && (

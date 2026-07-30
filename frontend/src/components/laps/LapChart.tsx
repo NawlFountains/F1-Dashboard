@@ -20,10 +20,10 @@ function CompoundDot(props: any) {
 export function LapChart({ laps }: { laps: DriverLap[] }) {
 	return (
 		<ResponsiveContainer width='100%' height={300}>
-		<LineChart data={laps} margin={{ top: 5, right: 20, left: 10, bottom: 5 }}>
+		<LineChart data={laps} margin={{ top: 5, right: 20, left: 50, bottom: 30 }}>
 			<CartesianGrid strokeDasharray="3 3" />
-			<XAxis dataKey="lap_number" label="Lap number"/>
-			<YAxis dataKey="lap_time" label="Lap time" domain={['dataMin - 2', 'dataMax + 2']} tickFormatter={formatDuration} reversed/>
+			<XAxis dataKey="lap_number" label={{ value: "Lap number", position: "insideBottom", offset: -10 }}/>
+			<YAxis dataKey="lap_time" label={{ value: "Lap time", angle: -90, position: "left", dx: -25 }} domain={['dataMin - 2', 'dataMax + 2']} tickFormatter={formatDuration} reversed/>
 			<Tooltip />
 			<Line type="monotone" dataKey="lap_time" stroke="#8884d8" dot={<CompoundDot />} connectNulls/>
 		</LineChart>

@@ -1,4 +1,3 @@
-import { LoadingSpinner } from '../styles/Icons'
 import PracticeResultsRow from './practice/PracticeResultsRow'
 import PracticeResultsTable from './practice/PracticeResultsTable'
 import QualifyingResultsRow from './qualifying/QualifyingResultsRow'
@@ -6,6 +5,7 @@ import QualifyingResultsTable from './qualifying/QualifyingResultsTable'
 import RaceResultsRow from './race/RaceResultsRow'
 import RaceResultsTable from './race/RaceResultsTable'
 import type {SessionResultsData} from '../../types'
+import TableSkeleton from '../skeletons/TableSkeleton'
 
 interface ResultsPanelProps {
 	onDriverSelect: (driver: string) => void
@@ -15,7 +15,7 @@ interface ResultsPanelProps {
 }
 
 export function ResultsPanel({ data, loading, raceLaps, onDriverSelect }: ResultsPanelProps) {
-	if (loading) return <div className="flex justify-center py-5"><LoadingSpinner size={40} /></div>
+	if (loading) return <TableSkeleton cols={3} rows={20}/>
 	if (!data) return null
 
 	switch (data.kind) {
