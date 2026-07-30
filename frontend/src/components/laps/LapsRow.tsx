@@ -1,4 +1,3 @@
-import React from 'react'
 import type {DriverLap} from '../../types'
 import { formatDuration } from '../../utils/time'
 

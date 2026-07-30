@@ -5,10 +5,11 @@ interface SchedulesRowProps {
 	schedule: Schedule,
 	onSelected: (schedule: Schedule) => void,
 	onSessionSelected: (session: SessionSchedule) => void,
-	isSelected: boolean
+	isSelected: boolean,
+	selectedSession?: SessionSchedule
 }
 
-export default function SchedulesRow( { schedule, onSelected, onSessionSelected, isSelected } : SchedulesRowProps ) {
+export default function SchedulesRow( { schedule, onSelected, onSessionSelected, isSelected, selectedSession } : SchedulesRowProps ) {
 	return (
 		<div
 			onClick={() => onSelected(schedule)}
@@ -44,9 +45,14 @@ export default function SchedulesRow( { schedule, onSelected, onSessionSelected,
 			      {schedule.sessions.map((session, index) => (
 				      <button
 					      key={`${session.date}-${index}`}
-					      onClick={() => onSessionSelected(session)}
+					      onClick={(e) => {
+						      e.stopPropagation()
+						      onSessionSelected(session)}
+					      }
 					      disabled={!eventHasPassed(session.date)}
-					      className='grid grid-cols-2 py-1 border border-gruv-orange/0 hover:bg-gruv-orange/10 hover:border-gruv-orange transition-all duration-300 cursor-pointer disabled:cursor-normal disabled:hover:bg-transparent disabled:hover:border-gruv-orange/0'
+					      className={`grid grid-cols-2 py-1 border border-gruv-orange/0 hover:bg-gruv-orange/10 hover:border-gruv-orange transition-all duration-300 cursor-pointer disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:border-gruv-orange/0
+						      ${selectedSession?.date === session?.date && 'bg-gruv-orange text-gruv-fg2'}
+						      `}
 					>
 
 					  <p>{session.name}</p>

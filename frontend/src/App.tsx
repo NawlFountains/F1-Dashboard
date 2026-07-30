@@ -12,7 +12,6 @@ import type { SessionType, Schedule, SessionSchedule } from "./types"
 import ScheduleTable from "./components/schedules/SchedulesTable"
 import SchedulesRow from "./components/schedules/SchedulesRow"
 import { formatDate } from "./utils/date"
-import ButtonTab from "./components/ButtonTab"
 import parseSessionNameToShort from "./utils/session_parser"
 import {ResultsPanel} from "./components/results/ResultsPanel"
 import {useLaps} from "./hooks/useLaps"
@@ -22,7 +21,18 @@ import {LapChart} from "./components/laps/LapChart"
 import TableSkeleton from "./components/skeletons/TableSkeleton"
 import ChartSkeleton from "./components/skeletons/ChartSkeleton"
 
+function useIsDesktop() {
+	const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768) 
+	useEffect(() => {
+		const handleResize = () => setIsDesktop(window.innerWidth >= 768)
+		window.addEventListener("resize", handleResize)
+		return () => window.removeEventListener("resize", handleResize)
+	}, [])
+	return isDesktop
+}
+
 function App() {
+	const isDesktop = useIsDesktop()
 	const [ activeTab, setActiveTab ] = useState<'schedules' | 'results' | 'upgrades' | 'laps'>('schedules')
 	const [ appliedYear, setAppliedYear ] = useState<number>(new Date().getFullYear())
 	const [ appliedRoundNumber, setAppliedRoundNumber ] = useState<number>(null)
@@ -90,21 +100,29 @@ function App() {
 		setAppliedYear(new Date(schedule.event_date).getFullYear()),
 		setAppliedRoundNumber(schedule.round_number)
 		setSelectedDriver(null)
+		setSelectedSession(null)
+		setSelectedSession(null)
 		setSelectedSchedule(schedule)
+		setActiveTab('schedules')
 	}
 
 	const handleSessionSelect = (session: SessionSchedule) => {
 		setSelectedSession(session)
 		setSelectedDriver(null)
 		setAppliedSessionType(parseSessionNameToShort(session?.name) as SessionType)
-		setActiveTab("results")
+		setActiveTab('results')
 	}
 
 	const handleSetCurrentSchedule = () => {
-		setSelectedSchedule(currentSchedule)
+		handleScheduleSelect(currentSchedule)
+	}
+
+	const handleYearSelected = (year: number) => {
+		setAppliedYear(year)
+		setSelectedSession(null)
 		setSelectedDriver(null)
 		setAppliedSessionType(null)
-		setActiveTab("schedules")
+		setActiveTab('schedules')
 	}
 
 	const isViewingCurrentSchedule =
@@ -159,92 +177,35 @@ function App() {
 
 		<div className="p-2 px-5">
 
-			{/* Mobile Tab section*/}
-			<div className="grid grid-cols-2 gap-2 sm:hidden">
-			<select 
-				value={activeTab}
-				onChange={(e) => setActiveTab(e.target.value as typeof activeTab)}
-				className={`flex flex-row gap-2 w-full text-center text-lg py-2 mb-2 bg-gruv-orange rounded dark:text-gruv-fg2 font-mono
-					${activeTab === 'schedules' ? 'col-span-1' : 'col-span-2'}
-					`}>
-				<option value="schedules" className="bg-gruv-bg1">Schedules</option>
-				{upgradesSummaries && Object.entries(upgradesSummaries).length > 0 && 
-					<option value="upgrades" className="bg-gruv-bg1">Upgrades</option>
-				}
-				{selectedSession && 
-					<option value="results" className="bg-gruv-bg1">Results</option>
-				}
-				{selectedDriver && 
-					<option value="laps" className="bg-gruv-bg1">Laps</option>
-				}
-				</select>
-
-			{activeTab === "schedules" && <select 
-				className={`px-2 mb-2 text-center dark:text-gruv-fg2 font-mono rounded-r
-					${activeTab === "schedules" ? 'bg-gruv-fg2 dark:bg-gruv-bg1' : ''}`}
-				value={appliedYear} 
-				onChange={(e) => setAppliedYear(Number(e.target.value))}
+			<div>
+			<div className="flex flex-col md:flex-row w-full bg-gruv-fg2 dark:bg-gruv-bg1 p-2 gap-3 md:items-stretch">
+			<div 
+				className="w-full flex flex-col justify-center"
+				style={ isDesktop ? { width: activeTab === 'schedules' ? '100%' : '30%' } : undefined}
 			>
-				{yearOptions.map(y => (
-					<option key={y} value={y} className="bg-gruv-fg2 dark:bg-gruv-bg1">{y}</option>
-				))}
-				</select>
-			}
-			</div>
-
-			{/* Desktop Tab section */}
-			<div className="hidden sm:flex sm:flex-row sm:gap-2">
-				<ButtonTab
-					onSelect={() => setActiveTab("schedules")}
-					isSelected={activeTab === "schedules"}
-					name="Schedules"
-				>
-				<select 
-					className={`px-2 dark:text-gruv-fg2 font-mono rounded-r
-						${activeTab === "schedules" ? 'bg-gruv-fg2 dark:bg-gruv-bg1' : ''}`}
-					value={appliedYear} 
-					onChange={(e) => setAppliedYear(Number(e.target.value))}
-				>
-					{yearOptions.map(y => (
-						<option key={y} value={y} className="bg-gruv-fg2 dark:bg-gruv-bg1">{y}</option>
-					))}
-				</select>
-				</ButtonTab>
-				<div className={` ${upgradesSummaries && Object.entries(upgradesSummaries).length > 0 
-						? `flex`
-						: `hidden` }`}
-				>
-				<ButtonTab
-					onSelect={() => setActiveTab("upgrades")}
-					isSelected={activeTab === "upgrades"}
-					name="Upgrades"
-				/>
+				<div className="flex flex-row w-full text-center dark:text-gruv-fg2 font-mono justify-center pb-2">
+					<h2>Schedule for </h2>
+					<select 
+						className={`px-2 rounded-r
+						`}
+						value={appliedYear} 
+						onChange={(e) => handleYearSelected(Number(e.target.value))}
+					>
+						{yearOptions.map(y => (
+							<option key={y} value={y} className="bg-gruv-fg2 dark:bg-gruv-bg1">{y}</option>
+						))}
+					</select>
 				</div>
-				<div className={`${selectedSession ? 'block' : 'hidden'}`}>
-				<ButtonTab 
-					onSelect={() => setActiveTab("results")}
-					isSelected={activeTab === "results"}
-					name="Results"
-				/>
-				</div>
-				<div className={`${selectedDriver ? 'block' : 'hidden'}`}>
-				<ButtonTab 
-					onSelect={() => setActiveTab("laps")}
-					isSelected={activeTab === "laps"}
-					name="Laps"
-				/>
-				</div>
-			</div>
-		
-			<div className="flex flex-col w-full">
-				<div className="col-span-4 w-full bg-gruv-fg2 dark:bg-gruv-bg1 flex flex-col rounded-r rounded-b overflown-hidden">
+			<div className={`w-full h-full overflow-y-auto min-h-[300px] max-h-[300px] md:max-h-[1000px]
+				transition-[width] duration-500 ease-in-out`}
+				>
 
 					{/* Full Schedule */}
-					{activeTab === 'schedules' && (
-						<>
 						{schedulesLoading ? (
 							<LoadingSpinner/>
 						): (
+							<>
+							
 							<ScheduleTable>
 							{schedules.map(schedule => (
 								<>
@@ -253,25 +214,64 @@ function App() {
 									onSelected={handleScheduleSelect}
 									onSessionSelected={handleSessionSelect}
 									isSelected={schedule?.event_date == selectedSchedule?.event_date}
+									selectedSession={selectedSession}
 									schedule={schedule}/>
 								</>
 							))}
 							</ScheduleTable>
+							</>
 						)}
 						{schedulesLoadError && (
 							<p>{schedulesLoadError}</p>
 						)}
-						</>
-					)}
+					</div>
+			</div>
+				<div className="px-2 transition-[width] duration-300 ease-in-out" 
+					style={ isDesktop ? { width: activeTab !== 'schedules' ? '80%' : '0%' } : undefined}
+				>
 
-					{/* Upgrades */}
+					{/* Tab navigation section*/}
+					<div className={`flex-row 
+						${activeTab === 'schedules' ? 'hidden' : 'block'}
+					`}>
+						<button 
+							onClick={() => setActiveTab('upgrades')}
+							className={`p-2 rounded-t text-lg cursor-pointer text-gruv-bg4 dark:text-gruv-fg2 font-mono disabled:text-gruv-gray disabled:cursor-not-allowed
+								${activeTab === 'upgrades' ? 'dark:bg-gruv-bg2' : 'bg-transparent'}
+							`}
+							disabled = {!upgradesSummaries || Object.entries(upgradesSummaries).length <= 0 }
+							>
+						Upgrades
+						</button>
+						<button 
+							onClick={() => setActiveTab('results')}
+							className={`p-2 rounded-t text-lg cursor-pointer text-gruv-bg4 dark:text-gruv-fg2 font-mono disabled:text-gruv-gray disabled:cursor-not-allowed
+								${activeTab === 'results' ? 'dark:bg-gruv-bg2' : 'bg-transparent'}
+							`}
+							disabled = {!results}
+							>
+							Results
+						</button>
+					</div>
 
+					<div className="w-full bg-gruv-fg1 dark:bg-gruv-bg2 border border-gruv-fg3 dark:border-gruv-bg3 rounded overflow-hidden">
+
+					{/* Upgrades tab */}
 					{activeTab === 'upgrades' && (
 						<>
 						{upgradesLoading ? (
 							<div className="flex justify-center py-5"><LoadingSpinner size={40} /></div>
 						) : (
-						<div>
+						<div className="w-full text-center flex flex-col justify-center py-2 gap-2">
+						<div className="flex flex-row">
+						<button 
+								onClick={() => setActiveTab('results')}
+								className="px-2 text-xl cursor-pointer text-gruv-bg4 dark:text-gruv-fg2 font-mono"
+								>
+							Results
+							</button>
+						</div>
+						<div className="flex flex-col">
 							<UpgradesTable>
 								{upgradesSummaries && Object.entries(upgradesSummaries).map(([team, summary]) => (
 									<UpgradesRow key={team} team={team} summary={summary}/>
@@ -285,52 +285,64 @@ function App() {
 								<p className="text-gruv-fg2">Couldn't found upgrades for this GP</p>
 							)}
 						</div>
+						</div>
 						)}
 						</>
 					)}
 
-					{/* Leaderboard */}
-					{activeTab === 'results' && (
-						<ResultsPanel 
-							data={results} 
-							loading={resultsLoading} 
-							raceLaps={leaderLaps}
-							onDriverSelect={handleDriverSelect}
-						/>
-					)}
-
-					{/* Laps */}
-					{activeTab === 'laps' && (
-						<>
-						{lapsLoading ? (
-							<>
-							<ChartSkeleton />
-							<TableSkeleton cols={6} rows={10}/>
-							</>
-						) : (
-						<div className="flex flex-col items-center">
-							{selectedDriver && (
-							<div className="w-full text-center flex flex-col py-2 gap-2">
-							<h2 className="text-gruv-fg2 text-xl font-bold">{selectedDriver} - Laps</h2>
-							<div className="bg-gruv-fg2 h-0.5"/>
-							</div>
+					{/* Results tab */}
+					{activeTab === "results" &&
+						<div className="w-full text-center flex flex-col justify-center py-2 gap-2 overflow-y-auto max-h-[1000px]">
+						{resultsLoading ? (
+							<TableSkeleton rows={20} cols={3} />
+						): (
+							<ResultsPanel 
+								data={results} 
+								loading={resultsLoading} 
+								raceLaps={leaderLaps}
+								onDriverSelect={handleDriverSelect}
+							/>
 						)}
-							<LapChart laps={laps}/>
-							<LapsTable>
-								{laps.map((lap, index) => (
-									<LapsRow key={index} lap={lap}/>
-								))}
-							</LapsTable>	
-							{lapsLoadError && (
-								<p className="text-gruv-red">{lapsLoadError}</p>
-							)}
 						</div>
-						)}
-						</>					)
 					}
 
+					{/* Laps tab */}
+					{activeTab === 'laps' &&
+						<div className="overflow-y-auto max-h-[1000px]">	
+							<div className="relative w-full text-center flex flex-row justify-center py-2 gap-2">
+							<button 
+								onClick={() => setActiveTab('results')}
+								className="absolute left-0 px-2 text-xl cursor-pointer text-gruv-bg4 dark:text-gruv-fg2 font-mono"
+							>
+								{'<'} Back
+							</button>
+								<h2 className="text-gruv-bg2 dark:text-gruv-fg2 text-xl font-bold">{selectedDriver} - Laps</h2>
+							<div className="bg-gruv-fg2 h-0.5"/>
+							</div>
+							{lapsLoading ? (
+								<>
+								<ChartSkeleton />
+								<TableSkeleton rows={5} cols={5} />
+								</>
+							): (
+								<>
+								<LapChart laps={laps}/>
+								<LapsTable>
+									{laps.map((lap, index) => (
+										<LapsRow key={index} lap={lap}/>
+									))}
+								</LapsTable>	
+								{lapsLoadError && (
+									<p className="text-gruv-red">{lapsLoadError}</p>
+								)}
+								</>
+							)}
+							</div>
+					}
+					</div>
 				</div>
 				</div>
+			</div>
 		</div>
 	</ScreenLayout>
     </>
