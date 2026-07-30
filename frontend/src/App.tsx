@@ -72,8 +72,13 @@ function App() {
 		(_, i) => CURRENT_YEAR - i
 	)
 
-	const leaderLaps = useMemo(() => results?.[0]?.laps ?? 0, [results])
+	const leaderLaps = useMemo(() => {
+		if (results?.kind !== "race") return 0
+		return results.results[0]?.laps ?? 0
+	}, [results])
 
+	// Handlers
+	
 	const handleDriverSelect = (driver_abbrevation: string) => {
 		setSelectedDriver(driver_abbrevation)
 		setActiveTab('laps')
@@ -89,7 +94,7 @@ function App() {
 	const handleSessionSelect = (session: SessionSchedule) => {
 		setSelectedSession(session)
 		setSelectedDriver(null)
-		setAppliedSessionType(parseSessionNameToShort(session?.name))
+		setAppliedSessionType(parseSessionNameToShort(session?.name) as SessionType)
 		setActiveTab("results")
 	}
 
@@ -253,6 +258,8 @@ function App() {
 						)}
 						</>
 					)}
+
+					{/* Upgrades */}
 
 					{activeTab === 'upgrades' && (
 						<>
