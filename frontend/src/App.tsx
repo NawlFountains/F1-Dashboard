@@ -1,4 +1,4 @@
-import { act, useMemo } from "react"
+import { useMemo } from "react"
 import ScreenLayout from "./layouts/ScreenLayout"
 import {useSchedules} from "./hooks/useSchedules"
 import {useEffect, useState} from "react"
@@ -110,6 +110,7 @@ function App() {
 	const isViewingCurrentSchedule =
 		selectedSchedule?.round_number === currentSchedule?.round_number &&
 		new Date(selectedSchedule?.event_date ?? 0).getFullYear() === new Date(currentSchedule?.event_date ?? 0).getFullYear()
+
   return (
     <>
     	<ScreenLayout>
@@ -246,12 +247,14 @@ function App() {
 						): (
 							<ScheduleTable>
 							{schedules.map(schedule => (
+								<>
 								<SchedulesRow 
 									key={schedule.event_date} 
 									onSelected={handleScheduleSelect}
 									onSessionSelected={handleSessionSelect}
 									isSelected={schedule?.event_date == selectedSchedule?.event_date}
 									schedule={schedule}/>
+								</>
 							))}
 							</ScheduleTable>
 						)}

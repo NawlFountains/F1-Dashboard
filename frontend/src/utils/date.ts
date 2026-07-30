@@ -26,3 +26,7 @@ export function formatEventDateSpan(startDateTimestamp: string, endDateTimestamp
 	return `${startDateDay} ${startDateMonth} - ${endDateDay} ${endDateMonth}`
 
 }
+
+export function eventHasPassed(timestamp: string) {
+	return new Date() > new Date(timestamp)
+}

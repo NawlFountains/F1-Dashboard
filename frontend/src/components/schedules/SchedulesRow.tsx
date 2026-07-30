@@ -1,5 +1,5 @@
 import type { Schedule, SessionSchedule } from '../../types'
-import {formatDateTime, formatEventDateSpan} from '../../utils/date'
+import {eventHasPassed, formatEventDateSpan} from '../../utils/date'
 
 interface SchedulesRowProps {
 	schedule: Schedule,
@@ -45,7 +45,8 @@ export default function SchedulesRow( { schedule, onSelected, onSessionSelected,
 				      <button
 					      key={`${session.date}-${index}`}
 					      onClick={() => onSessionSelected(session)}
-					      className='grid grid-cols-2 py-1 border border-gruv-orange/0 hover:bg-gruv-orange/10 hover:border-gruv-orange transition-all duration-300 cursor-pointer'
+					      disabled={!eventHasPassed(session.date)}
+					      className='grid grid-cols-2 py-1 border border-gruv-orange/0 hover:bg-gruv-orange/10 hover:border-gruv-orange transition-all duration-300 cursor-pointer disabled:cursor-normal disabled:hover:bg-transparent disabled:hover:border-gruv-orange/0'
 					>
 
 					  <p>{session.name}</p>
@@ -57,7 +58,7 @@ export default function SchedulesRow( { schedule, onSelected, onSessionSelected,
 						  month: "numeric",
 						  hour12: false
 					  })} 
-						<span className='absolute right-4 font-bold'>{`>`}</span>
+						<span className='absolute right-4 font-bold'>{eventHasPassed(session.date) ? `>` : ''}</span>
 					  </p>
 
 					</button>
