@@ -20,11 +20,12 @@ FastAPI service exposing:
 - `GET /api/schedule/{year}` — full season schedule
 - `GET /api/schedule/{year}/current` — the current or next upcoming race weekend
 - `GET /api/upgrades/{year}/{round}` — AI-generated per-team summaries of car updates
-- `GET /api/upgrades/{year}/{round}/{team}` — a single team's update summary
+- `GET /api/upgrades/{year}/{round}/{team}` - a single team's update summary
 Schedule and results data comes from FastF1, with a local JSON cache layer
 (`cache/`) so the app doesn't hit FastF1's API on every request — data is
 refreshed on a time-based staleness check rather than fetched live per call. 
-- `GET /api/results/{year}/{round}/{session_type}` — session results for a given round
+- `GET /api/results/{year}/{round}/{session_type}` - session results for a given round
+- `GET /api/laps/{year}/{round}/{session_type}/{driver}` - lap data for a driver in a given gp
 
 ### Car update summarizer pipeline (`scraper/`)
 Runs independently of the API (its own scheduled job, not triggered by
