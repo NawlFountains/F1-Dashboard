@@ -137,18 +137,31 @@ function App() {
 				F1 - Dashboard
 			</h1>
 			{!isViewingCurrentSchedule && (
+				<>
 				<button
 					onClick={handleSetCurrentSchedule}
-					className="absolute right-2 top-2 py-1 px-2 rounded bg-gruv-fg2 dark:text-gruv-fg1 dark:bg-gruv-bg2 hover:bg-gruv-orange cursor-pointer">
+					className="hidden sm:block absolute right-5 top-2 py-1 px-2 rounded bg-gruv-fg2 dark:text-gruv-fg1 dark:bg-gruv-bg2 hover:bg-gruv-orange cursor-pointer">
 					<p>Next GP</p>
 				</button>
+				
+				</>
 			)}
 			
 		</div>
 
+		
+
 
 		{/* Information about selected schedule */}
 		<div className="mx-5 py-2">
+			{!isViewingCurrentSchedule && (
+				<button
+					onClick={handleSetCurrentSchedule}
+					className="sm:hidden w-full my-2 py-3 bg-gruv-fg2 dark:bg-gruv-bg1 rounded border border-dashed border-gruv-orange text-gruv-bg0 dark:text-gruv-fg2 hover:bg-gruv-orange hover:text-gruv-fg2 cursor-pointer font-mono">
+					<p>Set current/next GP</p>
+				</button>
+			)}
+
 			{selectedSchedule && (
 				<Card>
 					
@@ -180,14 +193,12 @@ function App() {
 			<div>
 			<div className="flex flex-col md:flex-row w-full bg-gruv-fg2 dark:bg-gruv-bg1 p-2 gap-3 md:items-stretch">
 			<div 
-				className="w-full flex flex-col justify-center"
-				style={ isDesktop ? { width: activeTab === 'schedules' ? '100%' : '30%' } : undefined}
+				className="w-full flex flex-col"
+				style={ isDesktop ? { width: activeTab === 'schedules' ? '100%' : '40%' } : undefined}
 			>
-				<div className="flex flex-row w-full text-center dark:text-gruv-fg2 font-mono justify-center pb-2">
-					<h2>Schedule for </h2>
+				<div className="flex flex-row w-full text-center dark:text-gruv-fg2 font-mono justify-center py-2">
 					<select 
-						className={`px-2 rounded-r
-						`}
+						className={`px-2`}
 						value={appliedYear} 
 						onChange={(e) => handleYearSelected(Number(e.target.value))}
 					>
@@ -236,8 +247,8 @@ function App() {
 					`}>
 						<button 
 							onClick={() => setActiveTab('upgrades')}
-							className={`p-2 rounded-t text-lg cursor-pointer text-gruv-bg4 dark:text-gruv-fg2 font-mono disabled:text-gruv-gray disabled:cursor-not-allowed
-								${activeTab === 'upgrades' ? 'dark:bg-gruv-bg2' : 'bg-transparent'}
+							className={`p-2 rounded-t text-lg cursor-pointer text-gruv-bg2 dark:text-gruv-fg2 font-mono disabled:text-gruv-gray disabled:cursor-not-allowed
+								${activeTab === 'upgrades' ? 'bg-gruv-fg1 dark:bg-gruv-bg2' : 'bg-transparent'}
 							`}
 							disabled = {!upgradesSummaries || Object.entries(upgradesSummaries).length <= 0 }
 							>
@@ -245,8 +256,8 @@ function App() {
 						</button>
 						<button 
 							onClick={() => setActiveTab('results')}
-							className={`p-2 rounded-t text-lg cursor-pointer text-gruv-bg4 dark:text-gruv-fg2 font-mono disabled:text-gruv-gray disabled:cursor-not-allowed
-								${activeTab === 'results' ? 'dark:bg-gruv-bg2' : 'bg-transparent'}
+							className={`p-2 rounded-t text-lg cursor-pointer text-gruv-bg2 dark:text-gruv-fg2 font-mono disabled:text-gruv-gray disabled:cursor-not-allowed
+								${activeTab === 'results' ? 'bg-gruv-fg1 dark:bg-gruv-bg2' : 'bg-transparent'}
 							`}
 							disabled = {!results}
 							>
@@ -262,15 +273,6 @@ function App() {
 						{upgradesLoading ? (
 							<div className="flex justify-center py-5"><LoadingSpinner size={40} /></div>
 						) : (
-						<div className="w-full text-center flex flex-col justify-center py-2 gap-2">
-						<div className="flex flex-row">
-						<button 
-								onClick={() => setActiveTab('results')}
-								className="px-2 text-xl cursor-pointer text-gruv-bg4 dark:text-gruv-fg2 font-mono"
-								>
-							Results
-							</button>
-						</div>
 						<div className="flex flex-col">
 							<UpgradesTable>
 								{upgradesSummaries && Object.entries(upgradesSummaries).map(([team, summary]) => (
@@ -284,7 +286,6 @@ function App() {
 							{upgradesLoadError && (
 								<p className="text-gruv-fg2">Couldn't found upgrades for this GP</p>
 							)}
-						</div>
 						</div>
 						)}
 						</>
@@ -312,7 +313,7 @@ function App() {
 							<div className="relative w-full text-center flex flex-row justify-center py-2 gap-2">
 							<button 
 								onClick={() => setActiveTab('results')}
-								className="absolute left-0 px-2 text-xl cursor-pointer text-gruv-bg4 dark:text-gruv-fg2 font-mono"
+								className="absolute left-0 px-2 cursor-pointer text-gruv-bg4 dark:text-gruv-fg2 font-mono"
 							>
 								{'<'} Back
 							</button>
