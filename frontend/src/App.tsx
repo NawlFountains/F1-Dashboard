@@ -1,4 +1,4 @@
-import { useMemo } from "react"
+import { Suspense, useMemo } from "react"
 import ScreenLayout from "./layouts/ScreenLayout"
 import {useSchedules} from "./hooks/useSchedules"
 import {useEffect, useState} from "react"
@@ -269,12 +269,10 @@ function App() {
 
 					{/* Upgrades tab */}
 					{activeTab === 'upgrades' && (
-						<>
-						{upgradesLoading ? (
+						<Suspense fallback={
 							<div className="flex justify-center py-5"><LoadingSpinner size={40} /></div>
-						) : (
-						<div className="flex flex-col">
-							<UpgradesTable>
+						}>
+						<UpgradesTable>
 								{upgradesSummaries && Object.entries(upgradesSummaries).map(([team, summary]) => (
 									<UpgradesRow key={team} team={team} summary={summary}/>
 								))}
@@ -286,24 +284,22 @@ function App() {
 							{upgradesLoadError && (
 								<p className="text-gruv-fg2">Couldn't found upgrades for this GP</p>
 							)}
-						</div>
-						)}
-						</>
+
+						</Suspense>
 					)}
 
 					{/* Results tab */}
 					{activeTab === "results" &&
 						<div className="w-full text-center flex flex-col justify-center py-2 gap-2 overflow-y-auto max-h-[1000px]">
-						{resultsLoading ? (
-							<TableSkeleton rows={20} cols={3} />
-						): (
+						<Suspense fallback={<TableSkeleton rows={20} cols={3} />}>
 							<ResultsPanel 
 								data={results} 
 								loading={resultsLoading} 
 								raceLaps={leaderLaps}
 								onDriverSelect={handleDriverSelect}
 							/>
-						)}
+
+						</Suspense>
 						</div>
 					}
 
@@ -320,12 +316,13 @@ function App() {
 								<h2 className="text-gruv-bg2 dark:text-gruv-fg2 text-xl font-bold">{selectedDriver} - Laps</h2>
 							<div className="bg-gruv-fg2 h-0.5"/>
 							</div>
-							{lapsLoading ? (
+							<Suspense fallback={
 								<>
 								<ChartSkeleton />
 								<TableSkeleton rows={5} cols={5} />
 								</>
-							): (
+
+							}>
 								<>
 								<LapChart laps={laps}/>
 								<LapsTable>
@@ -337,7 +334,7 @@ function App() {
 									<p className="text-gruv-red">{lapsLoadError}</p>
 								)}
 								</>
-							)}
+							</Suspense>
 							</div>
 					}
 					</div>
