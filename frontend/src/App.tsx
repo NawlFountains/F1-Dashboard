@@ -296,7 +296,7 @@ function App() {
 								raceLaps={leaderLaps}
 								onDriverSelect={handleDriverSelect}
 							/>
-
+							{resultsLoadError && (<p className="text-red-500">{resultsLoadError}</p>)}
 						</Suspense>
 						</div>
 					}
