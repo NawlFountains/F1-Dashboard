@@ -212,30 +212,28 @@ function App() {
 				>
 
 					{/* Full Schedule */}
-						{schedulesLoading ? (
-							<LoadingSpinner/>
-						): (
+					<Suspense fallback={<LoadingSpinner/>}>
+						<>
+						<ScheduleTable>
+						{schedules.map(schedule => (
 							<>
-							
-							<ScheduleTable>
-							{schedules.map(schedule => (
-								<>
-								<SchedulesRow 
-									key={schedule.event_date} 
-									onSelected={handleScheduleSelect}
-									onSessionSelected={handleSessionSelect}
-									isSelected={schedule?.event_date == selectedSchedule?.event_date}
-									selectedSession={selectedSession}
-									schedule={schedule}/>
-								</>
-							))}
-							</ScheduleTable>
+							<SchedulesRow 
+								key={schedule.event_date} 
+								onSelected={handleScheduleSelect}
+								onSessionSelected={handleSessionSelect}
+								isSelected={schedule?.event_date == selectedSchedule?.event_date}
+								selectedSession={selectedSession}
+								schedule={schedule}/>
 							</>
-						)}
+						))}
+						</ScheduleTable>
+						</>
 						{schedulesLoadError && (
-							<p>{schedulesLoadError}</p>
-						)}
-					</div>
+						<p>{schedulesLoadError}</p>
+					)}
+
+					</Suspense>
+				</div>
 			</div>
 				<div className="px-2 transition-[width] duration-300 ease-in-out" 
 					style={ isDesktop ? { width: activeTab !== 'schedules' ? '80%' : '0%' } : undefined}
