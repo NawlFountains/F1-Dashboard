@@ -26,7 +26,7 @@ def summarize_team_updates(team: str, team_rows: list[dict]) -> str:
         {updates_text}"""
             }
         ],
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
     )
     return chat_completion.choices[0].message.content
  

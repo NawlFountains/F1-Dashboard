@@ -276,7 +276,7 @@ function App() {
 								))}
 							</UpgradesTable>	
 							{upgradesSummaries && Object.entries(upgradesSummaries).length > 0 && (
-									<p className="text-gruv-bg2 dark:text-gruv-fg4 text-center py-2">Summaries are AI generated using GROQ</p>
+									<p className="text-gruv-bg2 dark:text-gruv-fg4 text-center py-2">Summaries are AI generated using OpenAI based on official FIA documents</p>
 								)}
 
 							{upgradesLoadError && (
