@@ -1,6 +1,5 @@
 import type {Schedule} from '../types'
-
-const API_URL = "http://localhost:8000/api/schedule"
+import {apiGet} from './client'
 
 function cleanSchedule(schedule: Schedule): Schedule {
   return {
@@ -10,23 +9,11 @@ function cleanSchedule(schedule: Schedule): Schedule {
 }
 
 export async function getSchedules(year: number): Promise<Schedule[]> {
-	const response = await fetch(`${API_URL}/${year}`, { method: "GET" })
-
-	if (!response.ok) {
-		const errorBody = await response.json()
-		throw new Error(errorBody.detail || `Error ${response.status}`)
-	}
-	const data: Schedule[] = await response.json()
+	const data = await apiGet<Schedule[]>(`/schedule/${year}`)
 	return data.map(cleanSchedule)
 }
 
 export async function getCurrentSchedule(): Promise<Schedule> {
-	const response = await fetch(`${API_URL}/current`, { method: "GET" })
-
-	if (!response.ok) {
-		const errorBody = await response.json()
-		throw new Error(errorBody.detail || `Error ${response.status}`)
-	}
-	const data = await response.json()
+	const data = await apiGet<Schedule>('/schedule/current')
 	return cleanSchedule(data)
 }

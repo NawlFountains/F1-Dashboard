@@ -1,6 +1,8 @@
 # Env
 .venv
 .env
+.env.development
+.env.production
 
 #Cache
 __pycache__
