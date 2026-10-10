@@ -6,6 +6,8 @@ from pathlib import Path
 from .enums import SessionType
 from .parse_utils import _safe, _safe_int
 
+fastf1.Cache.set_disabled()
+
 def _normalize_lap(lap_data: dict) -> dict:
     """Shared schema across all session types — Race, Sprint, Qualifying, Practice."""
     return {
