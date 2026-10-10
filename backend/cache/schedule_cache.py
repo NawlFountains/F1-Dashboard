@@ -7,7 +7,6 @@ from .parse_utils import _to_iso_utc
 CACHE_DIR = Path("data/cache")
 MAX_AGE_DAYS = 7
 
-fastf1.Cache.set_disabled()
 
 def _normalize_event(event: dict) -> dict:
     return {

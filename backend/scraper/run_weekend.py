@@ -12,7 +12,6 @@ import fastf1
 
 from rapidfuzz import process, fuzz
 
-fastf1.Cache.set_disabled()
 
 # Known FIA website URL naming quirks that fuzzy matching might struggle with
 FIA_GP_NAME_MAP = {

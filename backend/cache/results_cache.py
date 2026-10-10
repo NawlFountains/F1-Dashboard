@@ -5,7 +5,6 @@ from pathlib import Path
 from .enums import SessionType
 from .parse_utils import _safe, _safe_int
 
-fastf1.Cache.set_disabled()
 
 def _normalize_race_results(driver_results: dict) -> dict:
     """Race and Sprint share this schema."""

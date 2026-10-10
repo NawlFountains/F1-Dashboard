@@ -1,0 +1,13 @@
+team,component,reason,differences,description
+McLaren,None,No updates submitted for this event,None,None
+Mercedes F1 Team,None,No updates submitted for this event,None,None
+Red Bull Racing,None,No updates submitted for this event,None,None
+Scuderia Ferrari,Halo,Performance - Local Load,Winglet added to the halo pillar,"Introducing a winglet element to the halo pillar as a minor update. Not event specific, it simply returns a small aerodynamic load benefit"
+Racing Bulls / RB,Rear Corner,Performance – Flow Conditioning,Profile modification to brake duct winglets.,The winglet geometry change helps improve the flow management at the back of the car and around the rear tyre.
+Aston Martin,None,No updates submitted for this event,None,None
+Haas F1 Team,Rear Impact Structure,Rear Impact,Performance - Local Load,Performance -
+Audi F1 Team,Front Wing,Performance - Local Load,Updated front wing flap and end plate geometry,The new flap and end plate lead to improved flow characteristics travelling further downstream along the car – locally and globally more efficient.
+Audi F1 Team,Nose,Performance - Local Load,Updated nose design,"In combination with the above mentioned step, the updated nose design allows a more efficient load extraction all along the slope."
+Alpine F1 Team,None,No updates submitted for this event,None,None
+Cadillac,Diffuser,Performance - Local Load,Trailing edge detail changes on diffuser winglet cascade,"Modifications made to the trailing edge lead to an increase in the local aerodynamic load acting on the winglet cascade, consequently increasing the overall aerodynamic load at the rear of the car."
+Cadillac,Mirror Stay,Structural Improvement,Small leading edge surface changes,Aerodynamic surface geometry has been revised in order to accommodate and integrate the latest structural improvements made to the component.
