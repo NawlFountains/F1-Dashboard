@@ -9,10 +9,14 @@ car development updates — no login required.
 > accessible data via [FastF1](https://github.com/theOehrly/Fast-F1) and the
 > FIA's public car presentation documents.
  
-## Status
- 
-🚧 **Backend & Frontend in progress.**
- 
+## Demo
+Try it right now [here](https://f1-dashboard-ivory-eta.vercel.app/) 
+> Currently not working - see know limitations at the bottom
+
+![demo results](assets/demo_results.png)
+![demo upgrades](assets/demo_upgrades_summaries.png)
+![demo telemetry](assets/demo_lap_telemetry.png)
+
 ## What's built so far
  
 ### Backend (`app/`)
@@ -75,4 +79,17 @@ Run the update-summary pipeline manually:
 ```bash
 python scraper/run_weekend.py
 ```
- 
+
+## Known limitations
+
+- **Live demo is currently unavailable.** Data is loaded through FastF1, which relies on a
+  local cache that doesn't fit on the free deployment tier. Planned fix: precompute the
+  processed lap data offline and serve only those small files, removing the cache
+  dependency from the deployed app.
+- **Cold starts.** The free Render tier sleeps after inactivity, so the first request can
+  take a while to respond.
+- **Upgrade summaries depend on name matching.** The FIA doesn't offer an API for team
+  upgrades, so the scraper downloads the official PDF from the FIA website. The Grand Prix
+  name in FastF1 must match the one used in the FIA document, and when they differ
+  (for example, <FastF1 name> vs <FIA name>), the lookup fails. Planned fix: a mapping
+  table between FastF1 event names and FIA document names.
