@@ -14,6 +14,7 @@ app = FastAPI(title='F1 upgrades API')
 
 origins = [
     "http://localhost:5173",
+    "https://f1-dashboard-ivory-eta.vercel.app"
 ]
 
 app.add_middleware(
