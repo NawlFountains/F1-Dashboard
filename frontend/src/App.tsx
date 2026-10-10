@@ -35,13 +35,12 @@ function App() {
 	const isDesktop = useIsDesktop()
 	const [ activeTab, setActiveTab ] = useState<'schedules' | 'results' | 'upgrades' | 'laps'>('schedules')
 	const [ appliedYear, setAppliedYear ] = useState<number>(new Date().getFullYear())
-	const [ appliedRoundNumber, setAppliedRoundNumber ] = useState<number>(null)
-	const [ appliedSessionType, setAppliedSessionType ] = useState<SessionType>(null)
+	const [ appliedRoundNumber, setAppliedRoundNumber ] = useState<number | null>(null)
+	const [ appliedSessionType, setAppliedSessionType ] = useState<SessionType | null>(null)
 
 	const {
 		schedules,
 		currentSchedule,
-		loading: schedulesLoading,
 		loadError: schedulesLoadError
 	} = useSchedules(appliedYear)
 
@@ -59,7 +58,6 @@ function App() {
 	}, [currentSchedule])
 
 	const {
-		loading: upgradesLoading,
 		loadError: upgradesLoadError,
 		upgradesSummaries,
 	} = useUpgrades(appliedYear, appliedRoundNumber)
@@ -71,7 +69,6 @@ function App() {
 	} = useSessionResults(appliedYear, appliedRoundNumber, appliedSessionType)
 
 	const {
-		loading: lapsLoading,
 		loadError: lapsLoadError,
 		laps
 	} = useLaps(appliedYear, appliedRoundNumber, appliedSessionType, selectedDriver)
@@ -114,7 +111,8 @@ function App() {
 	}
 
 	const handleSetCurrentSchedule = () => {
-		handleScheduleSelect(currentSchedule)
+		if (currentSchedule)
+			handleScheduleSelect(currentSchedule)
 	}
 
 	const handleYearSelected = (year: number) => {
@@ -216,15 +214,13 @@ function App() {
 						<>
 						<ScheduleTable>
 						{schedules.map(schedule => (
-							<>
 							<SchedulesRow 
 								key={schedule.event_date} 
 								onSelected={handleScheduleSelect}
 								onSessionSelected={handleSessionSelect}
-								isSelected={schedule?.event_date == selectedSchedule?.event_date}
+								isSelected={schedule.event_date === selectedSchedule?.event_date}
 								selectedSession={selectedSession}
 								schedule={schedule}/>
-							</>
 						))}
 						</ScheduleTable>
 						</>

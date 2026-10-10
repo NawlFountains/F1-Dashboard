@@ -41,7 +41,7 @@ export default function LapsRow( { lap } : LapsRowProps ) {
 			{formatDuration(lap.sector_3_time)}
 		</td>
 		<td className={`${compoundColor()} font-bold`}>
-			<p className='sm:hidden'>{lap.compound.substring(0,1)}</p>
+			<p className='sm:hidden'>{lap.compound?.substring(0,1)}</p>
 			<p className='hidden sm:table-cell'>{lap.compound}</p>
 		</td>
 		<td className='hidden md:table-cell'>

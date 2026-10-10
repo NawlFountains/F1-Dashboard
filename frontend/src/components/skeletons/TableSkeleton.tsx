@@ -1,5 +1,3 @@
-import React from "react"
-
 export default function TableSkeleton({ rows = 4, cols = 4 }) {
 	return (
 		<div className={`animate-pulse overflown-hidden`}>

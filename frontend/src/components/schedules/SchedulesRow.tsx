@@ -6,7 +6,7 @@ interface SchedulesRowProps {
 	onSelected: (schedule: Schedule) => void,
 	onSessionSelected: (session: SessionSchedule) => void,
 	isSelected: boolean,
-	selectedSession?: SessionSchedule
+	selectedSession: SessionSchedule | null
 }
 
 export default function SchedulesRow( { schedule, onSelected, onSessionSelected, isSelected, selectedSession } : SchedulesRowProps ) {

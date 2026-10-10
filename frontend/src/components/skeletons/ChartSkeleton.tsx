@@ -1,4 +1,4 @@
-import React, {useMemo} from "react"
+import {useMemo} from "react"
 import { LineChart, Line, YAxis, ResponsiveContainer } from "recharts"
 
 interface SkeletonLap {

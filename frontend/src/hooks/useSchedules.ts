@@ -2,7 +2,7 @@ import {useEffect, useState} from "react"
 import type {Schedule} from '../types'
 import {getCurrentSchedule, getSchedules} from "../api/schedules"
 
-export const useSchedules = (year?: number) => {
+export const useSchedules = (year: number) => {
 	const [ loading, setLoading] = useState(false)
 	const [ schedules, setSchedules ] = useState<Schedule[]>([])
 	const [ currentSchedule, setCurrentSchedule ] = useState<Schedule>()
@@ -19,7 +19,7 @@ export const useSchedules = (year?: number) => {
 				setSchedules(schedulesData)
 				setCurrentSchedule(currentScheduleData)
 			} catch (err) {
-				setLoadError(err instanceof Error ? err.message : "Unkwon error")
+				setLoadError(err instanceof Error ? err.message : "Unkwnown error")
 			} finally {
 				setLoading(false)
 			}
