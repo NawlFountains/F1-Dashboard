@@ -4,9 +4,11 @@
 .env.development
 .env.production
 
-#Cache
+#Enviromental Cache
 __pycache__
-data
+
+# Data cache
+# data
 
 # Logs
 logs

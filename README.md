@@ -11,7 +11,6 @@ car development updates — no login required.
  
 ## Demo
 Try it right now [here](https://f1-dashboard-ivory-eta.vercel.app/) 
-> Currently not working - see know limitations at the bottom
 
 ![demo results](assets/demo_results.png)
 ![demo upgrades](assets/demo_upgrades_summaries.png)
@@ -51,6 +50,24 @@ Output lives in `data/`, which the FastAPI app reads from directly.
 - Frontend (schedule, results, and upgrade summaries UI)
 - Tyre specs/sets, circuit lap records, past winners per circuit
 - ML-based pit-stop strategy prediction, layered on top of the dashboard
+
+## Data pipeline
+
+Data comes from two sources:
+
+- **FastF1**: schedule, results and lap data.
+- **FIA car presentation documents**: the official PDF is downloaded and parsed into a
+  structured table, then an LLM (via Groq) writes a per-team summary of the upgrades.
+
+To keep responses fast, every result is stored as JSON the first time it is fetched, so
+nothing is requested from these sources twice. This trades a small amount of storage
+(~<X> MB for a full season) for much lower latency.
+
+The deployed backend runs on Render, whose free tier has an ephemeral disk, so files
+created at runtime would be lost on every restart. Instead, the processed data is
+committed to this repository, and the API runs in read-only mode in production: it only
+serves committed files and never calls FastF1 or the FIA site at request time. 
+
 ## Tech stack
  
 - **Backend:** FastAPI, pandas
@@ -80,16 +97,14 @@ Run the update-summary pipeline manually:
 python scraper/run_weekend.py
 ```
 
-## Known limitations
+## Known limitations and future work
 
-- **Live demo is currently unavailable.** Data is loaded through FastF1, which relies on a
-  local cache that doesn't fit on the free deployment tier. Planned fix: precompute the
-  processed lap data offline and serve only those small files, removing the cache
-  dependency from the deployed app.
 - **Cold starts.** The free Render tier sleeps after inactivity, so the first request can
   take a while to respond.
 - **Upgrade summaries depend on name matching.** The FIA doesn't offer an API for team
   upgrades, so the scraper downloads the official PDF from the FIA website. The Grand Prix
   name in FastF1 must match the one used in the FIA document, and when they differ
-  (for example, <FastF1 name> vs <FIA name>), the lookup fails. Planned fix: a mapping
-  table between FastF1 event names and FIA document names.
+  (for example, <FastF1 name> vs <FIA name>), the lookup fails. 
+> Example of this is the Bahrein GP in Malasyia in 2026, also the GP before 2024 use another filename format
+
+- New race weekends would be ideally added by a scheduled GitHub Action that runs the pipeline and commits the new files, which triggers a redeploy.
