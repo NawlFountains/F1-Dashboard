@@ -96,4 +96,20 @@ export type PracticeSessionType = "FP1" | "FP2" | "FP3"
 
 export type SessionType = RaceSessionType | QualifyingSessionType | PracticeSessionType
 
-export type TeamSummaries = Record<string, string>
+export interface TeamSummary {
+  has_updates: boolean
+  summary: string | null
+}
+
+export interface SummariesMeta {
+  year: number
+  round: number
+  grand_prix: string
+  source: string
+  generated_at: string // ISO 8601
+}
+
+export interface TeamSummariesResponse {
+  meta: SummariesMeta
+  teams: Record<string, TeamSummary>
+}

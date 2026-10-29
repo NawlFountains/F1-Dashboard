@@ -7,7 +7,7 @@ client = Groq()
 def summarize_team_updates(team: str, team_rows: list[dict]) -> str:
     # teams with no updates get a fixed string, no LLM call needed
     if len(team_rows) == 1 and team_rows[0]["component"] == "None":
-        return f"{team} did not submit any updates for this event."
+        return {"has_updates": False, "summary": None}
  
     updates_text = "\n".join(
         f"- {row['component']}: {row['reason']} — {row['differences']}"
@@ -28,7 +28,8 @@ def summarize_team_updates(team: str, team_rows: list[dict]) -> str:
         ],
         model="openai/gpt-oss-120b",
     )
-    return chat_completion.choices[0].message.content
+    summary = (chat_completion.choices[0].message.content or "").strip()
+    return {"has_updates": True, "summary": summary}
  
 def generate_summaries(df: pd.DataFrame) -> dict:
     """

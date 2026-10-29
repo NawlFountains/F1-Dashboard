@@ -4,7 +4,7 @@ load_dotenv()
 import argparse
 import os
 import json
-from datetime import date
+from datetime import date, datetime, timezone
 from .downloader import get_car_submission_pdf
 from .processor import parse_fia_car_presentation
 from .summarizer import generate_summaries
@@ -95,7 +95,7 @@ def process_race_weekend(year: int, round_num: int, event_name: str | None):
         event_name = fastf1.get_event(year, round_num)['EventName']
 
     gp_name = format_gp_name(event_name)
-    pdf_path = get_car_submission_pdf(year, gp_name)              # downloader.py
+    pdf_path, source_url = get_car_submission_pdf(year, round_num, gp_name)              # downloader.py
 
     df = parse_fia_car_presentation(pdf_path)             # processor.py
     race_slug = f"{year}_round_{round_num}"
@@ -104,9 +104,21 @@ def process_race_weekend(year: int, round_num: int, event_name: str | None):
 
     os.remove(pdf_path) 
 
-    summaries = generate_summaries(df)                    # summarizer.py
-    with open(f"data/{race_slug}/team_summaries.json", "w") as f:
-        json.dump(summaries, f, indent=2)
+    teams = generate_summaries(df)                    # summarizer.py
+
+    payload = {
+        "meta": {
+            "year": year,
+            "round": round_num,
+            "grand_prix": event_name,
+            "source": source_url,
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+        },
+        "teams": teams,
+    }
+
+    with open(f"data/{race_slug}/team_summaries.json", "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fetch, process and summarize F1 component updates in a GP weekend.")

@@ -1,17 +1,22 @@
+import type { TeamSummary } from "../../types"
+
 interface UpgradesRowProps {
-	team: string,
-	summary: string
+    teamName: string
+    teamSummary: TeamSummary
 }
 
-export default function UpgradesRow( {team, summary}: UpgradesRowProps ) {
-	return (
-		<tr>
-			<td className="font-mono bg-gruv-orange px-2 text-gruv-fg2 font-bold">
-			{team}	
-			</td>
-			<td className="text-sm p-2 dark:text-gruv-fg2">
-			{summary}
-			</td>
-		</tr>
-	)
+export default function UpgradesRow({ teamName, teamSummary }: UpgradesRowProps) {
+    const { has_updates, summary } = teamSummary
+    const hasText = has_updates && !!summary
+
+    return (
+        <tr>
+            <td className="font-mono bg-gruv-orange px-2 text-gruv-fg2 font-bold">
+                {teamName}
+            </td>
+            <td className={`text-sm p-2 dark:text-gruv-fg2 ${hasText ? "" : "italic opacity-60"}`}>
+                {hasText ? summary : "No updates for this event"}
+            </td>
+        </tr>
+    )
 }

@@ -1,7 +1,7 @@
-import type {TeamSummaries} from "../types"
+import type {TeamSummariesResponse} from "../types"
 import { apiGet } from "./client"
 
-export async function getUpgradesSummaries(year: number, round_number: number): Promise<TeamSummaries> {
+export async function getUpgradesSummaries(year: number, round_number: number): Promise<TeamSummariesResponse> {
 	return apiGet(`/upgrades/${year}/${round_number}`)
 }
 

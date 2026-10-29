@@ -59,7 +59,8 @@ function App() {
 
 	const {
 		loadError: upgradesLoadError,
-		upgradesSummaries,
+		meta: upgradesMeta,
+		teams: upgradesTeams,
 	} = useUpgrades(appliedYear, appliedRoundNumber)
 
 	const {
@@ -244,7 +245,7 @@ function App() {
 							className={`p-2 rounded-t text-lg cursor-pointer text-gruv-bg2 dark:text-gruv-fg2 font-mono disabled:text-gruv-gray disabled:cursor-not-allowed
 								${activeTab === 'upgrades' ? 'bg-gruv-fg1 dark:bg-gruv-bg2' : 'bg-transparent'}
 							`}
-							disabled = {!upgradesSummaries || Object.entries(upgradesSummaries).length <= 0 }
+							disabled = {!upgradesTeams || Object.entries(upgradesTeams).length <= 0 }
 							>
 						Upgrades
 						</button>
@@ -267,13 +268,16 @@ function App() {
 							<div className="flex justify-center py-5"><LoadingSpinner size={40} /></div>
 						}>
 						<UpgradesTable>
-								{upgradesSummaries && Object.entries(upgradesSummaries).map(([team, summary]) => (
-									<UpgradesRow key={team} team={team} summary={summary}/>
+								{upgradesTeams && Object.entries(upgradesTeams).map(([name, summary]) => (
+									<UpgradesRow key={name} teamName={name} teamSummary={summary} />
 								))}
 							</UpgradesTable>	
-							{upgradesSummaries && Object.entries(upgradesSummaries).length > 0 && (
-									<p className="text-gruv-bg2 dark:text-gruv-fg4 text-center py-2">Summaries are AI generated using OpenAI based on official FIA documents</p>
-								)}
+							{upgradesTeams && Object.entries(upgradesTeams).length > 0 && (
+								<div className="text-gruv-bg2 dark:text-gruv-fg4 text-center py-2">
+									<p className="">Summaries are AI generated using OpenAI based on official FIA documents</p>
+									<p>Data sourced from <a href={upgradesMeta?.source} className="text-gruv-orange dark:text-gruv-orange">{upgradesMeta?.source}</a></p>
+								</div>
+							)}
 
 							{upgradesLoadError && (
 								<p className="text-gruv-fg2">Couldn't found upgrades for this GP</p>
