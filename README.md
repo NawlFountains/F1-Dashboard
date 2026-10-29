@@ -12,9 +12,7 @@ car development updates — no login required.
 ## Demo
 Try it right now [here](https://f1-dashboard-ivory-eta.vercel.app/) 
 
-![demo results](assets/demo_results.png)
-![demo upgrades](assets/demo_upgrades_summaries.png)
-![demo telemetry](assets/demo_lap_telemetry.png)
+![demo](assets/demo_f1_dashboard.gif)
 
 ## What's built so far
  
