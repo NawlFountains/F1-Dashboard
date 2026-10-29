@@ -2,6 +2,8 @@ import os
 import json
 import fastf1
 from pathlib import Path
+
+from scraper.run_weekend import process_race_weekend
 from .enums import SessionType
 from .parse_utils import _safe, _safe_int
 
@@ -106,6 +108,13 @@ def get_cached_results(year: int, round_number: int, session_type: SessionType):
         return _fetch_and_cache_session_results(year, round_number, session_type)
     
     with open(cache_file) as f:
+        return json.load(f)
+
+def get_cached_team_summary(year: int, round_number: int, force_refresh: bool = False):
+    cache_file = Path(f"data/{year}_round_{round_number}/team_summaries.json")
+    if not cache_file.exists() or force_refresh:
+        process_race_weekend(year, round_number, None)
+    with open(cache_file, "r", encoding="utf-8") as f:
         return json.load(f)
 
 if __name__ == "__main__":
