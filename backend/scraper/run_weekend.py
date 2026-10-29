@@ -19,8 +19,6 @@ FIA_GP_NAME_MAP = {
     "brazilian grand prix": "sao_paulo_grand_prix",
     "emilia romagna grand prix": "emilia_romagna_grand_prix",
     "imola grand prix": "emilia_romagna_grand_prix",
-    "mexico city grand prix": "mexico_grand_prix",
-    "mexican grand prix": "mexico_grand_prix",
     "abu dhabi grand prix": "abu_dhabi_grand_prix",
     "barcelona grand prix": "barcelona-catalunya_grand_prix"
 }
@@ -46,7 +44,7 @@ FIA_STANDARD_SLUGS = [
     "azerbaijan_grand_prix",
     "singapore_grand_prix",
     "united_states_grand_prix",
-    "mexico_grand_prix",
+    "mexico_city_grand_prix",
     "sao_paulo_grand_prix",
     "las_vegas_grand_prix",
     "qatar_grand_prix",
