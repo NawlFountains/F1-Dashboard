@@ -1,11 +1,47 @@
 {
-  "McLaren": "McLaren\u2019s rear wing now carries extra \u201cfurniture\u201d \u2013 small aerodynamic pieces that smooth the airflow over the wing. This tweak should give the car a cleaner rear\u2011end down\u2011force, helping it stick to the track better in the high\u2011speed corners. In short, the extra wing elements are meant to boost grip and stability, which could translate into quicker lap times and a stronger fight for podium spots this weekend.",
-  "Mercedes F1 Team": "Mercedes has trimmed the central winglet on the rear wing and added a small winglet behind the exhaust, both aimed at shaving drag so the car can pull more speed down the long straights of this circuit. At the front, the lip has been reshaped to smooth the airflow into the tyres, giving the car better bite in the corners. Together these tweaks should boost straight\u2011line pace without sacrificing the down\u2011force needed for a strong qualifying and race performance.",
-  "Red Bull Racing": "Red\u202fBull has reinforced the rear\u2011wheel bodywork, fixing a weak spot that could have caused reliability hiccups, so the car should stay on the track longer without losing grip. They\u2019ve also reshaped the \u201cfloor bib\u201d \u2013 the edge where the floor meets the chassis \u2013 to smooth the airflow and recover a little extra down\u2011force. Together, these tweaks mean a more stable, trouble\u2011free run this weekend, giving the drivers a better chance to push the limits in qualifying and the race.",
-  "Scuderia Ferrari": "Ferrari has reshaped the rear\u2011top wishbone\u2019s rear leg fairing, tweaking how the suspension handles the forces coming off the rear tyres. The change gives the car a more stable rear end and smoother load transfer, which should improve grip and tyre wear, especially through the slower corners. In short, it\u2019s a subtle aero\u2011suspension tweak that can translate into better corner exit speed and consistency for this weekend\u2019s race.",
-  "Racing Bulls / RB": "Racing Bulls / RB did not submit any updates for this event.",
-  "Aston Martin": "Aston Martin did not submit any updates for this event.",
-  "Audi F1 Team": "Audi F1 Team did not submit any updates for this event.",
-  "Alpine F1 Team": "Alpine has fitted a small new piece to the forward section of the floor, aimed at boosting the car\u2019s overall grip. By tweaking the local load on the floor, the addition should give the car a steadier feel through the corners and help it stay glued to the track. In short, it\u2019s a modest aero tweak that could translate into a few extra tenths per lap this weekend.",
-  "Cadillac": "Cadillac has fitted a tiny fin to the trailing edge of its rear wing and added a small blade inside the under\u2011floor diffuser. Both parts nudge more airflow to the car\u2019s underside, boosting corner\u2011entry grip and straight\u2011line stability\u2014exactly the kind of extra bite needed to shave seconds off lap times this weekend."
+  "meta": {
+    "year": 2026,
+    "round": 14,
+    "grand_prix": "Spanish Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2026_spanish_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T13:34:59.472294+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has added extra “furniture” to the rear wing – basically small winglets that smooth and shape the airflow behind the car. This gives a bit more grip and stability, especially in fast corners, so the driver can push harder without the car getting unsettled. In short, the tweak should translate into quicker lap times and a more confident race‑day performance."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has trimmed the central element of the rear wing and added a small winglet right behind the exhaust, both aimed at shaving drag and giving the car a cleaner flow on the straights for this circuit. At the front, the lip has been reshaped to smooth the air coming into the car, helping the tyres get down‑force earlier in the corners. Together, these tweaks should boost top‑speed on the long runs while keeping the car stable through the twisty sections of this weekend’s track."
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull’s mechanics have tweaked the rear‑wheel bodywork to improve its durability, and they’ve reshaped the little “floor bib” that sits where the floor meets the chassis. Both changes are aimed at preventing cracks or failures that could cost the team a pit stop or a retirement, giving the cars a more reliable platform for qualifying and the race. In short, the tweaks should keep the RB cars on track longer and let the drivers focus on speed rather than worrying about break‑downs."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has reshaped the fairing on the rear‑top wishbone, essentially fine‑tuning the rear suspension’s load handling. The tweak gives the car a more stable rear end, helping the tires stay in their sweet spot longer and improving cornering confidence. In short, you should see better grip out of the bends and a more consistent feel over the weekend’s races."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Audi F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has added a new piece to the forward part of the floor board, essentially giving the car a little extra “bite” on the front edge. This tweak should boost front‑end grip and stability, helping the drivers get the car into the corner quicker and stay on the racing line. In short, it’s a small change that could translate into more consistent lap times and a better fight for points this weekend."
+    },
+    "Cadillac": {
+      "has_updates": true,
+      "summary": "Cadillac has given the rear wing a new little winglet at the back edge and added a small fin inside the diffuser’s sidewall. Both tweaks generate extra push on the rear of the car, keeping the chassis planted and the tires more evenly loaded through fast corners. The result should be steadier handling and a better lap time right out of the box for this weekend’s race."
+    }
+  }
 }

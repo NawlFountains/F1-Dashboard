@@ -1,10 +1,43 @@
 {
-  "McLaren": "McLaren\u2019s latest tweak is a bigger front\u2011brake cooling duct, tailored to the demands of this circuit\u2019s high\u2011speed corners. The extra airflow will keep the brakes from overheating, letting the drivers push harder for longer without losing grip. In short, the car will brake more confidently and stay quicker through the tight sections all weekend.",
-  "Mercedes F1 Team": "The Mercedes front wing now has a reshaped middle section, moving from a three\u2011piece to a two\u2011piece layout, and the endplates and foot\u2011plate have been tweaked to match. This gives cleaner airflow over the car\u2019s front, improving grip on the straights and in corners, so the team expects a stronger launch off the line and more consistent handling throughout the weekend.",
-  "Red Bull Racing": "Red Bull has reshaped the front\u2011wing end plates and flaps to give the car a steadier, more planted feel through the corners, while an enlarged rear\u2011wheel exit duct improves cooling and reduces the chance of reliability problems. The tweaks should let the drivers push harder on the track without worrying about overheating or losing grip, giving them a solid edge for this weekend\u2019s race.",
-  "Scuderia Ferrari": "Scuderia Ferrari did not submit any updates for this event.",
-  "Racing Bulls / RB": "Racing Bulls / RB did not submit any updates for this event.",
-  "Aston Martin": "Aston Martin did not submit any updates for this event.",
-  "Alpine F1 Team": "Alpine F1 Team did not submit any updates for this event.",
-  "Audi F1 Team": "Audi F1 Team did not submit any updates for this event."
+  "meta": {
+    "year": 2026,
+    "round": 17,
+    "grand_prix": "Singapore Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2026_singapore_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T13:35:35.077450+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren’s new front‑corner package features a larger, high‑flow brake duct tailored to this circuit’s demands, keeping the front brakes cooler under the heavy braking zones. The extra cooling means the driver can push harder into corners without worrying about brake fade, giving the team a better chance to attack and defend throughout the weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has re‑shaped the front wing, redistributing the surface area across its three panels and moving to a two‑piece layout, while also tweaking the endplates, footplate and dive‑plane angle to keep the airflow tighter. The result should be cleaner air to the car’s floor and rear, giving a little extra grip in the corners and a smoother ride on the straights. In short, it’s a subtle front‑end clean‑up aimed at shaving off tenths of a second and keeping the car stable over the weekend’s bumpy tracks."
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull’s new front wing now features a reshaped end plate and flap, giving the car better bite in the corners and more stable grip as it tackles the circuit’s high‑speed bends. At the rear, a larger exit duct has been added to the wheel‑body area, helping to keep the car cooler and more reliable over a full race distance. Together, these tweaks should translate into sharper handling and fewer overheating issues, giving the team a stronger chance to fight for podium positions this weekend."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Audi F1 Team": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
 }

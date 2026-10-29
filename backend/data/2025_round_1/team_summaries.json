@@ -1,9 +1,39 @@
 {
-  "McLaren": "McLaren\u2019s aero package has been tweaked for the weekend: the front\u2011brake duct now carries a fresh winglet to smooth airflow, the front\u2011corner cooling scoop is lowered to tidy up the nose and keep the engine cool, and the beam\u2011wing has been made \u201cheavier\u201d \u2013 both the single\u2011element and the optional double\u2011element versions now carry more down\u2011force. In plain terms, the car should hug the corners better without losing too much straight\u2011line speed, giving the drivers a more stable, faster\u2011than\u2011usual run through the circuit\u2019s twists and turns.",
-  "Scuderia Ferrari": "Ferrari has gone back to a pull\u2011rod front suspension and reshaped the wishbones and brake\u2011duct scoop, giving the car a cleaner airflow up front and better grip out of the corners. The sidepods are now tighter and the cooling outlets have been re\u2011worked, so the power unit stays cooler without sacrificing speed. Finally, a fresh rear\u2011wing profile and a tweaked lower element promise more stable down\u2011force, meaning the car should feel more planted on the straights and through high\u2011speed turns this weekend.",
-  "Red Bull Racing": "Red\u202fBull has reshaped the front wing, nose, and front\u2011suspension fairings and given the floor a fresh profile \u2013 including new edge\u2011wing camber and shifted floor fences \u2013 to tighten up front\u2011end grip and improve overall downforce. A modest tweak to the side\u2011pod/engine\u2011cover shape, slimmer cooling louvers and revised rear\u2011suspension and rear\u2011wing elements aim to keep the power unit cooler and more reliable while fine\u2011tuning rear aero balance. In short, the car should feel more stable through the corners and stay on the limit longer this weekend, giving the team a better shot at extracting extra lap time.",
-  "Mercedes F1 Team": "The Mercedes car this weekend gets a cleaner, more efficient airflow thanks to a reshaped side\u2011pod inlet, a deeper under\u2011cut on the engine cover and a lower rear\u2011track rod up front, which should boost straight\u2011line speed and corner\u2011exit grip. The floor, beam wing and rear wing have all been re\u2011profiled to improve how the car handles load, giving the drivers a more stable, predictable feel through high\u2011speed corners. In short, the updates aim to make the car faster on the straights while keeping it steadier on the bends, giving the team a better chance to fight at the front of the grid.",
-  "Racing Bulls / RB": "Racing\u202fBulls have stretched the nose and reshaped the front wing and side\u2011pod inlet to clean up the airflow at the front of the car, while a deeper under\u2011cut, wider cooling louvers and a re\u2011profiled floor give extra rear\u2011end grip without adding drag.\u202fThe rear wing tip has been swept forward, the beam\u2011wing and floor fences have been nudged into a tighter position, and the whole front\u2011suspension layout is now a brand\u2011new geometry, all of which should translate into more stable cornering and a stronger exit onto the straights.\u202fIn short, the aero tweaks tighten the car\u2019s balance and the suspension overhaul gives the drivers a more predictable feel \u2013 the kind of edge that can turn a good qualifying lap into a podium fight this weekend.",
-  "Alpine F1 Team": "Alpine has raised and reshaped the side\u2011pod inlet and given the engine cover a fresh look, both aimed at getting cleaner air into the car and keeping the engine cooler on a hot track. The entire floor \u2013 from the edge fences to the diffuser \u2013 has been re\u2011worked, and the rear\u2011corner and rear\u2011wing endplates have been refined to boost down\u2011force and stability, while new rear\u2011suspension fairings smooth the airflow at the back. In short, the tweaks should give the car more grip and better balance, helping Alpine fight for higher positions this weekend.",
-  "Williams Racing": "Williams have fitted a set of bigger, more aggressive cooling louvre panels to the car and made a number of optional \u201cGurney\u2011flap\u201d tweaks \u2013 on the engine cover and front wing \u2013 that can be added if extra cooling is needed at a hot track.\u202fThese changes should keep the power unit and rear\u2011end temps down while giving the aerodynamics a tiny lift boost, meaning the car will be more stable and able to run harder through the corners this weekend."
+  "meta": {
+    "year": 2025,
+    "round": 1,
+    "grand_prix": "Australian Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2025_australian_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T14:00:46.158410+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has tweaked the front of the car – a new, slimmer brake‑duct winglet and a lower cooling scoop – to clean up airflow and keep the engine cool without adding drag. The rear beam wing now runs at a higher angle, using either a single‑ or double‑element version, which gives the car a bit more downforce for the twists and turns of this weekend’s circuit. In short, the changes should help the car stick to the tarmac better and stay stable through the high‑speed sections, giving the team a stronger chance to fight for the podium."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has changed its front suspension to a pull‑rod design and reshaped the brake‑duct area, cleaning up the airflow over the front of the car and giving the brakes and front tyres more bite in the corners. The sidepods are now slimmer with re‑worked cooling exits, tightening the rear‑end aerodynamics while still keeping the engine at optimal temperatures. A fresh rear‑wing profile and a tweaked lower element add extra, more usable down‑force without a big drag penalty, which should translate into better grip and straight‑line speed for the weekend."
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull have reshaped the front end – a re‑profiled first‑wing element, new nose fairings and tweaked front‑suspension fairings – to tighten the airflow into the car and give a little extra bite on the corner‑entry. On the floor they’ve moved the fences, added cambered edge surfaces and re‑sculpted the floor and rear‑wing geometry, while a modest side‑pod tweak and smaller cooling louvers help keep the power unit healthy without sacrificing the new downforce gains. In short, the package is all about cleaner aerodynamics and a more stable rear, which should translate into better grip and tyre life for this weekend’s circuit."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "The Mercedes W14 gets a tighter‑pack side‑pod inlet and a deeper under‑cut on the engine cover, letting more clean air hit the car’s front and rear aerodynamics. The floor, beam wing and rear wing have all been reshaped to generate a steadier down‑force balance, while a new low‑profile rear‑track rod at the front helps keep the car stable through corners. Together these tweaks should give the team a bit more grip and consistency on the upcoming circuit, translating into quicker lap times and a stronger fight for podium positions."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "RB’s 2025 C45 shows up with a longer nose that feeds a newly‑shaped front wing and a cleaner‑looking front‑corner air scoop, while the side‑pod inlet has been tucked lower and the engine cover narrowed to tighten the airflow over the car.  Subtle reshapes to the floor, deeper under‑cut, bigger cooling louvres and re‑positioned floor fences add extra rear‑end grip, and the rear‑wing tip is now swept forward with raised beam‑wing tips to give more down‑force without a drag penalty.  A completely revised front‑suspension geometry and refined rear‑suspension fairings round off the package, promising more stable handling and better cornering speed for this weekend’s race."
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has lifted and reshaped the side‑pod inlet and given the engine cover a fresh look to tidy up airflow and keep the car cooler, while a full‑floor overhaul – new fences, edges and diffuser – sharpens the downforce the car can generate. The rear corner has been re‑engineered and the wing endplates re‑profiled, plus tweaked rear‑suspension fairings, all aimed at giving the car more grip and a more stable rear on this weekend’s circuit. In short, the upgrades should make the car stick to the tarmac better and keep the tyres in the right window for a stronger race pace."
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams have fitted a new set of larger, more aggressive cooling louvers – plus an optional grille‑flap on the engine‑cover – that can be added if the track runs hot. They’ve also refined the front‑wing endplates and overall wing loading to keep the airflow smooth around those new cooling pieces. The result should keep the power unit in its sweet spot and give the car a steadier, more predictable feel through the high‑speed corners this weekend."
+    }
+  }
 }

@@ -1,12 +1,51 @@
 {
-  "McLaren": "McLaren did not submit any updates for this event.",
-  "Scuderia Ferrari": "Scuderia Ferrari did not submit any updates for this event.",
-  "Red Bull Racing": "Red Bull\u2019s new front wing now has a longer\u2011chord flap, giving the car extra front\u2011end grip and making the car feel more stable through high\u2011speed corners. At the front corners, they\u2019ve widened and reshaped the scoop and its exit duct, which improves airflow and reduces the chance of overheating, so the car can run more aggressively without worrying about reliability issues this weekend.",
-  "Mercedes F1 Team": "Mercedes F1 Team did not submit any updates for this event.",
-  "Aston Martin": "Aston\u202fMartin has rolled out a fresh, more aggressive front\u2011wing flap tuned specifically for this circuit\u2019s demands. The new profile boosts front\u2011end grip, letting the car turn sharper and keep the balance stable through high\u2011speed corners. In short, it should translate into better corner speed and more consistent lap times over the weekend.",
-  "Alpine F1 Team": "Alpine F1 Team did not submit any updates for this event.",
-  "Haas F1 Team": "Haas F1 Team did not submit any updates for this event.",
-  "Racing Bulls / RB": "RB has reshaped the front\u2011corner surfaces to smooth the airflow, giving the car a little extra grip on the faster turns. They\u2019ve also added a larger cooling louvre so the engine stays in its ideal temperature window on this hot, demanding circuit. The result is a more stable, punchier car that should translate into quicker laps and a better chance at a strong finish this weekend.",
-  "Williams Racing": "Williams Racing did not submit any updates for this event.",
-  "Sauber / Audi": "Sauber / Audi did not submit any updates for this event."
+  "meta": {
+    "year": 2025,
+    "round": 14,
+    "grand_prix": "Hungarian Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2025_hungarian_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T14:04:28.506848+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has added a slightly longer front‑wing flap and reshaped the front‑corner air scoop, giving the car a steadier, more planted front end. The bigger, re‑profiled intake also helps keep temperatures in check, so the car can run its optimal settings without worrying about overheating. Together, these tweaks should improve cornering grip and reliability, giving the team a better shot at extracting maximum performance this weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin rolled out a sharper, more aggressive front‑wing flap tailored to the track’s demands, building on the new wing they debuted last race. The extra bite at the front gives the car more front‑end grip, helping it turn into corners quicker and stay balanced through high‑speed sections—exactly the edge needed to fight for points this weekend."
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls has tweaked the front‑corner of the car, smoothing the surface to keep the airflow steadier as it rolls through the bends, which should give the driver a bit more grip and confidence out of the turns. They’ve also fitted a bigger cooling louvre, tuned for this circuit’s hot‑track demands, so the engine stays in its optimal temperature window longer. Together, the aerodynamic refinement and extra cooling aim to boost corner‑speed and reliability for the weekend’s sprint."
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Sauber / Audi": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
 }

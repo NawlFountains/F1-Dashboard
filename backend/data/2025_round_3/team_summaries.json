@@ -1,12 +1,51 @@
 {
-  "McLaren": "McLaren did not submit any updates for this event.",
-  "Scuderia Ferrari": "Scuderia Ferrari did not submit any updates for this event.",
-  "Red Bull Racing": "Red\u202fBull has tweaked a few bits to keep the car both reliable and a little quicker this weekend. They reshaped the central outlet on the engine cover and widened the rear\u2011corner exit duct, which should help the power unit stay cool and avoid overheating issues. A subtle re\u2011profile of the lower rear\u2011suspension fairing also smooths airflow around the tyre, giving a modest grip boost when it counts.",
-  "Mercedes F1 Team": "Mercedes F1 Team did not submit any updates for this event.",
-  "Aston Martin": "Aston Martin did not submit any updates for this event.",
-  "Alpine F1 Team": "Alpine F1 Team did not submit any updates for this event.",
-  "Haas F1 Team": "Haas has introduced a revised floor section that tweaks the way the car loads the track locally, giving a bit more down\u2011force and a smoother aerodynamic balance. The change should translate into better corner grip and more consistent tyre wear, letting the drivers push harder through the turns and fight for position this weekend.",
-  "Racing Bulls / RB": "The team has reshaped the halo shroud and its attachment to the chassis, smoothing the air that rushes over the car\u2019s nose.\u202fThat cleaner airflow boosts overall aero efficiency \u2013 giving a bit more down\u2011force and better cooling where it counts.\u202fIn practice, it should help the RB extract a few extra tenths over a lap and keep the tyres and brakes in a healthier window for the weekend\u2019s sprint and race.",
-  "Williams Racing": "Williams has tweaked the rear part of the front wing and its endplates to smooth the air and add a little extra front\u2011end grip. The changes should make the car feel more stable into corners and give the drivers a better balance, especially when braking and turning. In short, the car should be easier to drive around the circuit and more competitive this weekend.",
-  "Sauber / Audi": "Sauber\u2011Audi haven\u2019t introduced any new performance tweaks to the floor, rear wing or beam wing \u2013 all three components show \u201cno local load\u201d changes. In plain terms, the car\u2019s aerodynamics stay exactly as they were last week, so the team will be looking to extract speed elsewhere (strategy, tyre management or driver skill) rather than banking on a fresh aero upgrade for the upcoming race."
+  "meta": {
+    "year": 2025,
+    "round": 3,
+    "grand_prix": "Japanese Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2025_japanese_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T14:01:20.120288+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull’s RB‑engine cover now has a tweaked central exit shape and a bigger rear‑corner duct (with optional blanks), boosting cooling reliability for the weekend’s hot track. The rear‑suspension fairing around the lower wishbone has been subtly reshaped, giving the car a steadier rear grip as it tackles the high‑speed corners. In short, these tweaks keep the power unit and rear end running smoother, so the team can focus on extracting pace rather than fixing problems."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has tweaked the underside of the car, reshaping the floor panels to get a cleaner airflow and a better balance of down‑force. The change reduces drag on the straights while giving the rear more grip through the corners, so the drivers should be able to carry a little extra speed into turns and brake later. In short, it’s a subtle aerodynamic fix aimed at extracting more lap‑time without a major redesign, which could make a noticeable difference in qualifying and the race."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "The RB’s halo shroud has been reshaped and its connection to the chassis re‑profiled, smoothing the air that passes over the cockpit. This tweak cuts turbulence and gives the aero package a small but useful boost in down‑force and cooling. The result should translate into a tighter, more stable car on the straights and through the corners for this weekend’s race."
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams has tweaked the back‑most part of the front wing – both the flap and the endplate – to clean up the air that hits the car’s front and give the driver a steadier feel through the corners. The small aerodynamic adjustment should boost front‑end grip and improve overall balance, which is crucial for extracting lap‑time on a track where every fraction of a second counts. In short, a cleaner front wing means the car will be more stable and quicker around this weekend’s circuit."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber‑Audi’s aerodynamic package stays exactly as it was – there are no new tweaks to the floor, rear wing or beam wing this weekend. In plain terms, the car will run on the same baseline down‑force and balance the team used in the previous race, so engineers can focus on set‑up and strategy rather than figuring out fresh aero changes. That means drivers won’t have to adapt to any surprise handling shifts and the team’s performance will hinge on tyre management and race‑craft."
+    }
+  }
 }

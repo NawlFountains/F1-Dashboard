@@ -1,12 +1,51 @@
 {
-  "McLaren": "McLaren did not submit any updates for this event.",
-  "Scuderia Ferrari": "Scuderia Ferrari did not submit any updates for this event.",
-  "Red Bull Racing": "Red Bull has stretched out the front\u2011wing flaps on this weekend\u2019s RB car, giving the aero a slightly longer \u201cbite.\u201d The extra surface area should boost front\u2011end grip, making the car feel more planted in the slower corners and easier to turn into the bends. In short, the tweak aims to improve cornering stability and keep the RB competitive right out of the first lap.",
-  "Mercedes F1 Team": "Mercedes F1 Team did not submit any updates for this event.",
-  "Aston Martin": "Aston Martin did not submit any updates for this event.",
-  "Alpine F1 Team": "Alpine has re\u2011shaped the rear\u2011corner brake duct area, smoothing the airflow that runs over the rear of the car. The tweak should give the car a steadier rear end and better brake cooling, letting drivers carry a little more speed through fast corners. In practice, that extra stability could be the edge Alpine needs to attack or defend positions this weekend.",
-  "Haas F1 Team": "Haas F1 Team did not submit any updates for this event.",
-  "Racing Bulls / RB": "Racing Bulls / RB did not submit any updates for this event.",
-  "Williams Racing": "Williams Racing did not submit any updates for this event.",
-  "Sauber / Audi": "Sauber\u2011Audi has tweaked the shape of the rear brake\u2011duct vanes, giving the airflow at the rear corner a smoother, more focused path. The change should improve rear\u2011wheel cooling and give the car a steadier rear\u2011end, especially through fast corners. In practice, that means more grip and less overheating risk over the weekend\u2019s high\u2011speed layout."
+  "meta": {
+    "year": 2025,
+    "round": 15,
+    "grand_prix": "Dutch Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2025_dutch_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T14:04:38.230164+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has stretched the front‑wing flaps, giving the wing a longer “chord” that creates more bite at the front of the car. The extra load on those flaps should tighten up the turn‑in and keep the car more stable through the slow corners, which is crucial on a circuit that rewards a sharp, predictable front end. In short, a bigger front‑wing grip means Red Bull can attack the opening laps with confidence and stay competitive through the whole weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has reshaped the rear‑corner airflow by adding new internal pieces (“furniture”) to the rear brake duct. The tweak smooths the air that passes over the brakes, giving cooler, more consistent braking and a steadier rear end. That extra stability should translate into better corner exit speeds and tyre management for the weekend’s races."
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber’s Audi‑powered car gets a fresh rear‑brake‑duct vane, reshaping the airflow that feeds the brakes and the rear wing. The tweak should keep the brakes cooler and smooth the car’s rear‑end balance, giving drivers more confidence into fast corners and a little extra bite on the straights. In short, a modest‑looking change that could translate into better lap times and more consistent performance over the weekend."
+    }
+  }
 }

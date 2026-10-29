@@ -1,12 +1,51 @@
 {
-  "McLaren": "McLaren did not submit any updates for this event.",
-  "Scuderia Ferrari": "Scuderia Ferrari did not submit any updates for this event.",
-  "Red Bull Racing": "Red Bull has tweaked the underside of the RB\u202f19 by moving the small \u201cfloor fences\u201d and adding a slightly more angled section to the floor edge. The new placement smooths the airflow under the car, giving a bite of extra down\u2011force, while the locally increased camber helps the car stick better through the corners. Together these changes should boost cornering stability and tyre life, giving the team a sharper edge on the opening weekend.",
-  "Mercedes F1 Team": "Mercedes has tweaked the rear wing\u2019s camber \u2013 basically angling the flap a bit differently \u2013 to match the specific load demands of this circuit. The change should give the car a more stable rear end and a little extra bite in the corners, helping the drivers extract more speed and confidence over the weekend\u2019s layout.",
-  "Aston Martin": "Aston\u202fMartin has trimmed the aggressiveness of its front and rear wings \u2013 the front wing now has a milder flap, while the rear wing\u2019s front\u2011view area is smaller \u2013 and swapped in a single\u2011element beam wing to cut drag. The net effect is a cleaner, lower\u2011drag aero package that should boost straight\u2011line speed and make the car more balanced on this circuit\u2019s mix of corners and long straights, giving the team a better chance to fight at the front of the grid this weekend.",
-  "Alpine F1 Team": "Alpine has tweaked the front of the car \u2013 a new brake\u2011duct shape sharpens the airflow over the front wheels, keeping the brakes cooler and feeding more front\u2011end grip. At the same time, the front suspension geometry has been re\u2011profiled to give the car a smoother, more stable feel through the corners, meaning drivers can push harder and keep the tyres in their sweet spot for this weekend\u2019s race.",
-  "Haas F1 Team": "Haas F1 Team did not submit any updates for this event.",
-  "Racing Bulls / RB": "Racing Bulls / RB did not submit any updates for this event.",
-  "Williams Racing": "Williams is trialling a fresh, shorter\u2011chord beam wing this weekend \u2013 a plug\u2011in part that\u2019s slimmer than the one they used last year. By trimming the wing\u2019s surface it cuts drag, giving the car a boost on the straights without sacrificing the down\u2011force they need in the corners. If the package works, it could translate into better qualifying laps and more competitive race pace on a circuit that rewards top\u2011end speed.",
-  "Sauber / Audi": "Sauber\u2011Audi has reshaped the cover over the front suspension, tweaking the airflow around the front wheels. The new shape smooths the air coming off the front end, which helps the car stick to the track a bit better and gives drivers a more stable, responsive feel through corners. In short, it\u2019s a small aerodynamic tweak that could translate into a few extra tenths on the lap times this weekend."
+  "meta": {
+    "year": 2025,
+    "round": 6,
+    "grand_prix": "Miami Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2025_miami_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T14:02:11.660695+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has tweaked the aerodynamic “fences” on the car’s floor and reshaped the floor’s outer edge to give it a steeper angle. Those changes boost down‑force and make the car stick better through fast corners, which should help Max and Sergio get stronger grip off the line and on the high‑speed sections this weekend. In short, the tweaks aim to keep the RB18 faster and more stable on the track."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has tweaked the angle of the rear‑wing flap to better match the demands of this circuit, giving the car a more balanced rear end. The change should boost stability through fast corners and help the drivers keep the car planted when they push hard. In short, it’s a small aerodynamic tweak that could translate into better grip and a stronger finish this weekend."
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has swapped to a milder front‑wing flap and a slimmer rear wing, both trimmed down to cut drag for this track’s long straights. They’ve also added a single‑element beam wing that keeps the car stable without adding extra resistance. The result is a higher top‑speed setup that should help the team stay glued to the leaders on the straight‑line sections of this weekend’s circuit."
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has tweaked the airflow at the front of the car by reshaping the brake‑duct and tweaking the front‑suspension geometry, giving the car a cleaner “bite” into the on‑track air. The changes should boost front‑end grip and stability, especially in high‑speed corners, so drivers can push harder into turn‑ins and get better traction off the line this weekend. In short, a smoother airflow package means more confidence and potentially quicker lap times right out of the gate."
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams have introduced a new, slimmer beam‑wing element that slots into the rear‑wing assembly for this circuit. Its reduced size cuts drag, helping the car get up to speed faster on the straights while still keeping enough down‑force for the corners. In short, the tweak should give Williams a quicker lap time and better straight‑line performance for the weekend."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber’s Audi‑powered car got a fresh front‑suspension cover that smooths the airflow around the front wheels. That cleaner air boost helps the car generate a little more down‑force and reduces drag, giving the drivers extra grip in the high‑speed corners. In short, the tweak should make the car feel more planted and quicker through the weekend’s fast sections."
+    }
+  }
 }

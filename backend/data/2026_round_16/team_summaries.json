@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "year": 2026,
+    "round": 16,
+    "grand_prix": "Bahrain Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2026_bahrain_grand_prix_in_malaysia_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T13:45:01.137018+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has fitted a new, circuit‑tailored engine cover that boosts cooling airflow across the car. The extra cooling helps keep the power unit at optimal temperature, so the car can stay on the edge of the performance window longer. In practice, that means more consistent lap times and fewer worries about overheating during the sprint weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes have reshaped several parts of the floor and rear end for this weekend – the front‑floor now has new horizontal and vertical cut‑outs, extra “down‑wash” flaps and extra slots, while the diffuser roof and side‑walls have been tweaked, and the rear winglet has been moved and widened. The rear suspension fairings are also reshaped to clean up airflow. All of these changes tighten the car’s aerodynamic grip, giving the drivers more stability and corner‑speed when the track demands the extra downforce."
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has tweaked the shape of its floor board, reshaping the low‑down‑force panel under the car to spread the aerodynamic load more evenly. The change should give the RB a steadier grip through the corners and a smoother ride on the straights, helping them extract a few extra tenths on lap time. In short, the new floor should make the car feel more predictable and quicker over the weekend’s mix of fast and twisty sections."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has refined the little winglets on the outer edge of the diffuser, reshaping the airflow that feeds the rear of the car. The tweak should give a modest boost in down‑force and reduce drag, helping the car stick to the tarmac through the fast corners and preserving tyre life for the weekend. In short, it’s a subtle aerodynamic nudge that could translate into better corner speed and more consistent lap times."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls have fitted a brand‑new front‑wing flap tailored to this circuit, giving the car a finer balance between corner‑entry grip and straight‑line stability. At the rear they’ve tweaked the auxiliary pieces on the wing to boost overall downforce and keep the load more consistent through fast turns. In short, the car should feel steadier and stick to the asphalt better, giving the drivers a stronger platform to attack this weekend’s race."
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has reinforced the rear‑impact structure on the car, making the back end stiffer and more stable when it hits curbs or copes with heavy braking. That extra rigidity translates into better rear‑wheel grip and more consistent handling through the fast corners at this weekend’s circuit, helping the drivers keep the car on the limit without worrying about excess bounce or tyre wear. In short, the tweak should give Haas a cleaner, more predictable ride when it counts most."
+    },
+    "Audi F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has tweaked the way air exits the front‑corner brake drums, giving the brakes a cooler, more consistent operating temperature. That means the drivers can push harder into the corners without worrying about overheating or losing grip. With better brake stability, Alpine should be able to attack more aggressively and fight for stronger positions this weekend."
+    }
+  }
+}

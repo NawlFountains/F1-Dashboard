@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2025,
+    "round": 19,
+    "grand_prix": "United States Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2025_united_states_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T14:05:21.293428+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Red Bull Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "The team has tweaked the rear‑corner aero – the upper lip has been reshaped and the little winglets have been trimmed back. This gives the car a cleaner airflow and a slightly softer rear‑end, helping it stay more stable through the high‑speed corners while reducing tire wear. In short, the change should make the car easier to drive and keep the pace up for this weekend’s track."
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has reshaped the underside of the car – tweaking the floor panels, fences and edges – to tighten the airflow and boost grip, while also fine‑tuning the rear‑corner and side‑pod inlets for smoother, more efficient air passage. The result should be a car that sticks better to the track, especially through fast corners, giving the drivers a tangible edge right out of the gates this weekend."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Sauber / Audi": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
+}

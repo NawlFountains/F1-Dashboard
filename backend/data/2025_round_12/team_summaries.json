@@ -1,12 +1,51 @@
 {
-  "McLaren": "McLaren\u2019s latest tweaks reshape the car\u2019s underside and rear\u2011corner airflow. A re\u2011sculpted floor gives the car a cleaner, more stable grip on the track, while a re\u2011designed rear\u2011corner inlet smooths the air that feeds the diffuser, boosting rear\u2011end stability. Together these changes should translate into better corner speed and more consistent handling for the upcoming race weekend.",
-  "Scuderia Ferrari": "Scuderia Ferrari did not submit any updates for this event.",
-  "Red Bull Racing": "Red Bull has re\u2011shaped sections of the car\u2019s floor to work better with the new aerodynamic fences they fitted earlier. The tweak smooths the airflow under the car, giving a bit more grip and stability as the chassis slices through the corners. In short, the change should translate into more confidence on the track and a stronger push for podium spots this weekend.",
-  "Mercedes F1 Team": "Mercedes F1 Team did not submit any updates for this event.",
-  "Aston Martin": "Aston\u202fMartin has tweaked the underside of the car \u2013 a slightly reshaped floor, re\u2011curved fence pieces, refined edges, and a new profile on the top\u2011deck engine cover \u2013 all aimed at smoothing the airflow under the car. Those modest shape changes should give a bite more down\u2011force and cleaner aerodynamics, helping the car stick into the corners and keep the tyres in their sweet spot for the weekend\u2019s sprint. In short, it\u2019s a subtle \u201cfeel\u2011better\u201d upgrade that could shave a few tenths off lap times and keep Aston\u202fMartin competitive on the track.",
-  "Alpine F1 Team": "Alpine F1 Team did not submit any updates for this event.",
-  "Haas F1 Team": "Haas has reshaped the underside of the car \u2013 tweaking the floor panels, fences and edges \u2013 and refined the side\u2011pod inlet to smooth the airflow. The changes should boost down\u2011force and give the car a more stable ride through the corners, letting the drivers extract a little extra grip. In short, it\u2019s a subtle aerodynamic clean\u2011up aimed at making the car quicker and more predictable over this weekend\u2019s circuit.",
-  "Racing Bulls / RB": "The RB has fitted a circuit\u2011specific front wing with a fresh flap shape, giving the car a wider balance window and sharper front\u2011end grip. This tweak should make the car feel more stable through high\u2011speed corners while still staying nimble on the slower sections, helping the drivers extract more performance over the weekend\u2019s varied layout.",
-  "Williams Racing": "Williams has reshaped the in\u2011board floor fence, moving its leading edge further inward and giving it a smoother, three\u2011dimensional curve that blends back into the original shape. This tweak aims to clean up the airflow under the car, boosting downforce and stability as the car powers through corners. In short, the new fence should help the team grip the track better and fight for higher lap times this weekend.",
-  "Sauber / Audi": "Sauber\u2011Audi have tweaked the front part of the car: the forward section of the floor is now shaped to handle the loads it sees on this circuit, giving the car a more stable rear end. At the same time, they\u2019ve fitted a new front\u2011wing flap that lets the engineers dial the aerodynamic balance more precisely for the track\u2019s demands. The result should be better grip out of the corners and a more predictable car on the straights, giving the team a real chance to fight higher up the grid this weekend."
+  "meta": {
+    "year": 2025,
+    "round": 12,
+    "grand_prix": "British Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2025_british_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T14:04:01.378047+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has tweaked the underside of the car, reshaping the floor to get a cleaner, more consistent airflow that sticks the car to the track. They’ve also refined the rear‑corner inlet, smoothing out the air that feeds the diffuser for a bigger boost off the exits. Together, these changes should give the car a tighter grip and stronger push‑through on the straights, helping the drivers extract more lap time this weekend."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has tweaked the underside of the RB‑engineered floor, reshaping the surfaces that sit next to the side‑pods to match the latest fence adjustments. The new profile should smooth airflow and give a modest boost in rear‑end stability, especially through high‑speed corners. In short, the change aims to keep the car planted and maintain its edge on a circuit where every ounce of downforce counts."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has tweaked the underside of the car – reshaping the floor’s main panel, smoothing the curvature of the side fences, and fine‑tuning the edge wing – plus a subtle re‑profile of the engine cover’s top deck. These aerodynamic tweaks tighten airflow under the car, giving a bit more down‑force and stability in fast corners, which could translate into better grip and quicker lap times on this weekend’s circuit."
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has tweaked the underside of the car – reshaping the floor, adding new little fences and re‑contouring the floor edge – plus refined the inlet on the sidepods to smooth airflow. These changes tighten the aerodynamic “tunnel” under the chassis, giving the car a bit more down‑force without adding drag, which should help it stick to the track and improve corner speed this weekend. In short, the tweaks are all about grabbing a little extra grip where it counts most on the next race."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls have rolled out a new front‑wing layout for the weekend, tweaking the flap shape to give the car a more adaptable balance that suits the particular demands of this circuit. The change should boost front‑end grip and make the car easier to turn through the high‑speed corners, helping the drivers extract more performance without sacrificing straight‑line speed. In short, a sharper, more versatile front wing means better handling and a stronger shot at the podium."
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams has reshaped the in‑board floor fences, moving the leading edge farther inboard and giving the panel a smoother, three‑dimensional curve that eases back into the original shape. This tweak helps clean up the airflow under the car, boosting down‑force and stability through corners. In practice it should give the drivers a more predictable rear end and a little extra grip for qualifying and the race."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber/Audi have tweaked the forward section of the floor, reshaping it to spread the load more evenly and give the car extra rear‑end grip on the straights. They’ve also introduced a new front‑wing flap that can be dialed in for the specific demands of the circuit, helping to smooth out the car’s balance through the corners. Together, the changes should make the car stick better to the track and be easier to drive fast over this weekend’s layout."
+    }
+  }
 }

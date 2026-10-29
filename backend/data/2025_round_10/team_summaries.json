@@ -1,12 +1,51 @@
 {
-  "McLaren": "McLaren\u2019s new front\u2011wing shape smooths the air early on, giving the car a cleaner airflow and more bite into the corners. The rear wing has been tweaked for a medium\u2011downforce setting that trims drag, so the car can keep its straight\u2011line speed while still staying stable through the fast sections. Finally, a revised front\u2011suspension geometry improves tyre contact, helping the drivers extract extra grip when the rubber\u2019s up and the race gets intense.",
-  "Scuderia Ferrari": "Scuderia Ferrari did not submit any updates for this event.",
-  "Red Bull Racing": "Red Bull Racing did not submit any updates for this event.",
-  "Mercedes F1 Team": "Mercedes has fitted a larger brake\u2011duct inlet and outlet on the floor corner, giving the brakes a bigger cooling window for the hot\u2011track conditions this weekend. They\u2019ve also trimmed down a tiny wing element on the floor edge to smooth the airflow and boost rear\u2011end stability. Together, the tweaks should keep the car\u2019s brakes from overheating and give the driver a bit more grip through the corners.",
-  "Aston Martin": "Aston\u202fMartin has fitted a bigger opening on the front\u2011brake duct, tuned for the specific demands of this circuit. The larger exit lets the brakes stay cooler, so the drivers can dig in harder on the front corners without worrying about overheating. In short, it\u2019s a simple cooling tweak that should keep the car\u2019s performance consistent lap after lap this weekend.",
-  "Alpine F1 Team": "Alpine has fitted a circuit\u2011specific front wing with a re\u2011profiled, shorter flap to sharpen the car\u2019s balance and give a cleaner airflow into the floor. The tweak should translate into better front\u2011end grip and more consistent cornering, which is crucial for extracting pace on this weekend\u2019s twisty layout. In short, the new wing aims to keep the car stable through the bends and help the drivers attack the lap times more confidently.",
-  "Haas F1 Team": "Haas F1 Team did not submit any updates for this event.",
-  "Racing Bulls / RB": "Racing\u202fBulls have tweaked the front wing for this circuit, shortening the rear\u2011most flap segment to give the car a more neutral front\u2011end feel and help it stay balanced through the fast, sweeping turns. They\u2019ve also reshaped the lower winglet\u2019s end\u2011plate on the rear corner to smooth the airflow and boost rear\u2011end grip. Together, the changes should make the RB more predictable in high\u2011speed corners and give the drivers a clearer window for attack this weekend.",
-  "Williams Racing": "Williams Racing did not submit any updates for this event.",
-  "Sauber / Audi": "Sauber / Audi did not submit any updates for this event."
+  "meta": {
+    "year": 2025,
+    "round": 10,
+    "grand_prix": "Canadian Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2025_canadian_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T14:03:24.513562+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has tweaked the front wing to smooth the airflow, giving the car a cleaner “bite” into the corners. The rear wing is set to a medium‑downforce configuration, balancing straight‑line speed with enough grip for the track’s sweeping sections. A re‑worked front‑suspension geometry helps the car stay stable under heavy braking, meaning drivers can push later into the turn and extract more lap time this weekend."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Red Bull Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has added larger brake‑duct openings on the floor corners, giving the brakes extra cooling so the drivers can push harder through the heavy‑braking sections of this circuit. At the same time they’ve trimmed a small wing piece on the floor edge, cleaning up the airflow under the car for a touch more grip. The two tweaks should let the team run a bit faster and stay in the hunt for podium places this weekend."
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has tweaked the front‑corner airflow, fitting a brake duct with a bigger exit to boost cooling on this circuit’s demanding layout. That extra airflow means the brakes stay in the optimal temperature window longer, letting the driver brake harder and later into the corners. In short, more grip off the line and less risk of brake fade right where it counts for the weekend’s battles."
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has given the front wing a quick shape‑tweak, shortening the flap to suit this circuit’s high‑speed corners. The change aims to smooth the airflow and give the car a more stable front end, which should improve grip and confidence through the fast turns. In short, a sharper wing means better balance and a better chance to fight for points this weekend."
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls have tweaked the front wing for this track, shortening the backmost flap to give the car a more balanced feel through the corners. They’ve also reshaped the tiny winglet on the rear‑corner side pod to smooth the airflow and boost down‑force. Together, the changes should make the car steadier in high‑speed bends and help it stick to the tarmac when it matters most this weekend."
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Sauber / Audi": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
 }

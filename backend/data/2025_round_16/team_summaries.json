@@ -1,12 +1,51 @@
 {
-  "McLaren": "McLaren has reshaped the front\u2011suspension fairings and trimmed the front\u2011wing flap to tighten the car\u2019s aerodynamic balance, giving the driver a more predictable front end through the high\u2011speed corners. At the rear, both the main wing and the beam wing have been dialed down \u2013 the wing\u2019s profile is slimmer and set to a low\u2011downforce mode \u2013 which cuts drag and lets the car carry more speed on the straights. Together these tweaks should make the car feel steadier in the bends while maximizing straight\u2011line pace for this weekend\u2019s circuit.",
-  "Scuderia Ferrari": "Ferrari has trimmed the front\u2011wing flap to a shorter \u201cchord\u201d shape, giving the car a tighter balance that helps it turn more predictably through the corner\u2011heavy sections of the track. At the back, they\u2019ve lightened the top\u2011side rear\u2011wing elements and added a more flexible flap, while the lower beam wing now runs as a single, slimmer piece \u2013 both moves cut drag and boost straight\u2011line speed. In short, the new aero package should keep the car stable in the bends while letting it carry more speed onto the straights, a key advantage for this weekend\u2019s layout.",
-  "Red Bull Racing": "Red Bull has trimmed the front\u2011wing flaps and reshaped the floor, giving the car a cleaner airflow and a bit more grip on the straights and in fast corners. The new fence shapes and a re\u2011profiled floor edge act like a subtle \u201cskate\u2011blade,\u201d tightening the car\u2019s balance and making it easier to get on the power early in the weekend. In short, the aero tweaks should translate into more consistent cornering speed and better tyre wear, giving them a solid edge right out of the gate.",
-  "Mercedes F1 Team": "Mercedes has tweaked three key aero pieces for the weekend: a tiny reshaping of the rear\u2011wing tip to shave off a bit of drag, a re\u2011angled out\u2011board floor fence that smooths the airflow under the car, and a slightly flatter front\u2011wing flap to give the front end a more predictable bite. Together these changes should boost straight\u2011line speed while keeping the car stable through fast corners, giving the drivers a tighter, more confident feel on the track.",
-  "Aston Martin": "Aston\u202fMartin has added a new, less\u2011aggressive flap to the rear wing, giving the car a wider drag range that can be dialed in for this circuit\u2019s mix of straights and corners. The tweak lets the team fine\u2011tune straight\u2011line speed without losing too much down\u2011force in the slower sections, meaning the car should be quicker off the line and more stable through the bends this weekend.",
-  "Alpine F1 Team": "Alpine F1 Team did not submit any updates for this event.",
-  "Haas F1 Team": "Haas has fitted a circuit\u2011specific front wing that tweaks the aerodynamic balance across the car. By fine\u2011tuning the wing\u2019s \u201cbalance range,\u201d the team expects more stable front\u2011end grip and smoother tyre wear, which should translate into better cornering and overall pace this weekend. In short, the new wing is designed to give Haas a more predictable, faster car on the track.",
-  "Racing Bulls / RB": "Racing\u202fBulls has tweaked several aero pieces for this weekend\u2019s track, giving the car a cleaner, more efficient shape. The new rear\u2011wing and mirror housings cut drag, while the revised under\u2011floor and side\u2011pod panels improve down\u2011force without adding extra resistance. In short, the car should be quicker on the straights and stick to the corners better, giving the drivers a real performance edge.",
-  "Williams Racing": "Williams is trialling a new trim on both the front and rear wing flaps that subtly reshapes the trailing edges. The tweak reduces drag, giving the car a bit more straight\u2011line speed without sacrificing too much downforce. If it works, the extra top\u2011end pace could make a real difference in qualifying and the race this weekend.",
-  "Sauber / Audi": "Sauber / Audi did not submit any updates for this event."
+  "meta": {
+    "year": 2025,
+    "round": 16,
+    "grand_prix": "Italian Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2025_italian_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T14:04:52.894275+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has reshaped the front‑suspension fairings and trimmed the front‑wing flap to tighten up airflow over the car, giving a sharper turn‑in and more consistent grip through the corners. At the rear they’ve fitted a low‑downforce wing package with a slimmer flap and a reduced‑chord beam wing, cutting drag so the car can carry higher straight‑line speed. Together, these aero tweaks should make the car feel more balanced on the circuit’s fast sections while still staying planted in the twisty bits, giving McLaren a better shot at the weekend’s podium."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has trimmed the front‑wing flaps and lightened both the rear and lower “beam” wings, giving the car a cleaner aerodynamic shape that reduces drag. The changes should boost straight‑line speed while keeping enough downforce to stay stable through the corners, meaning the team will be able to push harder on the lap and fight more aggressively for position this weekend."
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has tweaked the front wing by shortening its outer flaps, giving the car a tighter, more responsive front end that helps it bite into corners earlier. The whole floor has been reshaped – the surface, the little “fences” that manage the airflow, and the edge wing profile have all been refined – to smooth the air under the car, boost down‑force and keep the rear stable without adding drag. Together, these changes should translate into better cornering grip and more consistent lap times for this weekend’s race."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has tweaked three aero pieces for this weekend: the rear‑wing tip now has a finer shape to shave off a bit of drag, the outboard floor fence has been re‑angled to smooth the airflow under the car, and the front‑wing flap has been slightly flattened to reduce front‑end load. These subtle changes should give the car a cleaner‑looking rear and more balanced handling, helping it stay glued to the tarmac through the high‑speed corners and improve overall lap times."
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has added a fresh rear‑wing flap that’s less aggressive, giving them a finer “drag range” to match this weekend’s circuit. In plain terms, the car can now generate a bit more downforce for the slower corners without costing too much straight‑line speed on the long straights. The result should be a tighter, more stable car that can push harder through the high‑speed sections while still staying glued to the track where it matters most."
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has installed a new, circuit‑specific front wing that lets the team fine‑tune the car’s balance for this track. The extra adjustability should improve corner‑entry grip and overall stability, giving the drivers a better chance to fight for higher positions in qualifying and the race."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls have tweaked the rear wing, under‑floor and side‑pod shapes, plus the mirror housings to suit this circuit’s layout, trimming drag while keeping enough downforce for cornering grip. These aerodynamic refinements should give the car a smoother airflow and a tighter handling feel, helping the team extract more speed on the straights and better stability through the bends this weekend."
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams is trialling a small “trim” on the trailing edges of both the front and rear wing flaps, essentially shaving off a bit of drag. That extra low‑drag bite should give the car a higher straight‑line speed on this weekend’s fast sections, while still letting the team fine‑tune the balance if they need a little more grip. In short, it’s a simple tweak aimed at making the car quicker on the straights without sacrificing too much handling."
+    },
+    "Sauber / Audi": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
 }

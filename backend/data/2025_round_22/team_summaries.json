@@ -1,12 +1,51 @@
 {
-  "McLaren": "McLaren has tweaked its aero package for this weekend\u2019s track: the front wing flap is a bit narrower to sharpen turn\u2011in response, while the rear wing\u2019s outer section is slightly smaller to cut drag on the straights. The result should give the car quicker corner entry without sacrificing too much top\u2011end speed, letting the drivers push harder through both the slow sections and the long DRS zones. This balance tweak could be the extra bite McLaren needs to stay competitive in qualifying and the race.",
-  "Scuderia Ferrari": "Scuderia Ferrari did not submit any updates for this event.",
-  "Red Bull Racing": "Red Bull has tweaked the front wing by flattening the flaps and trimming their width, which gives a narrower \u201cbalance range.\u201d In plain terms, the car will be less twitchy on the straights and more predictable through the slower corners, letting the drivers keep a steadier line without sacrificing too much down\u2011force. That extra stability could be the edge they need to stay ahead in this weekend\u2019s tight circuit.",
-  "Mercedes F1 Team": "Mercedes F1 Team did not submit any updates for this event.",
-  "Aston Martin": "Aston Martin did not submit any updates for this event.",
-  "Alpine F1 Team": "Alpine F1 Team did not submit any updates for this event.",
-  "Haas F1 Team": "Haas F1 Team did not submit any updates for this event.",
-  "Racing Bulls / RB": "RB has tweaked the shape of its rear\u2011wing flap to suit this circuit, giving the car a finer balance between straight\u2011line speed and corner\u2011grip. The change lets the team keep more momentum into the turns without losing too much top\u2011end on the straights, a potentially decisive edge on a track that mixes fast sections with tight corners.",
-  "Williams Racing": "Williams Racing did not submit any updates for this event.",
-  "Sauber / Audi": "Sauber / Audi did not submit any updates for this event."
+  "meta": {
+    "year": 2025,
+    "round": 22,
+    "grand_prix": "Las Vegas Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2025_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T14:06:52.301009+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren’s kit now has a slightly slimmer front‑wing flap and a tighter‑set rear‑wing flap, each trimmed to match the circuit’s demands. The front‑wing tweak gives the car a more balanced feel through the corners, while the rear‑wing reduction cuts drag, helping it hit higher straight‑line speeds. Together, they should make the car feel nimbler in turns and quicker on the main straight, giving McLaren a better shot at a stronger weekend performance."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has tweaked the front wing by flattening and narrowing the outer flaps, which gives the car a tighter, more predictable front‑end feel. The change tightens the aerodynamic balance, making it easier for drivers to keep the car planted through slow corners and to adapt if the track surface varies. In short, the car should be more stable off‑the‑line and quicker into the first turn this weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "The RB has tweaked the shape of its rear‑wing flap to match the specific demands of this weekend’s circuit, fine‑tuning the car’s drag‑to‑downforce balance. The change should give the car a little more bite in the fast corners without sacrificing too much straight‑line speed, helping the drivers stay competitive on both the straights and the twisty sections. In short, a smarter wing means better grip where it counts, which could translate into stronger lap times and more overtaking potential."
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Sauber / Audi": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
 }

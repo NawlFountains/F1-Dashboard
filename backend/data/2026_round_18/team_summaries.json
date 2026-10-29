@@ -1,10 +1,43 @@
 {
-  "McLaren": "McLaren has reshaped the front and rear corners of the car and tweaked the diffuser\u2019s shape to smooth out the airflow around the chassis. These changes give the car a tighter, more stable grip through high\u2011speed corners and a cleaner wake off the back, meaning better tyre wear and more consistent lap times. In short, the car should feel more predictable on the track and be able to push harder for longer during this weekend\u2019s sessions.",
-  "Mercedes F1 Team": "Mercedes F1 Team did not submit any updates for this event.",
-  "Red Bull Racing": "Red Bull has added a small \u201cvane\u201d to the lower part of the front wing, which helps smooth the air around the front tyres and gives the car a little extra bite into the corners. They\u2019ve also tweaked the rubber\u2011filled seal on the front\u2011corner bar, making it more durable so the aero\u2011load stays consistent throughout the stint. Together, the changes should translate into tighter turn\u2011in, more stable handling and less risk of a sudden loss of grip during this weekend\u2019s race.",
-  "Scuderia Ferrari": "Ferrari has given the car\u2019s under\u2011floor a tidy makeover \u2013 the front\u2011floor edge, the board braces and the diffuser have all been reshaped and their internal volumes tweaked, while the side\u2011pod inlet has been widened and its lower\u2011volume \u201ccoke\u2011line\u201d area re\u2011profiled. Those changes smooth the airflow under the car, giving a bit more rear down\u2011force and a steadier balance, which should translate into better grip through the high\u2011speed corners of this weekend\u2019s circuit. In short, the updates aim to make the car stick to the asphalt more consistently, giving the team a fighting chance at a stronger qualifying and race performance.",
-  "Racing Bulls / RB": "Racing\u202fBulls has freshened up the car\u2019s aero package \u2013 a revised front\u2011wing endplate, new rear\u2011wing flaps, and a reshaped engine\u2011cover shoulder all work together to clean up the airflow over the car.  A suite of floor updates \u2013 new leading\u2011edge devices, a fresh floor board and re\u2011profiled floor edge \u2013 plus a redesigned front\u2011brake duct and mirror stay, boost downforce and keep the tyres and brakes at optimal temperature.  The net result should be more grip and a quicker lap time right out of the box for this weekend\u2019s race.",
-  "Aston Martin": "Aston Martin did not submit any updates for this event.",
-  "Alpine F1 Team": "Alpine has given the back of the car a quick makeover \u2013 the rear\u2011floor corner has been reshaped and the rear\u2011wing flap has been re\u2011profiled. These tweaks tighten up the airflow over the diffuser and wing, giving the car a little extra grip and stability in the high\u2011speed corners. In short, the changes should help the team extract more pace and keep the car balanced as the rubber builds up this weekend.",
-  "Cadillac": "Cadillac has tweaked the shape of its front\u2011floor fence to smooth out airflow under the car, giving the chassis a cleaner \u201csuction\u201d effect that translates to better grip through the corners. They\u2019ve also reshaped the side\u2011pod cooling vents on the roof\u2011deck, letting the engine stay cooler without sacrificing aerodynamic efficiency. Together, these changes should help the Cadillac run faster through high\u2011speed sections and keep the power unit humming strong all weekend."
+  "meta": {
+    "year": 2026,
+    "round": 18,
+    "grand_prix": "United States Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T13:35:53.913149+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has tweaked the front and rear corners of the car’s aerodynamics and introduced a fresh diffuser shape, all aimed at smoothing the airflow around the car. The changes should give a tighter, more stable front end and extra rear‑end grip, letting the drivers carry more speed through the corners this weekend. In short, better airflow = better handling, and that could translate into a stronger qualifying and race performance."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull’s new front wing now sports an extra little vane on the lower edge of the endplate, which helps keep the airflow clean and gives the car a bit more front‑end grip. At the front corners they’ve tweaked the flexible rubber strip that seals the wheel‑rim area, improving durability so the car can stay on the optimal tyre‑temperature window longer. Together, these tweaks should translate into steadier handling on the straights and through the first turns, giving the team a better chance to extract maximum performance this weekend."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari’s new floor and diffuser package reshapes the front‑floor edge, adds extra volume to the side‑pod inlets and tweaks the rear diffuser’s shape, all to smooth airflow and boost down‑force. The changes should give the car better grip through the high‑speed corners of this weekend’s circuit, letting the drivers carry more speed and fight harder for positions."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls have refreshed a host of aero pieces for the weekend – a new end‑plate on the front wing, extra flap bits on the rear wing and a reshaped engine‑cover shoulder – all aimed at smoothing the airflow and giving the car a cleaner rear‑end. The floor gets a complete makeover, with fresh leading‑edge devices, a revised board and edge, plus a brand‑new front brake‑duct and floor board to boost down‑force where it counts. In short, the tweaks should improve grip and stability through the corners, helping the RB drivers extract more speed without having to fight the car’s balance."
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has tweaked the back of the car – the rear‑floor corner has been reshaped and the rear‑wing flap has a new profile. These changes give the car a bit more grip and stability, especially in high‑speed corners, so the drivers can push harder and defend better this weekend. In short, the updates should translate into quicker lap times and more confidence when battling on track."
+    },
+    "Cadillac": {
+      "has_updates": true,
+      "summary": "Cadillac has tweaked the shape of the forward floor fences to smooth the airflow under the car, giving it a little extra down‑force and stability in the fast corners. They’ve also reshaped the side‑pod cooling vents on the roof to keep the power unit running cooler without sacrificing grip. Together, the changes should help the car stay glued to the track and maintain peak performance throughout the weekend’s sprint and main race."
+    }
+  }
 }

@@ -1,12 +1,51 @@
 {
-  "McLaren": "McLaren did not submit any updates for this event.",
-  "Scuderia Ferrari": "Scuderia Ferrari did not submit any updates for this event.",
-  "Red Bull Racing": "Red Bull Racing did not submit any updates for this event.",
-  "Mercedes F1 Team": "Mercedes F1 Team did not submit any updates for this event.",
-  "Aston Martin": "Aston Martin did not submit any updates for this event.",
-  "Alpine F1 Team": "Alpine F1 Team did not submit any updates for this event.",
-  "Haas F1 Team": "Haas F1 Team did not submit any updates for this event.",
-  "Racing Bulls / RB": "Racing\u202fBulls have fitted a circuit\u2011specific front wing that adds a small Gurney flap to the front flap, giving the car a finer balance of downforce. The tweak should tighten up the car\u2019s front end, helping it turn better through the high\u2011speed corners and preserving tyre life. In short, it\u2019s a simple aerodynamic tweak aimed at making the RB more stable and quicker on the weekend\u2019s layout.",
-  "Williams Racing": "Williams Racing did not submit any updates for this event.",
-  "Sauber / Audi": "Sauber / Audi did not submit any updates for this event."
+  "meta": {
+    "year": 2025,
+    "round": 23,
+    "grand_prix": "Qatar Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2025_qatar_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T14:07:01.026310+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Red Bull Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls have introduced a circuit‑specific front‑wing setup, giving the team a new “Gurney” flap option to fine‑tune the front‑end balance. This tweak lets the car generate a bit more downforce on the straights while keeping the handling stable through the corners, which should boost straight‑line speed without sacrificing grip. In short, the extra flap could translate into better lap times and a stronger fight for points this weekend."
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Sauber / Audi": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
 }

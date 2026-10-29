@@ -1,13 +1,55 @@
 {
-  "McLaren": "McLaren has tweaked the rear wing by reshaping the endplates to smooth the airflow and by fitting a brand\u2011new wing assembly that cuts drag on this circuit. The result is a cleaner rear\u2011end aerodynamic balance, giving the car more straight\u2011line speed without sacrificing stability. In short, the changes should help the team hit higher top speeds and stay glued to the track through the fast corners this weekend.",
-  "Mercedes F1 Team": "Mercedes has tweaked the rear wing to a lower\u2011drag setting for this circuit, flattening the upper elements so the car can pull a bit more straight\u2011line speed down the long laps. The small rear\u2011corner \u201cdrum\u201d winglets have been repositioned and lengthened to give the car more stable down\u2011force when it\u2019s on the edge of grip, while the front\u2011wing endplates now sit with a higher angle to smooth the airflow into the car\u2019s nose. Together, these changes should help the team keep the car fast on the straights without sacrificing the bite needed in the twisty sections of the weekend\u2019s track.",
-  "Red Bull Racing": "Red Bull\u2019s rear wing now features reshaped pylons \u2013 essentially the little \u201cspines\u201d that help the wing work. The new shape gives the aero a cleaner, more consistent bite on the straights and corners, letting the car stay glued to the track while still delivering strong straight\u2011line speed. In practice, that translates to better stability and more tyre life over the weekend, giving the team a solid edge in qualifying and the race.",
-  "Scuderia Ferrari": "Scuderia Ferrari did not submit any updates for this event.",
-  "Williams Racing": "Williams has tweaked three key aero pieces for this weekend: a new rear\u2011brake duct winglet to clean up airflow and shave off drag, a local trim on the floor\u2019s main body to smooth the car\u2019s ride on this particular circuit, and a reshaped floor diffuser that creates a bigger \u201csweet\u2011spot\u201d under the car for extra rear\u2011end grip. Together these changes should make the car both faster on the straights and more stable through the fast corners, giving the team a better chance to fight higher up the grid.",
-  "Racing Bulls / RB": "Racing\u202fBulls have reshaped the car\u2019s aerodynamics this weekend, tweaking the side\u2011pods, upper bodywork and even the roll\u2011hoop inlet to smooth airflow and give the car a steadier, higher\u2011down\u2011force feel on the straights and through corners. The updated brake\u2011drum assembly at the front and a new upper rear\u2011wing element tighten the car\u2019s balance, helping drivers keep the tires in their sweet spot longer. In short, the package should boost corner\u2011entry grip and stability, giving the team a better chance to fight for points on the upcoming track.",
-  "Aston Martin": "Aston Martin did not submit any updates for this event.",
-  "Haas F1 Team": "Haas has tweaked the front wing to give the car a bit more bite on the straights and a smoother feel in the corners\u2014think a cleaner, more stable front end that sticks to the track. The new wing shape also trims a little drag, so the car can accelerate faster out of the slow turns that dominate this weekend\u2019s circuit. In short, the updates should help Haas hit higher speeds on the straights while staying more planted through the twists.",
-  "Audi F1 Team": "Audi has tweaked the upper part of the rear wing to suit this circuit\u2019s layout, fine\u2011tuning the amount of drag so the car can stay quicker on the straights without losing grip in the corners. They\u2019ve also added a small winglet on the diffuser\u2019s sidewall, which cleans up the airflow at the back of the car and gives a bit more rear stability. Together, these changes should translate into better corner exit speed and more confidence when pushing on the high\u2011speed sections of the weekend\u2019s track.",
-  "Alpine F1 Team": "Alpine has reshaped the halo fairing and added a small winglet, smoothing airflow over the car\u2019s cockpit area. The tweak reduces drag and gives a bit more down\u2011force to the front end, helping the car grip better through the high\u2011speed corners this weekend. In short, it\u2019s a subtle aerodynamic boost that could translate into a few tenths of a second on the lap.",
-  "Cadillac": "Cadillac has tweaked the front\u2011wing endplates \u2013 reshaping the footplate, adding new turning vanes and a horizontal vane on the body \u2013 to smooth the air that hits the car\u2019s front. The result is a cleaner \u201cair tunnel\u201d that boosts downforce and gives the tires more grip, so the car will feel steadier through corners and can push harder on the straights this weekend. In short, the update should translate into better handling and a quicker lap time without the team having to change any driving style."
+  "meta": {
+    "year": 2026,
+    "round": 10,
+    "grand_prix": "Belgian Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2026_belgian_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T13:33:37.280318+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has tweaked the rear wing’s side panels to smooth the airflow and fitted a brand‑new wing set‑up that cuts drag for this particular circuit. The result should be a tighter, more stable rear end that lets the car hug corners better while still staying fast on the straights. In short, the car will feel more planted and quicker, giving the drivers a tangible edge this weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes have tweaked the rear wing to run a flatter angle on the upper panels, shaving off drag and giving the car a little extra straight‑line speed on this circuit’s long straights. The small rear “drum” winglets have been repositioned and made a touch wider to sharpen rear‑end stability through the fast corners. Finally, the top edge of the front‑wing endplates is now more pronounced, helping clean up the airflow into the front of the car for better grip off the start‑line and into the first bends."
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has tweaked the rear‑wing’s little vertical elements, giving them a new shape that smooths out airflow over the car. The change should boost down‑force consistency, especially in the fast, flowing corners, helping the team stick closer to the racing line and defend better this weekend."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams have tweaked three key aero pieces for the weekend: a new rear‑brake‑duct winglet to clean up the airflow and cut drag, a subtle reshaping of the floor’s outer edge to suit the circuit’s characteristics, and a revised floor profile that widens the central diffuser to boost down‑force. In plain terms, these changes should give the car a steadier rear end and a bit more grip through the corners without sacrificing straight‑line speed, helping Williams be more competitive on this track."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls has tweaked the car’s aerodynamics – reshaping the engine cover, side‑pods and roll‑hoop inlet – to smooth the airflow over the front and rear, which should give a cleaner, more stable ride on the straights and through fast corners. A new brake‑drum layout improves front‑end grip off the brakes, while a fresh upper rear‑wing piece adds a bit more bite at the back, helping the car stay glued to the track in high‑speed sections. Together these tweaks aim to shave off lap‑time and give the drivers a more predictable, faster package for the weekend."
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has reshaped the front wing, adding a small “beam” element to shave off drag while tweaking the wing’s corners and end‑plates to push more air down onto the tires where it counts most. The result is a car that should feel stickier into the fast bends and a touch quicker on the straights, giving the drivers a better‑balanced package for qualifying and the race this weekend."
+    },
+    "Audi F1 Team": {
+      "has_updates": true,
+      "summary": "Audi’s weekend update tweaks two aero pieces to match the track’s character. The rear‑wing’s upper element has been reshaped to give a tighter drag range, letting the car stay stable on the straights while still grabbing enough down‑force through the corners. At the rear, a new side‑wall winglet on the diffuser helps keep the car glued to the tarmac, especially in high‑speed sections, so drivers can push harder without losing confidence."
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has tweaked the top of the car by reshaping the halo fairing and adding a small winglet. The new shape smooths the airflow over the cockpit, giving a modest bump in down‑force and better cooling for the driver. In short, it should help the car stick to the track a little more reliably during this weekend’s sprint."
+    },
+    "Cadillac": {
+      "has_updates": true,
+      "summary": "Cadillac has tweaked the back‑edge of its front wing – reshaping the footplates and adding a new horizontal vane – to smooth the airflow over the car. The result is a cleaner, more stable front end that should give better grip out of corners and help the team keep the car glued to the track this weekend. In short, the car will feel more planted, letting drivers push harder through the fast turns."
+    }
+  }
 }

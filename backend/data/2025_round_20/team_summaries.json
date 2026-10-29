@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2025,
+    "round": 20,
+    "grand_prix": "Mexico City Grand Prix",
+    "source": "https://www.fia.com/system/files/decision-document/2025_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
+    "generated_at": "2026-10-29T14:09:25.958640+00:00"
+  },
+  "teams": {
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has added extra exit louvers to the bodywork and enlarged the rear‑corner brake duct, both aimed at giving the engine and brakes extra cooling on this particular circuit. The extra airflow helps keep temperatures in the sweet spot, so the car can stay on the limit without overheating and potentially run faster over the weekend."
+    },
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has widened the front‑brake ducts and re‑shaped the engine‑cover exhaust outlets to keep the car cooler and reduce the risk of overheating mid‑race. Small tweaks to the upper floor around the radiator inlet, the side‑pod split line, and the leading edge of the floor wing sharpen the car’s balance and grip, especially through fast corners. Together, these changes should give the team more confidence that the car will stay reliable while staying on the edge of performance this weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has added a small lip to the back of the car’s bodywork for this circuit, giving the cooling ducts a bit more room to push hot air out. The extra “vent” helps keep the power‑unit and brakes from overheating on a track that really pushes the cooling system. In practice it means the car can stay on the limit longer without losing grip or power, giving the drivers a better shot at a strong weekend."
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls have fitted a bigger rear‑upper opening on the engine cover and a larger cooling louvre panel, both tuned specifically for this circuit’s heat load. The extra airflow helps keep the power unit and rear tyres at optimal temperatures, so the car can stay on the limit longer and avoid overheating‑related drops in performance during the weekend."
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams is adding extra cooling louvre panels for this weekend, giving the car more airflow options—both wider and narrower styles—than they've used before. This extra cooling helps keep the engine and brakes at optimal temperatures, which can translate into more consistent power and fewer overheating worries on a track that’s likely to run hot. In short, the tweak aims to keep the car running smoothly and potentially squeeze out a few extra tenths of performance."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber‑Audi has tweaked the car’s cooling system for this track, adding extra side‑pod louvres and widening the overall cooling opening. The extra vents help keep the power unit and brakes at optimal temperatures, which should let the drivers push harder for longer without overheating. In short, better cooling means more consistent performance over the race distance."
+    }
+  }
+}
