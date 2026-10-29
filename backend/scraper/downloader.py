@@ -40,6 +40,16 @@ def load_overrides() -> dict[str, str]:
     with open(OVERRIDES_PATH, encoding="utf-8") as f:
         return json.load(f)
 
+def generate_url_from_gp_name(year: int, gp_name: str) -> str:
+    """Generate the default URL for the FIA car presentation PDF based on the GP name."""
+    fia_url = "https://www.fia.com/"
+    if year > 2024:
+        url_prefix = f"{fia_url}system/files/decision-document/"
+        return f"{url_prefix}{year}_{gp_name}_-_car_presentation_submissions.pdf"
+    else:
+        gp_name = " ".join(word.capitalize() for word in gp_name.split("_"))
+        url_prefix = f"{fia_url}sites/default/files/decision-document/"
+        return f"{url_prefix}{year} {gp_name} - Car Presentation Submissions.pdf"
 
 def get_car_submission_pdf(year: int, round_num: int, gp_name: str) -> tuple[str, str]:
     """Download the FIA car presentation PDF for a round.
@@ -52,7 +62,6 @@ def get_car_submission_pdf(year: int, round_num: int, gp_name: str) -> tuple[str
     """
     filename = f"{year}_{gp_name}_car_presentation_submissions.pdf"
     url = load_overrides().get(f"{year}-{round_num}") or (
-        f"https://www.fia.com/system/files/decision-document/"
-        f"{year}_{gp_name}_-_car_presentation_submissions.pdf"
+        generate_url_from_gp_name(year, gp_name)
     )
     return download_pdf(url, filename), url
