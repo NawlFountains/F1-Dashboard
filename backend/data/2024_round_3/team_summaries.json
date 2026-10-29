@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 3,
+    "grand_prix": "Australian Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Australian Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:29:04.354408+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has added small winglets to the sides of the rear‑wing pylon, giving the car a little extra downforce where it matters most. This tweak helps keep the rear stable through high‑speed corners, boosting grip without adding drag. Expect the team to be more confident in corner entry and possibly fight harder for better lap times this weekend."
+    },
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has reshaped the twist of the front‑wing flap, giving the wing a smoother, more even bite on the air. That means the car will stick better through the mid‑speed corners and stay more stable under braking, helping drivers extract extra lap time on a track that rewards precise front‑end grip. In short, the tweak should make the car feel more predictable and quicker around the circuit this weekend."
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has introduced a circuit‑specific Beam Wing that can now be set to a wider “drag range,” letting the team dial the wing’s resistance up or down depending on the track’s demands. This flexibility means they can boost straight‑line speed on power‑heavy circuits or add extra grip in twisty sections, giving the car a better balance for the weekend’s conditions. In short, a more adaptable wing should translate into quicker laps and stronger race pace."
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams has tweaked the exit scoop on the rear brake duct, reshaping the airflow that comes off the brakes. This change should improve brake cooling and clean up the rear‑wheel wake, giving the car a more stable rear end and better tyre temperatures for the upcoming weekend. In short, the tweak aims to boost consistency through the corners and give the drivers a little extra grip when it counts."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls has reshaped the rear‑wing profile to boost its aerodynamic efficiency, giving the car a cleaner airflow and more down‑force where it counts. This tweak should translate into higher cornering grip and a stronger straight‑line push, helping the team extract extra lap time on the weekend’s circuits. In short, the new wing means the car can stick to the track better and attack the competition more aggressively."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber‑Audi has reshaped the third and fourth elements of the front wing and tweaked the endplates, giving the car a cleaner, more consistent airflow up front. The result should be a tighter front‑end feel and more grip into the slower corners, helping the team extract a little extra speed and stability on a track where precision matters most. This upgrade could make the difference between fighting in the midfield and challenging the top‑ten pack this weekend."
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 19,
+    "grand_prix": "United States Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 United States Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:38:55.773142+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has reshaped the rear‑section of the floor edge to boost downforce where the car is most sensitive, giving the RB to stick to the track a bit tighter in high‑speed corners. They’ve also lowered the upper side‑pod surface and re‑profiled its junction with the floor to improve cooling for this particular circuit, helping the power unit stay in its sweet spot. Together, the tweaks should translate into better grip and a more reliable run over the weekend’s demanding layout."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has tweaked a handful of aero pieces – reshaping the front‑wing flaps, the front‑suspension fairing and the in‑board floor fences – plus added a tiny vane on the floor edge and moved the side‑pod inlet lip back. These changes smooth the airflow over the car and sharpen cooling around the rear‑suspension, giving a little extra grip and stability on the high‑speed corners of this weekend’s circuit. In short, it’s a modest aero‑plus‑cooling package aimed at keeping the car on the limit without sacrificing tyre life."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "RB has reshaped the front wing and front suspension to smooth the airflow into the car, giving more grip in the corners. At the same time they’ve slimmed the front‑ and rear‑brake ducts, added a new rear‑wing beam element and tweaked the floor and rear‑suspension fairing to raise downforce without overheating the brakes. The result should be higher cornering speeds and better tyre life for this weekend’s race."
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has given the car a full‑front‑end makeover – a new front wing and endplates with altered twist and tip shapes, plus a tweaked engine‑cover “coke line” that smooths airflow over the top. The floor and diffuser have also been reshaped, with fresh edge profiles and a slightly different roof/sidewall shape to boost rear down‑force. These tweaks should tighten the car’s balance, give more grip out of the corners and help the team fight for better lap times this weekend."
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has reshaped several sections of the car’s floor and rear wing, smoothing out the airflow under the car and at the back. These tweaks tighten the aerodynamic “grip” on the track, giving the car a bit more downforce without adding drag, which should translate into better cornering stability and a stronger run off the straights. In short, the car should feel more planted and quicker through the high‑speed sections this weekend."
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber‑Audi has given the whole front end a fresh look – the front wing and its surrounding suspension covers have been reshaped to smooth the airflow into the car. At the back, the top wishbone cover and the upper brake‑duct deflectors have also been tweaked, cleaning up the rear‑ward air stream. These aerodynamic tweaks should tighten the car’s balance and give the drivers a little extra grip on the straights and through the corners for this weekend’s race."
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has reshaped the car’s under‑body and side‑pods for this weekend – a deeper‑cut inlet, a tweaked floor with a fresh edge‑wing and tighter‑aligned fences, plus an extra piece on the rear‑corner diffuser – all aimed at squeezing more clean airflow and grip out of the chassis. At the same time, the team fitted a bigger central outlet on the engine cover and new side‑pod louvers to keep the power unit cooler, meaning the car should be both more stable through the corners and able to run at full power for longer."
+    }
+  }
+}

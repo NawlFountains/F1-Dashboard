@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 17,
+    "grand_prix": "Azerbaijan Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Azerbaijan Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:38:21.977044+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has tweaked the shape of the floor tunnel – raising and lowering sections to smooth the airflow under the car. The subtle change should give a cleaner aerodynamic “river” beneath the chassis, boosting rear‑end stability and straight‑line grip. In short, it’s aimed at squeezing a little extra downforce for better corner speed and tyre preservation this weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has tweaked the little “lower‑deflector” piece on the rear corner of the car, reshaping its bottom edge. The subtle change smooths the airflow off the back, giving the rear a bit more stability and grip when you’re pushing through the high‑speed corners this weekend. In plain‑speak, it should make the car feel more planted and easier to drive at the limit."
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls have tweaked the front wing for this circuit, dialing back the angle of the small flap that normally helps balance the car. This gives the RB a steadier feel through the fast corners, letting the driver trust the front end a bit more. In practice, it should translate into cleaner entry speeds and a smoother overall lap time this weekend."
+    },
+    "Sauber / Audi": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
+}

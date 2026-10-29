@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 12,
+    "grand_prix": "British Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 British Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:36:50.946659+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has tweaked the underside of the RB‑19, smoothing out the area above and just behind the lower side‑impact structure and giving the edge wing a slight reshape. The aim is to make the airflow under the car cleaner and more consistent, which should boost down‑force and help the car stick to the track better, especially through the high‑speed corners. In short, a subtle floor makeover that could translate into a few extra tenths per lap and a stronger fight for podium spots this weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has reshaped the rear‑wing flap to fine‑tune drag for the track, giving the car a smoother straight‑line pace while keeping enough down‑force in the corners. The front brake ducts have been made slimmer, helping the brakes stay in the optimal temperature window without adding unnecessary drag. Finally, a small adjustment to the upper edge of the rear wing improves stability under heavy braking, meaning the car should feel more planted and easier to drive over this weekend’s layout."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has fitted a lower‑downforce rear wing and a set of interchangeable “beam‑wing” plates (high, mid and low load) that let the car run flatter on the straights while still keeping enough grip through the corners. They’ve also added an extra cooling outlet on the engine cover to keep the power unit from overheating on the hot, high‑speed circuit. Together these tweaks should give the team more outright speed and better temperature management, which could be the edge they need this weekend."
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin is rolling into the weekend with the same front wing and rear‑corner package they ran last race—no parts have been swapped out. That means the car will behave exactly as the drivers and engineers have grown accustomed to, giving them a solid baseline to fine‑tune setup rather than spending time adapting to new aerodynamics. In short, the team can focus on race‑day strategy and tyre management instead of figuring out fresh handling quirks."
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Red Bull has taken off the little winglet that sits on top of the Halo for some of their weekend setups. By stripping that piece away they’re tweaking the air that flows over the car, which can give a small boost in straight‑line speed and a slightly different feel in the corners. The change could be crucial on a circuit where every bit of drag reduction or extra grip makes a difference in qualifying and the race."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber/Audi have added a new, alternate‑trim version of the floor fences, essentially a different shape that tweaks the airflow under the car. The tweak should tighten the car’s rear‑end grip and make the aerodynamics a bit more predictable, giving the drivers a little extra bite out of the corners. If the flow works as hoped, it could translate into better lap times and more confidence over the weekend’s tricky sections."
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has fitted a reshaped floor and re‑aligned floor‑fences that generate noticeably more front‑end down‑force, giving the car a tighter, more stable feel through the corners. A new, higher‑lip side‑pod inlet – with a tweaked mirror‑stay and rear‑corner body – improves airflow and cooling, helping the power unit stay in its sweet spot. Together these changes should give the team a stronger grip and a little extra pace for the upcoming weekend."
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 20,
+    "grand_prix": "Mexico City Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Mexico City Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:44:32.320256+00:00"
+  },
+  "teams": {
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls has reshaped the car’s upper‑body and floor to boost cooling and grip for this circuit. Bigger air‑boxes and a new rear‑exit vent keep the power unit and brakes at optimal temperatures, while tweaked floor fences and wing edges smooth the airflow under the car for better down‑force. In short, the updates should keep the engine cooler and the car more stable through the high‑speed corners, giving RB a stronger chance to fight at the front of the grid this weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has added extra cooling louvres to the side of the car, a tweak tailored to this circuit’s hot, high‑down‑force demands. The new vents help keep the power unit and brakes at optimal temperatures, so the car can stay on the limit longer without overheating. In short, better cooling means more consistent performance and a stronger chance to fight for podium spots this weekend."
+    },
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has fitted a bigger, circuit‑tuned cooling package – a larger side‑pod inlet, a hotter‑weather‑ready engine cover and extra louvers – to keep the power unit at optimal temperature on this track’s demanding layout. They’ve also tweaked the floor’s shape to give a more stable rear end when the car is pushing hard. Together, these changes should keep the car cooler and more planted, translating into better grip and faster lap times for the weekend."
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams has added a new “trim” option to the beam wing that lets them shorten the wing’s trailing edge, shaving off a bit of drag for this circuit’s long straights. They’ve also fitted a bigger engine cover with a wider exit slot to boost cooling, helping the power unit stay in its optimal temperature window. Together, these tweaks should give the car a little more straight‑line speed and keep the engine happy over the weekend’s high‑load laps."
+    },
+    "Sauber / Audi": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
+}

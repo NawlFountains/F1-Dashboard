@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 23,
+    "grand_prix": "Qatar Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Qatar Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:39:38.812806+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has tweaked the front of the car – the wing now has reshaped elements with the leading piece lifted off the nose, and the nose itself is a bit shorter. The changes clean up the airflow over the front, giving the car a stickier front end and more stable handling into the corners. In short, Alpine hopes these tweaks will translate into better grip and faster lap times right out of the gate this weekend."
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber‑Audi has introduced a circuit‑specific front wing that’s a slimmer take on their current flap, giving the car a tighter aerodynamic package for this track. The smaller wing should improve the car’s balance and make the front end less twitchy, helping drivers extract more consistent lap times. In short, it’s a modest tweak aimed at keeping the car steadier through the corners and boosting overall performance this weekend."
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
+}

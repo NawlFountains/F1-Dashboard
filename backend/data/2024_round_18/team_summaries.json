@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 18,
+    "grand_prix": "Singapore Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Singapore Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:38:38.159366+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has tweaked the front‑corner of the RB‑something for this weekend by widening the exit of the front‑brake ducts, a circuit‑specific cooling tweak. The bigger ducts let the brakes stay cooler under the heavy‑braking zones, so the drivers can push later into corners without worrying about fade. In short, it’s a modest aero‑adjustment that helps keep the car’s performance stable and the tyres in the right temperature window for a hotter track."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has reshaped the middle part of its front wing, tweaking the shape of the third and fourth flaps and refining the wing‑tip edges. The change smooths the air that hits the car, giving the front end a steadier bite into corners and helping the driver keep the car stable under braking. That extra grip and balance could be the edge Ferrari needs to fight for the podium this weekend."
+    },
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has tweaked the little wing that sits above the rear of the car, setting it to a higher‑downforce position that’s tailored for this weekend’s circuit. The extra grip means the car will hug the corners tighter and get on the throttle sooner out of bends, giving the team a better chance to fight for the podium. In short, a more focused aerodynamic setup should translate into faster lap times on a track that rewards cornering speed."
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has reshaped the front wing for this circuit, adding a more aggressive, mid‑wing flap that’s angled steeper than before. The change gives the car extra front‑end grip and a more stable balance through the fast corners, letting the drivers turn in quicker and keep the car settled under braking – a boost that could translate into better lap times this weekend."
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has tweaked the shape of the upper part of the rear wing to suit the circuit’s high‑downforce demands, giving the car a more stable, planted feel through the fast corners. The new profile should translate into better rear‑end grip, helping the drivers keep the car balanced and attack more confidently this weekend. In short, it’s a down‑force‑focused upgrade aimed at boosting cornering performance where it matters most."
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams has refined the front suspension – new wishbone, track‑rod and pushrod angles – and tweaked a few brake‑duct and body‑work surfaces to match the new geometry. The tweaks should give the car a smoother front‑end feel, improving grip and stability through the high‑speed corners this weekend, which could translate into better qualifying laps and more consistent race pace."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "The RB has fitted a new, track‑tailored front wing that’s set at a steeper angle and with a larger flap, giving the car extra front‑end grip. This boost in downforce should help the car turn into the corners more confidently and keep the balance stable through the high‑speed sections, giving the drivers a better shot at a strong qualifying and race performance this weekend."
+    },
+    "Sauber / Audi": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
+}

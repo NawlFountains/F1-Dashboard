@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 4,
+    "grand_prix": "Japanese Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Japanese Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:29:22.143199+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has reshaped the side‑pod inlets and tweaked the floor’s shape, giving the car a slightly larger, more‑angled surface that should translate into extra downforce and better grip on the straights and corners. At the front, the brake ducts are now slimmer and re‑profiled to keep the brakes at optimal temperature without adding drag. Together, these changes aim to make the RB‑like more stable through fast bends and keep the tires and brakes working efficiently for the weekend’s circuit."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has fitted a new rear wing that delivers extra down‑force on the straights while still keeping drag low, giving the car better stability and corner‑entry grip for this weekend’s track layout. They’ve also reshaped the rear‑top suspension fairing to smooth the airflow around the rear tires, which helps the car stick to the road and reduces tyre wear. Together, these tweaks should make the Red Bull’s handling sharper and keep the drivers competitive through both fast sections and tight corners."
+    },
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has tweaked the front‑corner brake duct, dialing it down to a “low‑cooling” setting that’s been matched to the demands of this circuit. By cutting a bit of airflow there, the car will run cleaner and feel more agile through the high‑speed corners, giving the drivers a little extra bite on lap‑times. The trade‑off is tighter brake temperatures, but the team expects the gain in grip and straight‑line speed to pay off over the weekend."
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin’s floor has been tweaked – the main surface now has a slightly reshaped profile, the side “fences” have been moved and given a smoother curve, and the wing‑like edge at the rear is slimmer. The diffuser’s top shape has also been refined. Together these changes tighten the car’s rear grip and clean up the airflow, giving the team a better‑balanced car that should be quicker through the high‑speed corners this weekend."
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has reshaped the whole front wing and re‑designed the end plates to cut drag, giving the car a bit more straight‑line speed on this weekend’s high‑speed sections. At the front‑right corner they’ve re‑routed the brake‑cooling ducts, smoothing the airflow into the car’s underside for steadier down‑force in the corners. The rear beam wing stays a conventional single‑plane design, a subtle tweak that helps keep the car balanced as the new front‑end changes the overall aerodynamic load."
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams has reshaped the back part of the front‑wing endplates and trimmed the rear‑wing’s upper flaps, while also fitting a smaller beam wing. The goal is to clean up the airflow and cut drag, giving the car a boost on the straights without sacrificing too much down‑force for the corners. In short, the car should be quicker on the high‑speed sections of this weekend’s circuit, helping the team fight higher up the grid."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls have reshaped the floor’s “fences” and under‑floor profile, plus tweaked the shape and angle of the floor edge wing. The new geometry should tighten the car’s airflow, giving a bit more rear‑end grip and stability through fast corners. In short, the tweaks aim to boost downforce where it counts most, helping the team extract extra speed over this weekend’s track."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber‑Audi has fitted a freshly shaped floor‑body, with new edges up front and through the middle, to smooth the air that rushes under the car. The tweak should give the car a bit more grip and stability, especially in the high‑speed corners, translating into quicker lap times and less tyre wear. In short, a cleaner airflow under the chassis could be the little boost that moves them up the order this weekend."
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 7,
+    "grand_prix": "Emilia Romagna Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Emilia Romagna Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:30:17.439919+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has tweaked the front wing’s end‑plate and added a longer flap to give a bigger bite on the corner entry, while reshaping the nose‑box fairings and camera mounts to keep the new wing shape working smoothly. The floor’s leading edge has been shifted and the surface in front of it lowered to smooth the airflow under the car, and the rear‑wheel fairings have been reshaped to pull heat away from the brakes more efficiently. Together these changes should boost corner grip and keep the brakes cooler, giving the RB team a better balance and more consistent performance on this weekend’s circuit."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has tweaked the aerodynamics and cooling for this weekend’s track: a subtle shift in the floor fences and a reshaped floor tunnel will smooth airflow under the car, while a new biplane‑style beam wing and a refined rear‑wing tip cut drag and give extra bite where it counts. Inside the front‑corner area the brake ducts have been re‑routed for better cooling, helping the drivers keep the brakes at optimal temperatures. Together, these changes should make the car feel more stable through fast corners and give the team a little extra grip and efficiency on the circuit."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has reshaped the front and rear wings, added a new P‑shaped side‑pod inlet and trimmed the engine‑cover volume to clean up airflow and give the car a steadier rear‑end grip while shaving off a bit of drag. The floor, diffuser and rear‑suspension fairings have also been re‑profiled to boost low‑speed downforce and make the car feel more stable through the corners. Together these tweaks aim to improve traction out of slow turns and preserve straight‑line speed, giving Ferrari a stronger platform for qualifying and the race weekend."
+    },
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has tweaked both the rear and beam wings for this circuit, loading them up a bit more to fine‑tune the car’s drag balance. The extra load gives the car a steadier rear end through fast corners while still keeping enough straight‑line speed, which could make a real difference in overtaking and defending on this weekend’s layout. In short, the changes aim to keep the car glued to the track where it matters most."
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has given the whole front end – front wing, nose and floor – a subtle reshaping to clean up the air and keep the car more glued to the tarmac, while the diffuser and rear suspension have been tweaked to tighten the rear grip. The biggest bite comes from the rear‑corner tweaks, where a smaller inlet and re‑worked vanes tighten the exhaust flow, boosting corner‑exit speed. All of these changes should give the team a steadier balance and a little extra push on the straights for this weekend’s race."
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine will try out a new “floor flank stay” on Friday – basically a reinforcement that makes the underside of the car stiffer right in front of the rear tyre. The added stiffness should help the car keep a steadier, more predictable floor airflow, giving the drivers a bit more rear‑end grip in fast corners. If it works, Alpine could see better stability and a little extra speed on the straights and through the high‑speed turns this weekend."
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams have lightened the floor of the car by swapping to a thinner laminate, while keeping the aero shape exactly the same. The lighter floor trims overall weight and improves the car’s balance, giving the drivers a more nimble feel through corners. In short, it should help Williams extract a little extra grip and speed during the weekend’s sessions."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber’s Audi‑powered car now has a longer “floor fence” at the front, reshaping the airflow under the car and enlarging the low‑pressure volume ahead of the diffuser. The tweak smooths the turbulent wake from the front wheels, giving a steadier rear‑floor suction that should boost straight‑line speed and corner grip. If the flow works as intended, Sauber could be more competitive on both the long straights and the high‑speed corners this weekend."
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has tweaked the shape of the front‑wing endplates and the fairings on the rear wishbones to smooth the air around the car, while the rear‑corner winglet has been lowered to give a more balanced grip. These changes should tighten the car’s handling and boost straight‑line speed, giving the team a better shot at extracting more performance over the upcoming weekend’s layout."
+    }
+  }
+}

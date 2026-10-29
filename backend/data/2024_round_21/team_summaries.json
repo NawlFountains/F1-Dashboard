@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 21,
+    "grand_prix": "São Paulo Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 São Paulo Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:45:14.864119+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has brought three new rear‑wing packages to match the circuit’s demands: a medium‑downforce wing for balanced speed, a high‑downforce “beam” wing for tracks that need extra grip, and a low‑downforce beam wing for circuits where straight‑line pace is king. By swapping these wings, the team can fine‑tune how much corner‑holding versus top‑speed they get, giving their drivers a better chance to attack in the corners or hit higher speeds on the straights depending on the track layout this weekend. In short, more tailored aerodynamics should translate into faster lap times and a stronger fight for podium spots."
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber‑Audi has tweaked the front suspension by moving the pickup points outboard, giving the car a more responsive feel and extra mechanical grip off the corner apexes. They’ve also fitted a circuit‑specific tandem beam wing, which smooths the aerodynamic balance and helps the car stay stable on the straights and through fast bends. Together, the changes should translate into quicker corner entry and better overall lap times for this weekend’s race."
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
+}

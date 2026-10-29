@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 11,
+    "grand_prix": "Austrian Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Austrian Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:36:35.903751+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has straightened (decambered) the little wing that sits on the car’s nose, shaving off drag and giving the car a higher top‑speed on the straights. The cleaner airflow means the car can carry more speed into corners without overheating the tyres, so drivers can push harder over the weekend’s fast sections. In short, the tweak should translate into better straight‑line pace and more tyre longevity when it counts."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has added an extra cooling‑louvre panel that’s tuned for the specific demands of this circuit. The extra airflow keeps the power unit and brakes from overheating, so the car can stay on the limit for longer laps. In short, it helps the team extract more performance and stay competitive throughout the weekend."
+    },
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren’s new front‑wing shape and tweaked front‑suspension are both aimed at smoothing the air that hits the car’s nose and under‑tray, giving the car a cleaner, more stable aerodynamic platform. That extra grip and consistency should let the drivers hit the brakes later and carry more speed through the corners, which could be the edge they need to fight up the order this weekend."
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "The team has tweaked the small winglets on the rear‑drum area, reshaping the airflow coming off the back of the car. This gives a cleaner aerodynamic wake, so the RB should have a bit more grip in fast corners and be easier to follow on the straights. In short, the change should help the car stay stable through the weekend’s high‑speed turns and improve overall lap times."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber‑Audi has fitted a brand‑new lower rear wing – their first single‑element design of the year – which trims drag and lets the car punch harder down the straights. With less resistance, the car should hit higher top‑ends and carry more speed into the corners, giving the team a better shot at moving up the grid this weekend. In short, it’s a straight‑line boost that could translate into stronger overall lap times on the circuit."
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 5,
+    "grand_prix": "Chinese Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Chinese Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:29:34.945389+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has added a tiny “flick” to the halo’s side panels, just behind the driver’s head, to smooth the airflow around the cockpit. This subtle tweak reduces drag and helps the car stay more stable in high‑speed corners, giving the drivers a little extra grip when it counts most this weekend."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls have tweaked the underside of the car – a new “letterbox” in the diffuser, a reshaped front‑floor fence and a fresh floor‑edge wing – plus a slightly re‑contoured headrest behind the driver’s helmet. These changes smooth the airflow under and around the car, giving a little extra grip and stability on the straights and through fast corners, which could help the team extract a few more seconds in qualifying and defend better in the race."
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams has tweaked the front‑section of its halo, reshaping the shroud to smooth the airflow over the car. The change should give the car a modest boost in straight‑line speed and a cleaner aerodynamic profile, helping it stay competitive in the tight corners of this weekend’s circuit. In short, a sleeker halo means a little extra grip and a better chance to fight for points."
+    },
+    "Sauber / Audi": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has reshaped the front floor and its side fences, giving the car a bigger “push” from the ground and making it easier to drive through the high‑speed corners this weekend. At the rear, a slimmer exit section, bigger cooling vents and a tighter‑pack mirror clean up the airflow, so the back end stays more stable and the tyres stay in their sweet spot longer. Together these tweaks should translate into more grip and a more predictable car as the team battles the circuit’s fast straights and tricky turns."
+    }
+  }
+}

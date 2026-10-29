@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 8,
+    "grand_prix": "Monaco Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Monaco Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:30:38.960855+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has enlarged both the upper rear wing and the beam wing, giving the car a little extra downforce to keep it glued to the track through this circuit’s high‑speed corners. They’ve also widened the front brake‑cooling ducts and added a tiny notch in the front wishbone fairing to improve brake temperatures and steering feel. The result should be more stable, confidence‑boosting grip and fewer reliability worries for the weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has tweaked the rear wing by adding more camber to both the upper element and the beam, giving the car extra rear‑end grip where the circuit demands higher down‑force. The floor’s leading‑edge has been thickened and the front wing’s inner flap widened, reshaping the airflow to keep the car stable through the fast corners. Together, these changes should improve traction out of the bends and make the car easier to drive on a track that favours aerodynamic performance."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari’s bringing a circuit‑tuned rear wing to the track – a higher‑downforce version for the top wing and a slimmer, lower‑drag design for the lower wing. This gives the car more bite in the corners while shaving off a little straight‑line resistance, meaning better handling and a stronger push on the lap for this weekend’s race."
+    },
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has upped the load on both the rear wing and the beam wing, tailoring them to the circuit’s drag‑range demands. This means the car will generate extra downforce where it counts, giving the drivers more bite in the corners without sacrificing too much straight‑line speed. The result should be a tighter, more confident feel on the track, helping them attack overtaking spots and defend better this weekend."
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has fitted a sharper‑angled rear wing and a more aggressive beam wing for this weekend. The new shapes give the car extra push on the straights and better stability in fast corners, letting the drivers carry more speed through the lap. In short, the tweaks should translate into quicker lap times and a stronger fight for podium places."
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has given the car a more aggressive front‑wing profile and moved the front‑suspension mounting further back, giving extra bite in the tight, low‑speed corners that define Monaco. The rear wing and the new “beam” wing now carry more load with a double‑element design, boosting downforce for the high‑drag, twisty layout, while the halo vanes have been realigned to smooth airflow around the cockpit. In short, the package is all about squeezing more grip out of the narrow streets, which should translate into better stability and cornering speed this weekend."
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams is running a new, higher‑downforce rear wing this weekend – the upper elements are bigger, especially on the outer edge, to give the car extra grip in the fast corners. The same enlarged‑planform concept is being applied to the beam wing, while the front‑corner cooling package has been tweaked to cope with the extra load. In short, more downforce means better cornering stability on a track that rewards aerodynamic push, so Williams hopes to be quicker off the line and through the bends."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls have reshaped the front suspension to smooth the airflow into the car, giving the tires a steadier bite through the corners. The front brake ducts are now larger, so the brakes stay cooler and more consistent under heavy braking, while a more aggressively angled rear wing and a new two‑element beam wing boost rear‑end stability without sacrificing straight‑line speed. In short, the car should be easier to drive, brake harder and stay glued to the track where it counts most this weekend."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber‑Audi has fitted a new “single‑pylon” rear wing with detached end‑plate tips, plus a fresh beam‑wing design, to give the car a cleaner airflow and a bit more straight‑line speed on this circuit’s long straights. The front suspension covers and brake ducts have also been reshaped, improving cooling and reducing drag, which should help the team keep the tires in the right window and stay competitive in qualifying and the race."
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has tweaked the front suspension shroud so the steering can turn fully without snagging, and reshaped the brake‑duct exit and widened the side‑cooling vents to keep the car’s temps under control on this hot circuit. The rear aero has also been sharpened – both the upper and lower rear wing elements are now more cambered, giving extra downforce on the straights. Together these changes should improve grip and reliability, letting the drivers push harder through the corners and maintain speed on the long laps this weekend."
+    }
+  }
+}

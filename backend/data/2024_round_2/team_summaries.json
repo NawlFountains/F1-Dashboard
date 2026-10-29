@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 2,
+    "grand_prix": "Saudi Arabian Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Saudi Arabian Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:28:51.465579+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has trimmed the opening on the engine‑cover cooling outlet and flattened the rear‑wing and beam‑wing angles for this circuit, essentially “tightening up” the car’s aerodynamics. By cutting a little drag while keeping enough down‑force, the RB will be quicker on the straights and more stable through the fast corners that define this weekend’s track. In short, the tweaks give the team a better balance between speed and grip, which could be the edge they need to fight for the podium."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has tweaked the rear‑corner aero by dialing back the deflector’s rotation, essentially smoothing the airflow off the back of the car. This should give the team a bit more straight‑line speed and make the car more stable through the fast corners, helping drivers keep the tyres in the sweet spot. In short, it’s a subtle change aimed at extracting a little extra grip and pace for the weekend’s high‑speed layout."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has trimmed the rear wing for this circuit, opting for a lower‑downforce layout that cuts drag and lets the car get on the straights faster. At the front, they’re also running a less‑aggressive beam wing—available in two simple configurations—to further reduce resistance while still keeping enough front grip. The net effect should be a quicker lap time on the high‑speed sections, giving the team a better chance to fight up the grid this weekend."
+    },
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has swapped in a lower‑drag rear wing and a fresh beam‑wing piece that opens up the airflow. The change trims the car’s drag, boosting straight‑line speed while still keeping enough grip for the corners. In short, the car should be quicker on the circuit’s long sections, giving McLaren a better shot at a stronger finish this weekend."
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has tweaked the shape of the front‑corner scoop and the rear‑wing inlet/exits, reshaping the air that passes through them. The new front scoop smooths airflow to the front tires for extra bite out of the corners, while the rear‑wing revision lets the team dial the drag level to match the circuit’s demands, giving better straight‑line speed without sacrificing downforce. In short, the car should feel more planted in the bends and quicker on the straights this weekend."
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams has fitted a modest “trim” to the Beam Wing, shortening its rear edge to shave off drag and give the car a little extra straight‑line speed on this circuit’s fast sections. They’ve also narrowed the exit of the front brake‑duct, dialing back cooling to suit the track’s lower‑temperature conditions and keep the front end more stable. Together, these tweaks should help the car hit higher top speeds while maintaining the right balance for the weekend’s layout."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls has reshaped the car’s upper deck to smooth the airflow and added optional cooling louvers on that same surface, keeping the power unit at its optimal temperature for the weekend’s high‑speed straights. The front wing now features a tunable flap that lets engineers fine‑tune the car’s balance when running a lower rear wing, while the rear wing itself has been softened (less camber and incidence) to trim drag and boost straight‑line speed. Together these tweaks give the team more temperature control, a more adaptable handling feel and a bit more outright pace on a circuit that rewards both low drag and precise balance."
+    },
+    "Sauber / Audi": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
+}

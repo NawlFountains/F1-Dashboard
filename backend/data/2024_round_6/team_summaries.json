@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 6,
+    "grand_prix": "Miami Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Miami Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:30:00.884243+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull have taken a little brace out of the floor‑edge section that supports the front edge wing, cutting a few hundred grams off the car. The weight saving should give a tiny boost in straight‑line speed and help keep the tyres in the right window, but the team will keep an eye on durability to make sure the change doesn’t compromise reliability over the weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes have added extra vanes to the floor edge and reshaped the floor’s roof volume, giving the car a bit more down‑force and stability on the high‑speed sections. They’ve also opened up more cooling louvres on the engine cover to keep the power unit at its sweet spot in the hotter conditions of this weekend’s circuit. Finally, a slightly smaller front‑wing flap and a fine‑tuned front‑suspension angle improve the car’s overall balance, helping the drivers get better grip into the corners."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren’s package this weekend is a full‑on aerodynamic refresh: a brand‑new front wing, reshaped front and rear suspension geometry, and updated brake ducts and winglets front‑to‑rear, plus a completely reworked floor and side‑pod inlet to smooth airflow over the car. New engine‑cover bodywork and a tweaked cooling‑louvre layout tighten the car’s rear‑end balance, while a circuit‑specific beam‑wing is now off‑loaded to cut drag on the straights. All of these changes should give McLaren better grip in fast corners and more straight‑line speed, helping them stay competitive on the high‑speed layout of this race weekend."
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has softened the front‑wing profile and trimmed the rear‑wing’s front‑view area, giving the car a gentler aerodynamic balance and less drag so it can carry more speed through the faster sections of the track. The engine cover now features a bigger rear‑exit opening, and a single‑element beam wing plus a dedicated chassis scoop improve cooling for both the power unit and the driver, keeping temperatures in check over a hot weekend. In short, the car is a bit looser and quicker on the straights while staying reliably cool, which should help the team fight for higher positions in qualifying and the race."
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Based on the update you provided, Williams has introduced a new setting that lets the team trim the back edge of the front wing, giving them finer control over how the car handles the corners. This tweak should help the car generate a bit more down‑force where it matters most, improving grip and stability on this weekend’s circuit. If there are any other areas you’d like summarized, just let me know!"
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls has raised and reshaped the front‑floor section and tweaked the fence edges, while the diffuser’s inlet has been re‑contoured. The tweaks give the car a cleaner airflow under the car, boosting down‑force and grip where it matters most out of the slow corners. In short, the car should feel more stable on the straights and bite harder into the bends this weekend."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber‑Audi has trimmed the top two elements of the front wing and lowered the rear‑wing flap for this circuit, giving the car a sleeker, less aggressive aerodynamic profile. The tweaks should smooth out the airflow and make the car easier to balance through the high‑speed corners, helping drivers keep the tyres in the sweet spot and stay competitive over a full race‑distance."
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has opened up the rear of the floor a bit more and added a tiny flap at the trailing edge, effectively giving the car a bigger diffuser. The change pushes more air under the car, boosting downforce so the chassis sticks to the track better—especially in the high‑speed corners of this weekend’s circuit. In short, you’ll see a more stable, quicker‑feeling Haas that can attack the bends with a bit more confidence."
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 22,
+    "grand_prix": "Las Vegas Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Las Vegas Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:39:26.044131+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has tweaked the front wing for this track, slimming the outer flap sections to give the car a more stable front end and smoother airflow. They’ve also reshaped the forward part of the second floor fence, helping to keep the air glued to the underside for a cleaner, faster slipstream. Together, these changes should improve grip and straight‑line speed, giving the team a better chance to defend and attack in the opening laps."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has tweaked the rear part of the front wing for this circuit, shaving a bit off the flap’s edge. The change gives the car a smoother front‑end flow, helping it stay more stable through the high‑speed corners that dominate the weekend. In plain terms, the car should feel more planted and easier to drive, allowing the drivers to extract a bit more grip when it counts."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has tweaked the front wing to a lower‑downforce set‑up, giving the car a looser feel through the fast corners of this circuit. The floor’s fences, surface and edge have all been reshaped and re‑profiled, smoothing the airflow under the car for more stable grip. Together, these changes should help the SF‑24 get better balance and traction, especially on the high‑speed sections where a few extra tenths can make the difference on race day."
+    },
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has rolled out a fresh front‑wing flap that’s been tailored to the quirks of this weekend’s circuit, giving the car a more predictable balance through the fast corners. The tweak should let the driver hit the apex earlier and stay on the power better on the straights, translating into a stronger overall lap time when it counts. In short, a smarter wing means the car will be both nimbler in the bends and faster on the straights, boosting McLaren’s shot at a better result."
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has installed a circuit‑specific front wing that sits flatter and is slimmer in the middle. The flatter flap drops front downforce while the reduced mid‑span chord cuts drag, giving the car a more balanced feel through the high‑speed corners. In practice, this should help the team keep the car stable on the straights and boost overall pace for this weekend’s race."
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has refined the shape of the front‑corner panels to smooth the airflow into the front of the car. This gives the car a tighter front end, improving grip and stability through slow corners and helping the drivers extract more performance off the line. In short, the tweak should translate into better handling and potentially faster lap times right from the start of the weekend."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls have lowered the “ramp” behind the sidepods and tweaked the rear‑suspension angles, giving the car cleaner air and a bit more rear‑end grip as they head into Monza’s high‑speed layout. They’ve also refreshed the tiny rear‑corner winglets, reshaped the rear floor expansion, and slimmed down the mirror housing to shave off drag, all aimed at keeping the car stable through the long straights while still generating enough downforce for the heavy braking zones. In short, the updates tighten the aero package and improve traction where it matters most for a faster, more balanced lap at Monza."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber‑Audi has ripped out the whole under‑floor and rebuilt it from the ground up – the flat plate, its side “fences”, the edge profile and the rear diffuser are all brand‑new. The fresh layout should generate more stable downforce and cleaner airflow, giving the car better grip and corner‑speed right out of the box for this weekend’s race. In short, a cleaner floor means the car can stick to the track more effectively when it counts."
+    }
+  }
+}

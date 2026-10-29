@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 9,
+    "grand_prix": "Canadian Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Canadian Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:30:53.374722+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has tweaked the rear wing by reshaping the flap, giving the car a steadier rear‑end grip as it drifts through the fast corners of this weekend’s circuit. They’ve also enlarged the exit duct on the front‑right brake, helping the brakes stay cooler and more reliable over a long run. Together, these changes should let the RB push harder in the corners while keeping the brakes from fading, giving the team a stronger chance at a solid podium finish."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has tweaked the front suspension geometry, straightening the track‑rod and lower wishbone to smooth out the airflow into the car’s front end. They’ve also enlarged the cooling inlet on the front corner, giving the power unit a bit more bite on this circuit’s demanding straights. Together, the changes should boost grip out of slow corners and keep the engine running cooler, translating into quicker lap times and more consistent performance over the weekend."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has tweaked the beam wing by lowering its tips, which changes the way the wing twists under load. This gives the car a steadier rear‑end and more predictable down‑force as the aero loads shift through corners. The result should be better balance and confidence for the drivers, helping them extract more speed on the twisty sections of this weekend’s circuit."
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams Racing has fitted shorter steering arms to both the front and rear suspension for this weekend’s race. The tighter geometry gives the car quicker, more precise handling, helping the drivers turn in sharper and maintain stability through the corners. In short, the tweak should make the car feel more responsive and give Williams a better shot at extracting extra pace on the track."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls have tweaked both wings for this weekend’s track: the rear wing’s upper surface now has a slightly different angle and curvature, giving the car a smoother, more predictable down‑force bite. At the front, the wing is a bit shorter and set at a lower angle, which softens the front end and helps keep the car balanced through the fast corners. The net result should be a car that feels more stable under braking and turns more consistently, giving the drivers a better platform to attack."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber‑Audi has given the rear wing a fresh main plane and flap, plus a new‑shaped beam wing, both tuned for the specific drag demands of this circuit. The changes let the car run a tighter rear‑end balance and adjust how much it “sticks” or “lets go” on the straights, giving drivers more grip in corners without sacrificing top‑speed. In short, the aero tweaks should make the car feel more stable and quicker over the weekend’s mix of slow and fast sections."
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has tweaked the front wing for this circuit, dialing back the angle of the flap and removing the little “IB hook” piece. The change gives the car a more neutral feel and steadier front‑end grip, especially through the bumpy, medium‑speed corners that dominate the weekend’s track. In short, the car should be easier to drive and stay on the racing line longer, giving the drivers a better shot at consistent lap times."
+    }
+  }
+}

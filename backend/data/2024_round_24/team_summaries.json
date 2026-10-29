@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 24,
+    "grand_prix": "Abu Dhabi Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Abu Dhabi Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:39:49.194070+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls’ RB has rolled out a brand‑new front wing – the mainplane, flap and endplates have all been reshaped to better condition the airflow. The result is more bite in the corners and a cleaner wake on the straights, giving the drivers extra grip and stability when it counts. In a weekend where turn‑in and braking performance are key, that extra aerodynamic edge could make the difference between fighting for points and staying in the midfield."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber/Audi has reshaped the rear of the floor, giving it a bit more “room” to smooth out the airflow under the car and boost overall down‑force. They also moved the lower part of the rear brake‑duct’s deflector, tweaking the way air is routed around the brakes for better cooling and a cleaner rear‑wing wake. Together, the tweaks should give the team a little extra grip and stability on the straights and in corners this weekend."
+    },
+    "Haas F1 Team": {
+      "has_updates": false,
+      "summary": null
+    }
+  }
+}

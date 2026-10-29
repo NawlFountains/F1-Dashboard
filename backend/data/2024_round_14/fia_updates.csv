@@ -1,0 +1,30 @@
+team,component,reason,differences,description
+Red Bull Racing,None,No updates submitted for this event,None,None
+Mercedes F1 Team,Diffuser,Performance - Local Load,Subtle changes to diffuser roof profile.,
+Mercedes F1 Team,Floor Edge,Performance – Local Load,Revised floor edge wing with additional flap element added over forward section.,
+Mercedes F1 Team,Beam Wing,Performance – Drag Reduction,Single element beam wing.,
+Mercedes F1 Team,Front Wing,Circuit Specific – Balance Range,"Low camber, small chord front wing flap.",
+Mercedes F1 Team,Halo,Performance – Drag Reduction,Removed flap element from Halo fairing.,
+Scuderia Ferrari,Front Wing,Circuit specific - Balance Range,Lower Downforce Front Wing Flap design and trims,"The depowered front wing flap provides the required aero balance range associated to the optimum downforce level anticipated for Spa. Different trims are available, to allow modulation"
+Scuderia Ferrari,Rear Wing,Circuit specific - Drag Range,Lower Downforce Top and Lower Rear Wing designs,This update features depowered Top and Lower Rear Wing profiles in order to adapt to Spa layout peculiarities and efficiency requirements
+McLaren,Rear Wing,Circuit specific - Drag Range,Low Downforce Rear Wing,"In anticipation of high isochronal circuits, a less loaded Rear Wing assembly is introduced for this event, with the aim of reducing drag efficiently."
+McLaren,Beam Wing,Circuit specific - Drag Range,Offloaded Beamwing,"With the target to increase the operating range of the newly introduced low downforce wing, an offloaded Beam Wing has been designed to trade downforce and drag efficiently."
+McLaren,Rear Corner,Circuit specific - Drag Range,Low Drag Rear Brake Duct furniture,"The rear brake duct furniture has been updated, adapting to the low downforce Rear Wing and Beam Wing configuration brought to this event."
+Aston Martin,None,No updates submitted for this event,None,None
+Alpine F1 Team,Front Wing,Performance - Local Load,Reprofiled front wing flap elements.,"Compared to previous specification, the new front wing features different profiles to give the ability to cover the full balance range required for lower downforce races."
+Alpine F1 Team,Coke/Engine Cover,Circuit specific - Cooling Range,Redesigned engine cover.,"As part of our normal development cycle, this new engine cover is designed to improve our overall cooling efficiency by reviewing the channelling of the internal airflow."
+Alpine F1 Team,Rear Corner,Circuit specific - Cooling Range,New inlet and exit ducts with new furniture.,"As part of our normal development cycle, this new rear corner aims at giving more authority on the management of our rear brake temperature through a wider inlet duct as well as a larger exit duct."
+Alpine F1 Team,Beam Wing,Circuit specific - Drag Range,New reprofiled single element rear beam wing.,The updated single element wing offers a small reduction in drag and will improve the aerodynamic efficiency of the car overall to extend our rear wing and beam wing range.
+Alpine F1 Team,Rear Wing,Circuit specific - Drag Range,A lower camber rear wing assembly to suit the lift/drag requirements,"At a given speed, the wing has less aerodynamic load and therefore drag than the rear wings used in previous events ogether with the above mentioned sidepod and the engine"
+Alpine F1 Team,Mirror,Performance - Flow Conditioning,New wing mirror stay geometry.,"At a given speed, the wing has less aerodynamic load and therefore drag than the rear wings used in previous events ogether with the above mentioned sidepod and the engine"
+Williams Racing,None,No updates submitted for this event,None,None
+Racing Bulls / RB,Rear Corner,Circuit specific - Drag Range,Modified winglet profiles.,"The winglets on the rear corner are replaced with a different arrangement, efficiently reducing downforce & drag and better suited to Spa & other low downforce circuits."
+Racing Bulls / RB,Beam Wing,Circuit specific - Drag Range,Biplane configuration with low incidence elements for use with certain wing levels.,"The low incidence biplane configuration efficiently reduces load & drag for low downforce circuits, whilst continuing to provide low pressure for the diffuser."
+Racing Bulls / RB,Rear Wing,Circuit specific - Drag Range,"Reduced camber, chord & incidence upper elements to achieve lower drag level target.","Low downforce circuits demand more efficient, less-loaded rear wings. Less cambered aerofoil sections at lower angles of incidence generate less downforce & less induced drag."
+Sauber / Audi,Mirror,Performance - Local Load,Updated mirror geometry,The new mirror stays were designed to provide better flow control and flow quality for the rear end of the car.
+Sauber / Audi,Floor fence,Performance - Drag reduction,Reworked floor fences,The reworked floor fences deliver a local load step while maintaining good flow quality towards the end of the car.
+Sauber / Audi,Front wing,Performance - Flow Conditioning,Shorter chord flap,The smaller front flap reduces the load generated by the front wing to ensure that we can balance the low-drag rear wing introduced for this circuit.
+Sauber / Audi,Rear wing,Performance - Mechanical Setup,Redesigned upper flap,The re-profiled rear wing upper flap was designed for the low drag requirements seen in Spa. The new shape improves the aerodynamic efficiency of the car.
+Sauber / Audi,Beam Wing,Reliability,Redesigned beam wing profile,"Together with the new upper flap mentioned above, the new beam wing is another step of aerodynamic efficiency designed specifically for low drag tracks like Spa."
+Haas F1 Team,Rear Wing,Performance - Drag reduction,Less cambered Rear Wing profiles,This is a low drag Rear Wing configuration: it reduces the local load in an efficient way. In order to tune the drag level this Rear Wing is compatible with different Lower Beam options.
+Haas F1 Team,Beam Wing,Performance - Drag reduction,Less cambered Lower Beam profiles available.,"This lower beam option reduces the camber of the profiles, allowing a further tuning option of the overall drag level of the car."

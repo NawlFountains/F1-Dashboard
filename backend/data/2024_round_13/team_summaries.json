@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 13,
+    "grand_prix": "Hungarian Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Hungarian Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:37:11.115202+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has reshaped the car’s side‑pods, engine cover and halo fairings to improve cooling for this circuit, while a new front‑wing profile and a re‑worked lower‑wishbone shroud tighten the airflow up front. A revised wrap‑around wheel‑body at the rear corner also tweaks the car’s balance, giving a little extra grip and stability. In short, these modest aerodynamic and cooling tweaks should help the RB push harder through the corners and keep the tyres and power unit in their sweet spot all weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has tweaked the rear‑corner aero by lowering the trim on the deflector endplate. That small change cleans up the airflow around the rear tyres, giving the car better stability and grip when it gets on the throttle out of the corners. In practice it should translate into more consistent corner exit speeds and a little extra straight‑line bite for this weekend’s race."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "The RB has smoothed out the floor under the car to improve airflow and give extra grip through the corners. They’ve also revised the front‑side ducts to keep the car cooler on this circuit’s hot stretches, and tweaked the tiny rear‑corner winglets for more stable braking and acceleration. Together, these tweaks should help the car run smoother, preserve tyre life and deliver quicker, more consistent lap times this weekend."
+    },
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has fitted a sharper, Silverstone‑specific front‑wing flap and lifted the second element on the beam wing, giving the car a more aggressive front end and extra bite into the corners. Small revisions to the halo vanes, floor panels, fences, edge wing and diffuser smooth the airflow and boost overall downforce, helping the car stay glued to the track. In short, the tweaks should translate into better grip and stability for the weekend’s high‑speed battles."
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has added fresh inlet and exit ducts around the rear corner, a circuit‑specific tweak to improve cooling. The extra airflow keeps the power unit and brakes in their sweet spot, letting the drivers run harder without overheating. In short, it’s a modest change that could give the team a vital performance edge over the race distance."
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams is rolling out a circuit‑specific cooling tweak – a noticeably larger central exit duct on the engine cover. The bigger vent helps dump heat more efficiently, keeping the power unit in its sweet spot and reducing the risk of overheating on a hot weekend. In plain terms, it should give the car a little extra reliability and punch when it matters most on the track."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber’s Audi‑powered car has been given a quick aerodynamic facelift for the weekend – the side‑pod inlets and the engine‑cover top are reshaped to smooth the airflow, while the floor has been lowered and its edges sealed to generate a cleaner, stickier rear‑end. New brake‑scoop ducts, rear‑suspension fairings and a tweaked halo‑deflector all work together to boost down‑force and keep the car stable under heavy braking. The result should be better grip through the corners and a stronger push on the straights, giving the team a more competitive launch off the line."
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has fitted a bigger opening on the engine cover and added a fresh set of side‑pod and cover louvers that are tuned for this circuit’s heat‑load. The extra airflow keeps the power unit and brakes from overheating, so the car can run its full pace without worrying about temperature‑related issues during the weekend."
+    }
+  }
+}

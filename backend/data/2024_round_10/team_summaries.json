@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 10,
+    "grand_prix": "Spanish Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Spanish Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:36:23.077075+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has re‑shaped the side‑pod inlets, the surrounding engine‑cover panels and the floor to fine‑tune cooling and keep the car’s balance steady on this circuit’s demanding, high‑speed corners. At the same time, the team has tweaked the beam‑wing endplates and moved the lower section of the rear‑wing endplate outward to squeeze a little extra down‑force on the straights without adding drag, giving the car more grip and stability for qualifying and the race."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has fitted a higher‑downforce rear wing and tweaked the under‑body to give the car more grip on the straights and through the corners, which should improve stability on this weekend’s circuit. They also reshaped the side‑pod inlet and lowered the front floor to smooth airflow, while widening the rear floor area for extra downforce, meaning the car will be more planted and able to attack harder on the lap. The halo’s new trailing edge is a safety tweak that doesn’t affect performance."
+    },
+    "McLaren": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Aston Martin": {
+      "has_updates": true,
+      "summary": "Aston Martin has tweaked the front of the car – the suspension fairings now twist a bit differently and the brake‑duct scoop has been reshaped – to give the front end more consistent grip under braking and through fast corners. At the rear, the lower deflector’s edge has been trimmed and repositioned, tightening airflow and boosting rear‑wheel stability. Together these tweaks should tighten the car’s balance, letting drivers hit the apex with more confidence and keep the tyres in the sweet‑spot longer throughout the weekend."
+    },
+    "Alpine F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "RB has rolled the front‑brake cooling duct back to the pre‑Monaco specification, giving the brakes better temperature control without upsetting the car’s aero flow. The engine‑cover top, side‑pod inlet and the forward floor (including its fences) have all been reshaped to smooth the air and sharpen rear‑end stability, while the beam wing’s camber and incidence have been dialed down to a middle‑ground setting between the high‑downforce and low‑drag packages. In short, the updates tighten the aerodynamic balance and keep the brakes cool, giving the drivers a more predictable, stable platform on a circuit that demands both speed and grip."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber‑Audi has reshaped its rear wing – a new pylon, a tweaked main plane and flap, plus split‑off tips – to smooth the airflow and give a cleaner, more stable down‑force package. They’ve also re‑worked the exit ducts on the front brake‑ducts, which should improve front‑end grip as the car comes out of the corners. Together these tweaks aim to make the car feel more balanced and responsive, helping the drivers extract a few extra tenths per lap on this weekend’s circuit."
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has tweaked the rear‑impact structure, adding a small “up‑wash” flap on its trailing edge. The tweak smooths the air that leaves the car’s rear, giving a bit more rear‑end grip and a cleaner flow to the rear wing. In practice it should make the car more stable through high‑speed corners this weekend, helping drivers hit the brakes later and keep the tyres healthier."
+    }
+  }
+}

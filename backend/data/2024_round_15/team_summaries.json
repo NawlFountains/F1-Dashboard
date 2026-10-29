@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 15,
+    "grand_prix": "Dutch Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Dutch Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:37:47.270943+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": true,
+      "summary": "Red Bull has tweaked the rear of the RB‑something for this circuit, tightening the engine‑cover outlet to keep temperatures in the sweet spot while shaving off a little drag. The halo‑fairing has been reshaped so the airflow is guided more cleanly past the cockpit, and the side‑mirror mounts have been angled differently to smooth the surrounding air. Together these small aerodynamic tweaks should improve straight‑line speed and stability, giving the team a better chance to fight for the podium this weekend."
+    },
+    "Mercedes F1 Team": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Scuderia Ferrari": {
+      "has_updates": false,
+      "summary": null
+    },
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has fitted a fresh front‑brake scoop and tweaked the front and rear suspension to smooth the car’s airflow, while a reshaped floor edge adds a little extra bite on the asphalt. For this weekend’s track, they’ve also swapped in a higher‑downforce rear wing and matching beam wing, giving the car more grip in the corners without sacrificing straight‑line speed. In short, the changes should keep the car glued to the track and boost its lap‑time potential."
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has reshaped the front‑suspension arm to smooth the air that hits the car, giving the front end a little extra bite in the corners. At the rear they’ve tweaked the brake‑duct layout to keep the rear more stable under heavy braking. Together, the tweaks should help the car stick to the track better and keep the drivers more confident throughout the weekend."
+    },
+    "Williams Racing": {
+      "has_updates": true,
+      "summary": "Williams has completely reshaped the floor – raising the front section, re‑profiling the fences and giving the edges a sharper “finger” shape – which should boost rear down‑force and keep the car more planted through the fast corners. At the same time the side‑pod inlet, the engine‑cover inlet and the central air intake have been given a smoother, wider profile and a gentler gully, helping the car “breathe” more efficiently and reducing turbulence. In short, the updates aim to give the car extra grip and a cleaner aerodynamic flow, which could translate into better corner speed and a stronger showing this weekend."
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "The rear‑corner aero has been tweaked – the brake‑duct shape and the little winglets are now re‑profiled. This gives the car cleaner airflow and a steadier rear‑end, helping drivers keep the tires in the optimal temperature window. In short, the tweak should translate into more grip out of the corners and a stronger push on the straights for this weekend’s race."
+    },
+    "Sauber / Audi": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has reshaped the front of the car – the wing now has a different camber, the nose now covers the first wing element, the upper wishbone has been re‑profiled and the small vertical deflector has been tweaked – all to smooth the air that hits the front tires and front axle. The result should be cleaner airflow, a steadier front end and a little extra grip, helping the drivers get better corner entry and tyre longevity for this weekend’s circuit."
+    }
+  }
+}

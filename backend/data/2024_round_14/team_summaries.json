@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "year": 2024,
+    "round": 14,
+    "grand_prix": "Belgian Grand Prix",
+    "source": "https://www.fia.com/sites/default/files/decision-document/2024 Belgian Grand Prix - Car Presentation Submissions.pdf",
+    "generated_at": "2026-10-29T14:37:28.653767+00:00"
+  },
+  "teams": {
+    "Red Bull Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Mercedes F1 Team": {
+      "has_updates": true,
+      "summary": "Mercedes has tweaked several aero pieces for this weekend: the rear diffuser now has a slightly reshaped roof, the floor edge wing gained an extra little flap up front, and the halo’s fairing lost a small flap to cut drag. They’ve also fitted a slimmer, low‑camber front‑wing flap and a single‑element beam wing to reduce drag. Together these changes tighten the car’s balance and give a bit more straight‑line speed, helping the team extract extra performance on this circuit’s mix of high‑speed sections and tight corners."
+    },
+    "Scuderia Ferrari": {
+      "has_updates": true,
+      "summary": "Ferrari has taken the downforce off the front and rear wings, running a lower‑downforce front‑wing flap and a more open rear‑wing layout to reduce drag on this circuit. The changes give the car a higher straight‑line speed while keeping enough corner grip to stay stable through the fast corners, which could be the edge they need to fight for podium places this weekend."
+    },
+    "McLaren": {
+      "has_updates": true,
+      "summary": "McLaren has switched to a low‑drag setup for this weekend – the rear wing is now in a “low‑downforce” mode, the beam wing has been turned off, and the rear‑corner brake duct is trimmed for minimal resistance. In plain terms, the car will be quicker on the straights and more agile through fast corners, giving McLaren the extra top‑end speed they need to challenge the front runners on this circuit."
+    },
+    "Aston Martin": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Alpine F1 Team": {
+      "has_updates": true,
+      "summary": "Alpine has reshaped the front wing and added a slimmer rear‑beam wing to tighten front grip while cutting drag at the back, giving the car a more balanced feel on this circuit. They’ve also reworked the engine‑cover and rear‑corner air ducts for cooler, more reliable power, and lowered the rear wing with a new mirror geometry to fine‑tune lift and airflow. Together, these tweaks should boost grip and stability, which is exactly what the team needs to extract every ounce of performance this weekend."
+    },
+    "Williams Racing": {
+      "has_updates": false,
+      "summary": null
+    },
+    "Racing Bulls / RB": {
+      "has_updates": true,
+      "summary": "Racing Bulls has reshaped the rear‑corner winglet, added a low‑angle “biplane” beam wing and flattened the rear wing to trim drag for this track. The changes give the car a cleaner aerodynamic profile, boosting straight‑line speed without sacrificing corner grip. In short, the RB will be quicker on the long straights and more stable through the high‑speed sections this weekend."
+    },
+    "Sauber / Audi": {
+      "has_updates": true,
+      "summary": "Sauber’s new Audi‑badged car arrives with a sleeker rear‑view mirror and a cleaned‑up floor fence, both aimed at shaving off drag so the car can carry more speed down the straights. The front wing’s small flap has been shortened and the rear wing’s top element reshaped, giving the car a tighter, more predictable down‑force balance, while a revamped beam‑wing profile boosts overall reliability. Together these tweaks should translate into better corner exit and a stronger push for points this weekend."
+    },
+    "Haas F1 Team": {
+      "has_updates": true,
+      "summary": "Haas has tweaked the rear wing and lower beam wing to a flatter, less‑curved shape, shaving off drag and letting the car slip through the air more easily. The result should be higher straight‑line speed and better tyre preservation, giving the team a clearer shot at qualifying higher and defending positions during the race."
+    }
+  }
+}
