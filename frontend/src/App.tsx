@@ -20,6 +20,7 @@ import LapsRow from "./components/laps/LapsRow"
 import {LapChart} from "./components/laps/LapChart"
 import TableSkeleton from "./components/skeletons/TableSkeleton"
 import ChartSkeleton from "./components/skeletons/ChartSkeleton"
+import Chat from "./components/chat/Chat"
 
 function useIsDesktop() {
 	const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768) 
@@ -33,7 +34,7 @@ function useIsDesktop() {
 
 function App() {
 	const isDesktop = useIsDesktop()
-	const [ activeTab, setActiveTab ] = useState<'schedules' | 'results' | 'upgrades' | 'laps'>('schedules')
+	const [ activeTab, setActiveTab ] = useState<'schedules' | 'results' | 'upgrades' | 'laps'| 'chat' >('schedules')
 	const [ appliedYear, setAppliedYear ] = useState<number>(new Date().getFullYear())
 	const [ appliedRoundNumber, setAppliedRoundNumber ] = useState<number | null>(null)
 	const [ appliedSessionType, setAppliedSessionType ] = useState<SessionType | null>(null)
@@ -135,31 +136,37 @@ function App() {
 			<h1 className="text-2xl text-gruv-fg1 font-bold">
 				F1 - Dashboard
 			</h1>
-			{!isViewingCurrentSchedule && (
-				<>
+			<div className="hidden sm:block absolute right-5 top-2 flex flex-row gap-9">
+
+				{/* Tabs */}
 				<button
-					onClick={handleSetCurrentSchedule}
-					className="hidden sm:block absolute right-5 top-2 py-1 px-2 rounded bg-gruv-fg2 dark:text-gruv-fg1 dark:bg-gruv-bg2 hover:bg-gruv-orange cursor-pointer">
-					<p>Next GP</p>
+					onClick={() => setActiveTab('schedules')}
+					className={`py-1 px-2 rounded text-lg cursor-pointer text-gruv-bg2 dark:text-gruv-fg2 font-mono disabled:text-gruv-gray disabled:cursor-not-allowed
+						${activeTab === 'upgrades' ? 'bg-gruv-fg1 dark:bg-gruv-bg2' : 'bg-transparent'}`}>
+					Schedules
 				</button>
-				
-				</>
-			)}
+
+				<button
+					onClick={() => setActiveTab('chat')}
+					className={`py-1 px-2 rounded text-lg cursor-pointer text-gruv-bg2 dark:text-gruv-fg2 font-mono disabled:text-gruv-gray disabled:cursor-not-allowed
+						${activeTab === 'upgrades' ? 'bg-gruv-fg1 dark:bg-gruv-bg2' : 'bg-transparent'}`}>
+					Chat
+				</button>
+
+				{!isViewingCurrentSchedule && (
+					<button
+						onClick={handleSetCurrentSchedule}
+						className="py-1 px-2 rounded bg-gruv-fg2 dark:text-gruv-fg1 dark:bg-gruv-bg2 hover:bg-gruv-orange cursor-pointer">
+						<p>Next GP</p>
+					</button>
+				)}
+			</div>
 			
 		</div>
-
-		
 
 
 		{/* Information about selected schedule */}
 		<div className="mx-5 py-2">
-			{!isViewingCurrentSchedule && (
-				<button
-					onClick={handleSetCurrentSchedule}
-					className="sm:hidden w-full my-2 py-3 bg-gruv-fg2 dark:bg-gruv-bg1 rounded border border-dashed border-gruv-orange text-gruv-bg0 dark:text-gruv-fg2 hover:bg-gruv-orange hover:text-gruv-fg2 cursor-pointer font-mono">
-					<p>Set current/next GP</p>
-				</button>
-			)}
 
 			{selectedSchedule && (
 				<Card>
@@ -188,50 +195,54 @@ function App() {
 		</div>
 
 		<div className="p-2 px-5">
-
 			<div>
-			<div className="flex flex-col md:flex-row w-full bg-gruv-fg2 dark:bg-gruv-bg1 p-2 gap-3 md:items-stretch">
-			<div 
-				className="w-full flex flex-col"
-				style={ isDesktop ? { width: activeTab === 'schedules' ? '100%' : '40%' } : undefined}
-			>
-				<div className="flex flex-row w-full text-center dark:text-gruv-fg2 font-mono justify-center py-2">
-					<select 
-						className={`px-2`}
-						value={appliedYear} 
-						onChange={(e) => handleYearSelected(Number(e.target.value))}
-					>
-						{yearOptions.map(y => (
-							<option key={y} value={y} className="bg-gruv-fg2 dark:bg-gruv-bg1">{y}</option>
-						))}
-					</select>
-				</div>
-			<div className={`w-full h-full overflow-y-auto min-h-[300px] max-h-[300px] md:max-h-[1000px]
-				transition-[width] duration-500 ease-in-out`}
+				<div className="flex flex-col md:flex-row w-full bg-gruv-fg2 dark:bg-gruv-bg1 p-2 gap-3 md:items-stretch">
+				
+				{activeTab === 'chat' ? (
+					<Chat />
+				): (
+				<>
+				<div 
+					className="w-full flex flex-col"
+					style={ isDesktop ? { width: activeTab === 'schedules' ? '100%' : '40%' } : undefined}
 				>
+					<div className="flex flex-row w-full text-center dark:text-gruv-fg2 font-mono justify-center py-2">
+						<select 
+							className={`px-2`}
+							value={appliedYear} 
+							onChange={(e) => handleYearSelected(Number(e.target.value))}
+						>
+							{yearOptions.map(y => (
+								<option key={y} value={y} className="bg-gruv-fg2 dark:bg-gruv-bg1">{y}</option>
+							))}
+						</select>
+					</div>
+				<div className={`w-full h-full overflow-y-auto min-h-[300px] max-h-[300px] md:max-h-[1000px]
+					transition-[width] duration-500 ease-in-out`}
+					>
 
-					{/* Full Schedule */}
-					<Suspense fallback={<LoadingSpinner/>}>
-						<>
-						<ScheduleTable>
-						{schedules.map(schedule => (
-							<SchedulesRow 
-								key={schedule.event_date} 
-								onSelected={handleScheduleSelect}
-								onSessionSelected={handleSessionSelect}
-								isSelected={schedule.event_date === selectedSchedule?.event_date}
-								selectedSession={selectedSession}
-								schedule={schedule}/>
-						))}
-						</ScheduleTable>
-						</>
-						{schedulesLoadError && (
-						<p>{schedulesLoadError}</p>
-					)}
+						{/* Full Schedule */}
+						<Suspense fallback={<LoadingSpinner/>}>
+							<>
+							<ScheduleTable>
+							{schedules.map(schedule => (
+								<SchedulesRow 
+									key={schedule.event_date} 
+									onSelected={handleScheduleSelect}
+									onSessionSelected={handleSessionSelect}
+									isSelected={schedule.event_date === selectedSchedule?.event_date}
+									selectedSession={selectedSession}
+									schedule={schedule}/>
+							))}
+							</ScheduleTable>
+							</>
+							{schedulesLoadError && (
+							<p>{schedulesLoadError}</p>
+						)}
 
-					</Suspense>
+						</Suspense>
+					</div>
 				</div>
-			</div>
 				<div className="px-2 transition-[width] duration-300 ease-in-out" 
 					style={ isDesktop ? { width: activeTab !== 'schedules' ? '80%' : '0%' } : undefined}
 				>
@@ -337,7 +348,9 @@ function App() {
 					}
 					</div>
 				</div>
-				</div>
+				</>
+				)}
+			</div>
 			</div>
 		</div>
 	</ScreenLayout>
